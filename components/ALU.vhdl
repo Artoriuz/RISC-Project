@@ -1,65 +1,53 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+ 
+entity ALU is
+   port(
+		Input0, Input1 : in std_logic_vector(7 downto 0);
+		Operation : in std_logic_vector(3 downto 0);
+		Carry : out std_logic;
+		Flag : out std_logic;
+		Result : out std_logic_vector(7 downto 0)
+   );
+end entity ALU;
+ 
+architecture Behavioral of ALU is
 
-entity alu is
-port(   CLK : in std_logic; 
-        IN0 : in signed(7 downto 0);
-		IN1 : in signed(7 downto 0);	
-        SEl : in unsigned(3 downto 0); 
-        OUT0 : out signed(7 downto 0);  
-        CARRY : out signed;
-		FLAG : out signed
-		);
-end alu;
-
-architecture Behavioral of alu is
-
-
-signal Reg1,Reg2,Reg3,Si : signed(7 downto 0) := (others => '0');
-signal Temp : signed(8 downto 0);
+	signal Temp: std_logic_vector(9 downto 0);
 
 begin
+	process(Input0, Input1, Operation, temp) is
+	begin
+		Flag <= '0';
+		case Operation is
+		when "0000" => -- res = nib1 + nib2, flag = carry = overflow
+			Temp <= std_logic_vector((unsigned("0" & Input0) + unsigned(Input1)));
+			Result <= temp(3 downto 0);
+			Carry <= temp(4);
+		when "0001" => -- res = |nib1 - nib2|, flag = 1 iff nib2 > nib1
+			if (Input0 >= Input1) then
+				Result <= std_logic_vector(unsigned(Input0) - unsigned(Input1));
+				Flag <= '0';
+			else
+				Result <= std_logic_vector(unsigned(Input1) - unsigned(Input0));
+				Flag <= '1';
+            end if;
+		when "0010" =>
+			Result <= Input0 and Input1;
+		when "0011" =>
+			Result <= Input0 or Input1;
+		when "0100" =>
+			Result <= Input0 xor Input1;
+		when "0101" =>
+			Result <= not Input0;
+		when "0110" =>
+            Result <= not Input1;
+		when others => -- res = nib1 + nib2 + 1, flag = 0
+			Temp <= std_logic_vector((unsigned("0" & Input0) + unsigned(not Input1)) + 1);
+			Result <= temp(3 downto 0);
+			Flag <= temp(4);
+		end case;
+	end process;
 
-Reg1 <= IN0;
-Reg2 <= IN1;
-OUT0 <= Reg3;
-
-process(CLK)
-begin
-
-    if(rising_edge(CLK)) then --Somente faz os seguintes passos na subida positiva do clock
-        case SEL is
-            when "0000" => 
-                Temp <= Reg1 + Reg2;
-				Reg3 <= Temp(7 downto 0);
-				Si(0) <= Temp(8);
-				Si(7 downto 1) = '0';
-			when "0001" => 
-				if (Reg1 >= Reg2) then
-					Reg3 <= std_logic_vector(unsigned(Reg1) - unsigned(Reg2));
-					FLAG <= '0';
-				else
-					Reg3 <= std_logic_vector(unsigned(Reg2) - unsigned(Reg1));
-					FLAG <= '1';
-				end if;
-			when "0010" => 
-                Reg3 <= not Reg1;  --NOT gate
-            when "0011" => 
-                Reg3 <= Reg1 nand Reg2; --NAND gate 
-            when "0100" => 
-                Reg3 <= Reg1 nor Reg2; --NOR gate               
-            when "0101" => 
-                Reg3 <= Reg1 and Reg2;  --AND gate
-            when "0110" => 
-                Reg3 <= Reg1 or Reg2;  --OR gate    
-            when "0111" => 
-                Reg3 <= Reg1 xor Reg2; --XOR gate   
-            when others =>
-                NULL;
-        end case;       
-    end if;
-    
-end process;    
-
-end Behavioral;
+end architecture Behavioral;
