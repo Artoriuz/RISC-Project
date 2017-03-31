@@ -33,7 +33,7 @@ begin
                 Temp <= Reg1 + Reg2;  --addition
 				Reg3 <= Temp(7 downto 0);
 				Si(0) <= Temp(8);
-				Si(6 downto 1) = '0';
+				Si(7 downto 1) = '0';
 			when "0001" => 
                 Reg3 <= Reg1 - Reg2; --subtraction
             when "0010" => 
