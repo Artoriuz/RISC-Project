@@ -15,7 +15,8 @@ end alu;
 architecture Behavioral of alu is
 
 
-signal Reg1,Reg2,Reg3,Reg4 : signed(7 downto 0) := (others => '0');
+signal Reg1,Reg2,Reg3,Si : signed(7 downto 0) := (others => '0');
+signal Temp : signed(8 downto 0);
 
 begin
 
@@ -29,8 +30,11 @@ begin
     if(rising_edge(CLK)) then --Do the calculation at the positive edge of clock cycle.
         case SEL is
             when "0000" => 
-                Reg3 <= Reg1 + Reg2;  --addition
-            when "0001" => 
+                Temp <= Reg1 + Reg2;  --addition
+				Reg3 <= Temp(7 downto 0);
+				Si(0) <= Temp(8);
+				Si(6 downto 1) = '0';
+			when "0001" => 
                 Reg3 <= Reg1 - Reg2; --subtraction
             when "0010" => 
                 Reg3 <= not Reg1;  --NOT gate
