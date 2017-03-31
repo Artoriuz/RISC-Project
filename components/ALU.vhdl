@@ -8,7 +8,8 @@ port(   CLK : in std_logic;
 		IN1 : in signed(7 downto 0);	
         SEl : in unsigned(3 downto 0); 
         OUT0 : out signed(7 downto 0);  
-        OUT1 : out signed(7 downto 0)
+        CARRY : out signed;
+		FLAG : out signed
 		);
 end alu;
 
@@ -27,16 +28,22 @@ OUT0 <= Reg3;
 process(CLK)
 begin
 
-    if(rising_edge(CLK)) then --Do the calculation at the positive edge of clock cycle.
+    if(rising_edge(CLK)) then --Somente faz os seguintes passos na subida possitiva do clock
         case SEL is
             when "0000" => 
-                Temp <= Reg1 + Reg2;  --addition
+                Temp <= Reg1 + Reg2;
 				Reg3 <= Temp(7 downto 0);
 				Si(0) <= Temp(8);
 				Si(7 downto 1) = '0';
 			when "0001" => 
-                Reg3 <= Reg1 - Reg2; --subtraction
-            when "0010" => 
+				if (Reg1 >= Reg2) then
+					Reg3 <= std_logic_vector(unsigned(Reg1) - unsigned(Reg2));
+					FLAG   <= '0';
+				else
+					Reg3 <= std_logic_vector(unsigned(Reg2) - unsigned(Reg1));
+					FLAG   <= '1';
+				end if;
+			when "0010" => 
                 Reg3 <= not Reg1;  --NOT gate
             when "0011" => 
                 Reg3 <= Reg1 nand Reg2; --NAND gate 
