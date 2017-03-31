@@ -11,7 +11,6 @@ entity register8 is port(
 end register8;
 
 architecture description of register8 is
-
 begin
     process(Clk, Clr)
     begin
@@ -19,7 +18,7 @@ begin
 			Out0 <= "00000000";
         elsif rising_edge(Clk) then
             if Ld = '1' then
-				Out0 <= In0;
+			Out0 <= In0;
             end if;
         end if;
     end process;
