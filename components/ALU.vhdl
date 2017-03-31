@@ -7,14 +7,15 @@ port(   CLK : in std_logic;
         IN0 : in signed(7 downto 0);
 		IN1 : in signed(7 downto 0);	
         SEl : in unsigned(3 downto 0); 
-        OUT0 : out signed(7 downto 0)  
-        );
+        OUT0 : out signed(7 downto 0);  
+        OUT1 : out signed(7 downto 0)
+		);
 end alu;
 
 architecture Behavioral of alu is
 
 
-signal Reg1,Reg2,Reg3 : signed(7 downto 0) := (others => '0');
+signal Reg1,Reg2,Reg3,Reg4 : signed(7 downto 0) := (others => '0');
 
 begin
 
