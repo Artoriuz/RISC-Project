@@ -28,7 +28,7 @@ OUT0 <= Reg3;
 process(CLK)
 begin
 
-    if(rising_edge(CLK)) then --Somente faz os seguintes passos na subida possitiva do clock
+    if(rising_edge(CLK)) then --Somente faz os seguintes passos na subida positiva do clock
         case SEL is
             when "0000" => 
                 Temp <= Reg1 + Reg2;
@@ -38,10 +38,10 @@ begin
 			when "0001" => 
 				if (Reg1 >= Reg2) then
 					Reg3 <= std_logic_vector(unsigned(Reg1) - unsigned(Reg2));
-					FLAG   <= '0';
+					FLAG <= '0';
 				else
 					Reg3 <= std_logic_vector(unsigned(Reg2) - unsigned(Reg1));
-					FLAG   <= '1';
+					FLAG <= '1';
 				end if;
 			when "0010" => 
                 Reg3 <= not Reg1;  --NOT gate
