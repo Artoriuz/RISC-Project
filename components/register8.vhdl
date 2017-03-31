@@ -23,4 +23,8 @@ begin
             end if;
         end if;
     end process;
+<<<<<<< HEAD
 end description;
+=======
+end description;
+>>>>>>> 7ae28f3e1e324121b9ef80808201ef0e0864ed19
