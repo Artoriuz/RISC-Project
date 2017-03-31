@@ -1,3 +1,3 @@
 # RISC-Project
-This repository will be used by me and perhaps some colleagues to implement our VHDL RISC microprocessor. 
-We synthesize our code on Quartus and use Altera FPGAs.
+This repository will be used by me to document my implementation of a VHDL RISC microprocessor. 
+The VHDL code found here will be synthesized on Quartus and be tested on Altera FPGAs.
