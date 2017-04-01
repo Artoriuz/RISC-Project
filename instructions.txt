@@ -52,4 +52,4 @@ Reg1 - 01
 Reg2 - 10
 Reg3 - 11
 
-De maneira com que uma instrução ADD Reg0, Reg1 seria escrita da seguinte forma: 0100 0001 XXXX XXXX 
+De maneira com que uma instrução ADD Reg0, Reg1 seria escrita da seguinte forma: 0100 0001 0000 0000 
