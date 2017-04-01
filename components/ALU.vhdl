@@ -5,7 +5,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity ALU is
    port(
 		Input0, Input1 : in std_logic_vector(7 downto 0);
-		Operation : in std_logic_vector(3 downto 0);
+		Operation : in std_logic_vector(7 downto 0);
 		Carry : out std_logic;
 		Flag : out std_logic; --Podemos usar uma coisa só para as duas linhas em cima disso
 		Result : out std_logic_vector(7 downto 0)
