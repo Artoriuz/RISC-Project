@@ -3,7 +3,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 entity mux4to1 is 
 	port( 
-		Sel : in  std_logic_vector (1 downto 0);     
+		operation : in  std_logic_vector (1 downto 0);     
 		in0 : in  std_logic_vector (7 downto 0);     
 		in1 : in  std_logic_vector (7 downto 0);
 		in2 : in  std_logic_vector (7 downto 0);
@@ -14,7 +14,7 @@ end mux4to1;
 
 architecture behavioral of mux4to1 is
 begin
-	with Sel select
+	with operation select
 		X <= in0 when "00",
 			in1 when "01",
 			in2 when "10",

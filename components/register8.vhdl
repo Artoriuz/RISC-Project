@@ -2,23 +2,23 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
 entity register8 is port(
-	In0 : in std_logic_vector(7 downto 0);
-	Ld : in std_logic; 
-	Clk : in std_logic;
-	Clr : in std_logic;
-	Out0 : out std_logic_vector(7 downto 0)
+	in0 : in std_logic_vector(7 downto 0);
+	ld : in std_logic; 
+	clk : in std_logic;
+	clr : in std_logic;
+	out0 : out std_logic_vector(7 downto 0)
 );
 end register8;
 
 architecture description of register8 is
 begin
-    process(Clk, Clr)
+    process(clk, clr)
     begin
-        if Clr = '1' then
-			Out0 <= "00000000";
-        elsif rising_edge(Clk) then
-            if Ld = '1' then
-			Out0 <= In0;
+        if clr = '1' then
+			out0 <= "00000000";
+        elsif rising_edge(clk) then
+            if ld = '1' then
+			out0 <= in0;
             end if;
         end if;
     end process;
