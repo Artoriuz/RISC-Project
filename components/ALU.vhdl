@@ -43,7 +43,7 @@ begin
 		when "0101" =>
 			result <= not in0;
 		when "0110" =>
-            result <= not in1;
+			result <= not in1;
 		when others => 
 			temp (8 downto 0) <= '0';
 			result <= temp (7 downto 0);
@@ -51,6 +51,5 @@ begin
 			carry <= '0';
 		end case;
 	end process;
-
 end architecture Behavioral;
 --Devemos ainda mudar a codificação dentro do ALU para a mesma ficar igual á codificação as instruções, o que é mais fácil para o controlador. Mas isso não importa.

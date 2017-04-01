@@ -1,5 +1,5 @@
 LIBRARY IEEE;
-USE IEEE.std_logic_1164.ALL;
+USE IEEE.STD_LOGIC_1164.ALL;
 
 entity register8 is port(
 	in0 : in std_logic_vector(7 downto 0);
