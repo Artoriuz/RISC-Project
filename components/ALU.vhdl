@@ -7,14 +7,14 @@ entity ALU is
 		Input0, Input1 : in std_logic_vector(7 downto 0);
 		Operation : in std_logic_vector(3 downto 0);
 		Carry : out std_logic;
-		Flag : out std_logic;
+		Flag : out std_logic; --Podemos usar uma coisa só para as duas linhas em cima disso
 		Result : out std_logic_vector(7 downto 0)
    );
 end entity ALU;
  
 architecture Behavioral of ALU is
 
-	signal Temp: std_logic_vector(9 downto 0);
+	signal Temp: std_logic_vector(8 downto 0);
 
 begin
 	process(Input0, Input1, Operation, temp) is
@@ -43,11 +43,15 @@ begin
 			Result <= not Input0;
 		when "0110" =>
             Result <= not Input1;
-		when others => -- res = nib1 + nib2 + 1, flag = 0
-			Temp <= std_logic_vector((unsigned("0" & Input0) + unsigned(not Input1)) + 1);
-			Result <= temp(3 downto 0);
-			Flag <= temp(4);
+		when others => 
+			--Temp <= std_logic_vector((unsigned("0" & Input0) + unsigned(not Input1)) + 1);
+			--Result <= temp(3 downto 0);
+			--Flag <= temp(4);
+			Temp <= '000000000';
+			Result <= Temp (3 downto 0);
+			Flag <= '0';
 		end case;
 	end process;
 
 end architecture Behavioral;
+--Devemos ainda mudar a codificação dentor do ALU para a mesma ficar igual á codificação as instruções, o que é mais fácil para o controlador. Mas isso não importa.
