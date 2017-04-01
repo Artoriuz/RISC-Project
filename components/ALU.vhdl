@@ -21,11 +21,11 @@ begin
 	begin
 		Flag <= '0';
 		case Operation is
-		when "0000" => -- res = nib1 + nib2, flag = carry = overflow
+		when "0000" => -- Result = Input0 + Input1, Flag = Carry = Overflow
 			Temp <= std_logic_vector((unsigned("0" & Input0) + unsigned(Input1)));
-			Result <= temp(3 downto 0);
-			Carry <= temp(4);
-		when "0001" => -- res = |nib1 - nib2|, flag = 1 iff nib2 > nib1
+			Result <= temp(6 downto 0);
+			Carry <= temp(7);
+		when "0001" => -- Result = |Input0 - Input1|, flag = 1 if Input1 > Input0
 			if (Input0 >= Input1) then
 				Result <= std_logic_vector(unsigned(Input0) - unsigned(Input1));
 				Flag <= '0';
@@ -54,4 +54,4 @@ begin
 	end process;
 
 end architecture Behavioral;
---Devemos ainda mudar a codificação dentor do ALU para a mesma ficar igual á codificação as instruções, o que é mais fácil para o controlador. Mas isso não importa.
+--Devemos ainda mudar a codificação dentro do ALU para a mesma ficar igual á codificação as instruções, o que é mais fácil para o controlador. Mas isso não importa.
