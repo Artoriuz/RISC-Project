@@ -5,7 +5,7 @@ entity register8 is port(
 	In0 : in std_logic_vector(7 downto 0);
 	Ld : in std_logic; 
 	Clk : in std_logic;
-	Clk : in std_logic;
+	Clr : in std_logic;
 	Out0 : out std_logic_vector(7 downto 0)
 );
 end register8;
