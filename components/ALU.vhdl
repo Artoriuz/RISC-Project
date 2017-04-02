@@ -15,7 +15,7 @@ end entity ALU;
  
 architecture Behavioral of ALU is
 
-signal temp: std_logic_vector(8 downto 0);
+signal temp : std_logic_vector(8 downto 0);
 
 begin
 	process(in0, in1, operation, temp) is
@@ -24,8 +24,8 @@ begin
 		case operation is
 		when "0000" => -- result = in0 + in1, flag = carry = Overflow
 			temp <= std_logic_vector((unsigned("0" & in0) + unsigned(in1)));
-			result <= temp(6 downto 0);
-			carry <= temp(7);
+			result <= temp(7 downto 0);
+			carry <= temp(8);
 		when "0001" => -- result = |in0 - in1|, flag = 1 if in1 > in0
 			if (in0 >= in1) then
 				result <= std_logic_vector(unsigned(in0) - unsigned(in1));
