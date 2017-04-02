@@ -4,8 +4,9 @@ USE IEEE.numeric_bit.all;
 
 entity ram is 
 	port(
-		address : in std_logic_vector(7 downto 0);
+		in0 : in std_logic_vector(7 downto 0);
 		clk : in std_logic;
-		memwr : in std_logic;
-		in0 : std_logic_vector(7 downto 0);
-		
+		address : in std_logic_vector(7 downto 0);
+		out0 : out std_logic_vector(7 downto 0)
+	);
+	--This is completely incomplete. 

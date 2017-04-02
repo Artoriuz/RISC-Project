@@ -1,9 +1,9 @@
 entity programcounter is
     Port( 
-		clk : in  STD_LOGIC;
-        in0 : in  STD_LOGIC_VECTOR (7 downto 0);
-        operation : in  STD_LOGIC_VECTOR (1 downto 0);
-        out0 : out  STD_LOGIC_VECTOR (7 downto 0)
+		clk : in  std_logic;
+        in0 : in  std_logic_vector (7 downto 0);
+        operation : in  std_logic_vector (1 downto 0);
+        out0 : out  std_logic_vector (7 downto 0)
         );
 end programcounter;
 

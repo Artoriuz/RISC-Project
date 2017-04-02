@@ -34,20 +34,28 @@ begin
 				result <= std_logic_vector(unsigned(in1) - unsigned(in0));
 				flag <= '1';
             end if;
-		when "0010" =>
+		when "0010" => -- and port
 			result <= in0 and in1;
-		when "0011" =>
+		when "0011" => -- or port 
 			result <= in0 or in1;
-		when "0100" =>
+		when "0100" => -- xor port 
 			result <= in0 xor in1;
-		when "0101" =>
+		when "0101" => -- not port primeira entrada
 			result <= not in0;
-		when "0110" =>
+		when "0110" => -- not port segunda entrada 
 			result <= not in1;
+		when "0111" => -- shift right
+			temp(8) <= '0';
+			temp(7 downto 0) <= in0;
+			result(7 downto 0) <= temp(8 downto 1);
+		when "1000" => --shift left
+			temp(0) <= '0';
+			temp(8 downto 1) <= in0;
+			result(7 downto 0) <= temp(7 downto 0);
 		when others => 
 			temp (8 downto 0) <= '0';
 			result <= temp (7 downto 0);
-			flag <= '0';
+			flag <= '0'; --provavelmente não preciso disso e nem da linha de baixo dessa 
 			carry <= '0';
 		end case;
 	end process;
