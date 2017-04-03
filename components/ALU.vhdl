@@ -42,13 +42,11 @@ begin
 			result <= in0 xor in1;
 		when "0101" => -- not port primeira entrada
 			result <= not in0;
-		when "0110" => -- not port segunda entrada 
-			result <= not in1;
-		when "0111" => -- shift right
+		when "0110" => -- shift right
 			temp(8) <= '0';
 			temp(7 downto 0) <= in0;
 			result(7 downto 0) <= temp(8 downto 1);
-		when "1000" => --shift left
+		when "0111" => --shift left
 			temp(0) <= '0';
 			temp(8 downto 1) <= in0;
 			result(7 downto 0) <= temp(7 downto 0);

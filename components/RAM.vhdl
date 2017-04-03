@@ -15,14 +15,14 @@ port (
 end ram ;
 
 architecture Behavioral of ram is
-	type mem_type is array (256 downto 0) of std_logic_vector(7 downto 0);
+	type mem_type is array (255 downto 0) of std_logic_vector(7 downto 0);
 	signal mem : mem_type;
 	begin
 	memory : process (control, address, clk, clr, mem, in0)
 		begin
 		if rising_edge(clk)	then
 			if (clr = '1') then 
-				mem (256 downto 0) <= '00000000';
+				mem (255 downto 0) <= '00000000';
 			else			
 				if (control = '1') then
 					mem(to_integer(address)) <= in0; -- write
