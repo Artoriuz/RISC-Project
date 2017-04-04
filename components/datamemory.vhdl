@@ -22,7 +22,7 @@ architecture Behavioral of datamem is
 		begin
 		if rising_edge(clk)	then
 			if (clr = '1') then 
-				mem (31 downto 0) <= '00000000';
+				mem (31 downto 0) <= '0';
 			else			
 				if (control = '1') then
 					mem(to_integer(address)) <= in0; -- write

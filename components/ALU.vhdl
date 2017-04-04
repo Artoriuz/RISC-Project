@@ -23,15 +23,15 @@ begin
 		flag <= '0';
 		case operation is
 		when "0000" => -- result = in0 + in1, flag = carry = Overflow
-			temp <= std_logic_vector((unsigned("0" & in0) + unsigned(in1)));
+			temp <= in0 + in1;
 			result <= temp(7 downto 0);
 			carry <= temp(8);
 		when "0001" => -- result = |in0 - in1|, flag = 1 if in1 > in0
 			if (in0 >= in1) then
-				result <= std_logic_vector(unsigned(in0) - unsigned(in1));
+				result <= in0 - in1;
 				flag <= '0';
 			else
-				result <= std_logic_vector(unsigned(in1) - unsigned(in0));
+				result <= in1 - in0;
 				flag <= '1';
             end if;
 		when "0010" => -- and port
