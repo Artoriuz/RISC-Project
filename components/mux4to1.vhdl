@@ -15,9 +15,8 @@ end mux4to1;
 architecture behavioral of mux4to1 is
 begin
 	with operation select
-		X <= in0 when "00",
+		out0 <= in0 when "00",
 			in1 when "01",
 			in2 when "10",
-			in3 when "11",
-			'0'  when others;
+			in3 when "11";
 end behavioral;
