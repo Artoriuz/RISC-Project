@@ -23,15 +23,15 @@ architecture Behavioral of datamemory is
 	memory : process (control, address, clk, clr, mem, in0)
 		begin
 		if rising_edge(clk)	then
-			--if (clr = '1') then 
-			--	mem (31 downto 0)(7 downto 0) <= 
-			--else			
+			if (clr = '1') then 
+				mem (31 downto 0)(7 downto 0) <= (others => (others=>'0')); 
+			else			
 				if (control = '1') then
 					mem(conv_integer(std_logic_vector(address))) <= in0; -- write
 				end if;
 				out0 <= mem(conv_integer(std_logic_vector(address))); -- read
-			--end if;
+			end if;
 		end if;	
 	end process memory;
 end Behavioral;
--- Isso � literalmente a mesma coisa da RAM s� que com 32x8 em vez de 256x8. 
+-- Isso é literalmente a mesma coisa da RAM só que com 32x8 em vez de 256x8. 

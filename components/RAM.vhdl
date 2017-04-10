@@ -22,15 +22,15 @@ architecture Behavioral of ram is
 	memory : process (control, address, clk, clr, mem, in0)
 		begin
 		if rising_edge(clk)	then
-		--	if (clr = '1') then 
-		--		mem (255 downto 0)(7 downto 0) <= (others => '0'); 
-		--	else			
+			if (clr = '1') then 
+				mem (255 downto 0)(7 downto 0) <= (others => (others=>'0')); 
+			else			
 				if (control = '1') then
 					mem(conv_integer(std_logic_vector(address))) <= in0; -- write
 				end if;
 				out0 <= mem(conv_integer(std_logic_vector(address))); -- read
 			end if;
-		--end if;	
+		end if;	
 	end process memory;
 end Behavioral;
 --Eu acho que isso funciona, não tenho certeza sobre a parte do "mem(to_integer(address))", mas vai dar certo. 

@@ -32,13 +32,17 @@ MUX3
 Unidades lógicas aritmeticas
 
 ALU (Só existe um)
-	9 funções (possuem 4bits para dar folga para futuras instruções):
+	12 funções (possuem 4bits para dar folga para futuras instruções):
 		0000 - ADD
 		0001 - SUB
 		0010 - AND
 		0011 - OR
 		0100 - XOR
 		0101 - NOT
-		0110 - SHIFT_R
-		0111 - SHIFT_L
+		0110 - NAND
+		0111 - NOR
+		1000 - SHF_R
+		1001 - SHF_L
+		1010 - INC (+1)
+		1011 - DCR (-1)
 	

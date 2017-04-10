@@ -1,4 +1,4 @@
-O projeto busca utilizar uma ISA mais próxima possível de uma ISA RISC pura. Com poucas instruções, 
+﻿O projeto busca utilizar uma ISA mais próxima possível de uma ISA RISC pura. Com poucas instruções, 
 intruções de mesmo tamanho e separadas por grupos baseados em funcionalidade.
 
 Intruções:
@@ -15,6 +15,14 @@ JMP - Vá para end. JMP XXXX XXXX XXXX
 JZ - Se ult==0, vá para end. JZ XXXX XXXX XXXX 
 SHL - Shift left. SHL RxXX XXXX XXXX 
 SHR - Shift right. SHR RxXX XXXX XXXX
+AND 
+OR
+XOR
+NOT
+NAND
+NOR
+INC - Incrementa
+DEC - Decrementa
 
 Como temos 4 bits para codificar a instrução (sem contar os registradores e os valores), as mesmas podem ser separadas em 4 grandes grupos:
 

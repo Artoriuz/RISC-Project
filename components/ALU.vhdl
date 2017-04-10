@@ -43,23 +43,30 @@ begin
 			result <= in0 xor in1;
 		when "0101" => -- not port primeira entrada
 			result <= not in0;
-		when "0110" => --nand
+		when "0110" => -- nand
 			result <= in0 nand in1;
-		when "0111" => --nor 
+		when "0111" => -- nor 
 			result <= in0 nor in1;
 		when "1000" => -- shift right
 			temp(8) <= '0';
 			temp(7 downto 0) <= in0;
 			result(7 downto 0) <= temp(8 downto 1);
-		when "1001" => --shift left
+		when "1001" => -- shift left
 			temp(0) <= '0';
 			temp(8 downto 1) <= in0;
 			result(7 downto 0) <= temp(7 downto 0);
-		when "1010" => --+1
-			temp <= ('0' & in0) + "00000001";
+		when "1010" => -- +1
+			temp <= ('0' & in0) + "000000001";
+			result <= temp(7 downto 0);
+			carry <= temp(8);
+		when "1011" => -- -1
+			if(in0 > "00000000") then
+				temp <= ('0' & in0) - "000000001";
+				result <= temp(7 downto 0); 
+			end if;
 		when others => 
-			temp (8 downto 0) <= "000000000";
-			result <= temp (7 downto 0);
+			temp(8 downto 0) <= "000000000";
+			result <= temp(7 downto 0);
 			flag <= '0'; --provavelmente não preciso disso e nem da linha de baixo dessa 
 			carry <= '0';
 		end case;
