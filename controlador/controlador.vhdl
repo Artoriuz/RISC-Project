@@ -58,14 +58,14 @@ architecture Behavioral of controlador is
 			when busca =>
 				regload <= "0000000";
 				regclear <= "0000000";
-				finished <= '1';
+				finished <= '0';
 			when decode =>
 				regload <= "0000000";
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 			when MOV =>
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 				mux0select <= "001";
 				mux1select <= instruction(1 downto 0);
 				case (instruction(3 downto 2)) is 
@@ -80,7 +80,7 @@ architecture Behavioral of controlador is
 				end case;
 			when MVI =>
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 				mux0select <= "010";
 				case (instruction(3 downto 2)) is 
 					when "00" =>
@@ -94,7 +94,7 @@ architecture Behavioral of controlador is
 				end case;
 			when ADD =>
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 				mux0select <= "000";
 				alucontrol <= "0000";
 				case (instruction(3 downto 0)) is 
@@ -165,7 +165,7 @@ architecture Behavioral of controlador is
 				end case;
 			when SUB =>
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 				mux0select <= "000";
 				alucontrol <= "0001";
 				case (instruction(3 downto 0)) is 
@@ -236,7 +236,7 @@ architecture Behavioral of controlador is
 				end case;
 			when instIN =>
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 				mux0select <= "100";
 				case (instruction(3 downto 2)) is 
 					when "00" =>
@@ -250,7 +250,7 @@ architecture Behavioral of controlador is
 				end case; 
 			when instOUT =>
 				regclear <= "0000000";
-				finished <= '0';
+				finished <= '1';
 				regload <= "0000010"; --Regout
 				case (instruction(3 downto 2)) is 
 					when "00" =>
@@ -290,7 +290,7 @@ architecture Behavioral of controlador is
 					when "1101" =>
 						next_state <= instOUT;
 					when others =>
-						next_state <= decode;
+						next_state <= busca;
 				end case;
 			when others =>
 				next_state <= busca;
