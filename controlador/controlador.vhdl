@@ -274,6 +274,8 @@ architecture Behavioral of controlador is
 			when busca =>
 				if (execute = '1') then
 					next_state <= decode;
+				else
+					next_state <= busca;
 				end if;
 			when decode =>
 				case (instruction (7 downto 4)) is
