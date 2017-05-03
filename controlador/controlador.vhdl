@@ -62,7 +62,7 @@ architecture Behavioral of controlador is
 			when decode =>
 				regload <= "0000000";
 				regclear <= "0000000";
-				finished <= '1';
+				finished <= '0';
 			when MOV =>
 				regclear <= "0000000";
 				finished <= '1';

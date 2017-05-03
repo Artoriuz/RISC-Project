@@ -65,6 +65,7 @@ signal regcarryflagout, alucarryflag : std_logic;
 
 begin
 
+instructionout <= instruction;
 reg00 : register8 port map (mux0out, regload(6), clk, regclear(6), reg00out);
 reg01 : register8 port map (mux0out, regload(5), clk, regclear(5), reg01out);
 reg10 : register8 port map (mux0out, regload(4), clk, regclear(4), reg10out);
