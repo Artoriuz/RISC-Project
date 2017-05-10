@@ -1,0 +1,12 @@
+
+State Machine - |microprocessador|controlador:controlador0|state
+Name state.instOUT state.instIN state.SUB state.ADD state.MVI state.MOV state.decode state.busca state.start 
+state.start 0 0 0 0 0 0 0 0 0 
+state.busca 0 0 0 0 0 0 0 1 1 
+state.decode 0 0 0 0 0 0 1 0 1 
+state.MOV 0 0 0 0 0 1 0 0 1 
+state.MVI 0 0 0 0 1 0 0 0 1 
+state.ADD 0 0 0 1 0 0 0 0 1 
+state.SUB 0 0 1 0 0 0 0 0 1 
+state.instIN 0 1 0 0 0 0 0 0 1 
+state.instOUT 1 0 0 0 0 0 0 0 1 

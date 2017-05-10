@@ -1,0 +1,405 @@
+Analysis & Synthesis report for microprocessador
+Wed May 10 15:06:30 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |microprocessador|controlador:controlador0|state
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "datapath:datapath0|register8:regin"
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed May 10 15:06:30 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; microprocessador                                ;
+; Top-level Entity Name              ; microprocessador                                ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 162                                             ;
+;     Total combinational functions  ; 137                                             ;
+;     Dedicated logic registers      ; 50                                              ;
+; Total registers                    ; 50                                              ;
+; Total pins                         ; 29                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; microprocessador   ; microprocessador   ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++-------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
++-------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; ../microprocessador/microprocessador.vhdl ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/microprocessador/microprocessador.vhdl ;         ;
+; ../datapath/datapath.vhdl                 ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/datapath/datapath.vhdl                 ;         ;
+; ../controlador/controlador.vhdl           ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/controlador/controlador.vhdl           ;         ;
+; ../components/register8.vhdl              ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/components/register8.vhdl              ;         ;
+; ../components/register1.vhdl              ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/components/register1.vhdl              ;         ;
+; ../components/mux5to1.vhdl                ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/components/mux5to1.vhdl                ;         ;
+; ../components/mux4to1.vhdl                ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/components/mux4to1.vhdl                ;         ;
+; ../components/ALU.vhdl                    ; yes             ; User VHDL File  ; E:/GitHub Repos/RISC-Project/components/ALU.vhdl                    ;         ;
++-------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 162   ;
+;                                             ;       ;
+; Total combinational functions               ; 137   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 61    ;
+;     -- 3 input functions                    ; 64    ;
+;     -- <=2 input functions                  ; 12    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 108   ;
+;     -- arithmetic mode                      ; 29    ;
+;                                             ;       ;
+; Total registers                             ; 50    ;
+;     -- Dedicated logic registers            ; 50    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 29    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 50    ;
+; Total fan-out                               ; 657   ;
+; Average fan-out                             ; 3.04  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |microprocessador              ; 137 (0)           ; 50 (0)       ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |microprocessador                                           ; work         ;
+;    |controlador:controlador0|  ; 33 (33)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                  ; work         ;
+;    |datapath:datapath0|        ; 104 (0)           ; 41 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0                        ; work         ;
+;       |ALU:ALU0|               ; 42 (42)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|ALU:ALU0               ; work         ;
+;       |mux4to1:mux1|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux4to1:mux1           ; work         ;
+;       |mux4to1:mux2|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux4to1:mux2           ; work         ;
+;       |mux5to1:mux0|           ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux5to1:mux0           ; work         ;
+;       |register1:regcarryflag| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regcarryflag ; work         ;
+;       |register8:reg00|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register8:reg00        ; work         ;
+;       |register8:reg01|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register8:reg01        ; work         ;
+;       |register8:reg10|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register8:reg10        ; work         ;
+;       |register8:reg11|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register8:reg11        ; work         ;
+;       |register8:reout|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register8:reout        ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |microprocessador|controlador:controlador0|state                                                                        ;
++---------------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
+; Name          ; state.instOUT ; state.instIN ; state.SUB ; state.ADD ; state.MVI ; state.MOV ; state.decode ; state.busca ; state.start ;
++---------------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
+; state.start   ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 0           ;
+; state.busca   ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 1           ; 1           ;
+; state.decode  ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 1            ; 0           ; 1           ;
+; state.MOV     ; 0             ; 0            ; 0         ; 0         ; 0         ; 1         ; 0            ; 0           ; 1           ;
+; state.MVI     ; 0             ; 0            ; 0         ; 0         ; 1         ; 0         ; 0            ; 0           ; 1           ;
+; state.ADD     ; 0             ; 0            ; 0         ; 1         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.SUB     ; 0             ; 0            ; 1         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.instIN  ; 0             ; 1            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.instOUT ; 1             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
++---------------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                   ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; controlador:controlador0|mux1select[1]              ; controlador:controlador0|WideOr5       ; yes                    ;
+; controlador:controlador0|mux1select[0]              ; controlador:controlador0|WideOr5       ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[8]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; controlador:controlador0|mux2select[1]              ; controlador:controlador0|regload[0]    ; yes                    ;
+; controlador:controlador0|mux2select[0]              ; controlador:controlador0|regload[0]    ; yes                    ;
+; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|regload[0]    ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[0]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr1       ; yes                    ;
+; controlador:controlador0|mux0select[1]              ; controlador:controlador0|WideOr1       ; yes                    ;
+; controlador:controlador0|mux0select[2]              ; controlador:controlador0|WideOr1       ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[1]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[2]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[3]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[4]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[5]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[6]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; datapath:datapath0|ALU:ALU0|temp[7]                 ; controlador:controlador0|alucontrol[0] ; yes                    ;
+; Number of user-specified and inferred latches = 17  ;                                        ;                        ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 50    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 50    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 1:1                ; 9 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|ALU:ALU0|Mux13    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux1|Mux5 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux2|Mux3 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |microprocessador|controlador:controlador0|Selector2   ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux5to1:mux0|Mux2 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath0|register8:regin"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed May 10 15:06:28 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/microprocessador/microprocessador.vhdl
+    Info (12022): Found design unit 1: microprocessador-Behavioral
+    Info (12023): Found entity 1: microprocessador
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/datapath/datapath.vhdl
+    Info (12022): Found design unit 1: datapath-Behavioral
+    Info (12023): Found entity 1: datapath
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/controlador/controlador.vhdl
+    Info (12022): Found design unit 1: controlador-Behavioral
+    Info (12023): Found entity 1: controlador
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/register8.vhdl
+    Info (12022): Found design unit 1: register8-description
+    Info (12023): Found entity 1: register8
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/register1.vhdl
+    Info (12022): Found design unit 1: register1-description
+    Info (12023): Found entity 1: register1
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/mux5to1.vhdl
+    Info (12022): Found design unit 1: mux5to1-behavioral
+    Info (12023): Found entity 1: mux5to1
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/mux4to1.vhdl
+    Info (12022): Found design unit 1: mux4to1-behavioral
+    Info (12023): Found entity 1: mux4to1
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/alu.vhdl
+    Info (12022): Found design unit 1: ALU-Behavioral
+    Info (12023): Found entity 1: ALU
+Info (12127): Elaborating entity "microprocessador" for the top level hierarchy
+Info (12128): Elaborating entity "controlador" for hierarchy "controlador:controlador0"
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(65): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(65): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(65): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(65): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "mux2select[0]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "mux2select[1]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "mux1select[0]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "mux1select[1]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "mux0select[0]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "mux0select[1]" at controlador.vhdl(65)
+Info (10041): Inferred latch for "mux0select[2]" at controlador.vhdl(65)
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath0"
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhdl(24): object "reginout" assigned a value but never read
+Info (12128): Elaborating entity "register8" for hierarchy "datapath:datapath0|register8:reg00"
+Info (12128): Elaborating entity "register1" for hierarchy "datapath:datapath0|register1:regcarryflag"
+Info (12128): Elaborating entity "mux5to1" for hierarchy "datapath:datapath0|mux5to1:mux0"
+Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:datapath0|mux4to1:mux1"
+Info (12128): Elaborating entity "ALU" for hierarchy "datapath:datapath0|ALU:ALU0"
+Warning (10631): VHDL Process Statement warning at ALU.vhdl(20): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "temp[0]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[1]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[2]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[3]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[4]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[5]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[6]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[7]" at ALU.vhdl(20)
+Info (10041): Inferred latch for "temp[8]" at ALU.vhdl(20)
+Warning (13012): Latch controlador:controlador0|mux1select[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
+Warning (13012): Latch controlador:controlador0|mux1select[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
+Warning (13012): Latch controlador:controlador0|alucontrol[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SUB
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 207 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 178 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 533 megabytes
+    Info: Processing ended: Wed May 10 15:06:30 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
