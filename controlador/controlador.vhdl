@@ -19,7 +19,7 @@ architecture Behavioral of controlador is
 	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT);
 	signal state, next_state : state_type;
 	begin
-		sincronia : process (clk)
+		sincronia : process (clk, reset)
 			begin
 			if (reset = '1') then 
 				state <= start;
@@ -55,7 +55,7 @@ architecture Behavioral of controlador is
 					when "1101" =>
 						next_state <= instOUT;
 					when others =>
-						next_state <= busca; --Volta para busca caso o usuÃ¡rio entre com uma instruÃ§Ã£o invÃ¡lida
+						next_state <= busca; --Volta para busca caso o usuario entre com uma instrução inválida
 				end case;
 			when others =>
 				next_state <= busca;
@@ -262,7 +262,7 @@ architecture Behavioral of controlador is
 						mux1select <= "00"; --Selecionando Reg00
 					when "01" =>
 						mux1select <= "01"; --Selecionando Reg01
-					when "10" =>
+					when "10" => 
 						mux1select <= "10"; --Selecionando Reg10
 					when "11" =>
 						mux1select <= "11"; --Selecionando Reg11
