@@ -11,7 +11,7 @@ end register1;
 
 architecture description of register1 is
 begin
-    process(clk, clr)
+    process(clk, clr, ld)
     begin
         if clr = '1' then
 			out0 <= '0';
