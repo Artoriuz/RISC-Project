@@ -36,8 +36,8 @@ ALU (Só existe um)
 		0101 - NOT
 		0110 - NAND
 		0111 - NOR
-		1000 - SHF_R
-		1001 - SHF_L
+		1000 - SHL
+		1001 - SHR
 		1010 - INC (+1)
 		1011 - DCR (-1)
 	

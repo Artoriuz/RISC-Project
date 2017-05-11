@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\GitHub Repos\RISC-Project\quartus\simulation\qsim
+vmicroprocessador
+Z1 I7?3nb>Vb1J[haFH_NEM4L2
+Z2 VaO[3f]YYOj`>dgfC:J3c42
+Z3 dE:\GitHub Repos\RISC-Project\quartus\simulation\qsim
+Z4 w1494472705
+Z5 8microprocessador.vo
+Z6 Fmicroprocessador.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|microprocessador.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 Q<cc1XTN;4Q4F_?W;8Gei1
+!s85 0
+Z11 !s108 1494472707.701000
+Z12 !s107 microprocessador.vo|
+!s101 -O0
+vmicroprocessador_vlg_check_tst
+!i10b 1
+Z13 !s100 4PPgeo:]=C9Lgnd:1KbEQ1
+Z14 ISe?GFUKBf`UN70DDMEhBB1
+Z15 VBNikGG7R@8aTCjo^ABZZ63
+R3
+R4
+Z16 8microprocessador.vt
+Z17 Fmicroprocessador.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z18 !s108 1494472707.904000
+Z19 !s107 microprocessador.vt|
+Z20 !s90 -work|work|microprocessador.vt|
+!s101 -O0
+R9
+vmicroprocessador_vlg_sample_tst
+!i10b 1
+Z21 !s100 QdfOJmfKUVKSk9<>L<09j1
+Z22 IjEI3;kfce0Fnc1jG8iXHN0
+Z23 VB9eg=P8LgRYkm5?F4OBGN1
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+vmicroprocessador_vlg_vec_tst
+!i10b 1
+Z24 !s100 GcWXKg>NeehMShWEPUlEC2
+Z25 I96Ck3Njaj=C3Kb<cC8oGf1
+Z26 VkKaE9@62HPgLoM93el6V^2
+R3
+R4
+R16
+R17
+Z27 L0 339
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9

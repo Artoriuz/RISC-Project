@@ -12,9 +12,9 @@ entity programcounter is
 end programcounter;
 
 architecture Behavioral of programcounter is
-	signal current: std_logic_vector (7 downto 0) := X"00";
+	signal current: std_logic_vector (7 downto 0) := "00000000";
 begin
-	process (clk)
+	process (clk, operation)
 	begin
 		if rising_edge(clk) then
 			case operation is
@@ -25,10 +25,10 @@ begin
 				when "10" => -- Seta de um valor externo
 					current <= in0;
 				when "11" => -- Reset
-					current <= X"00"; --X para mandar em hexadecimal 
+					current <= "00000000"; 
 			end case;
 		end if;
-	end process;
 	out0 <= current;
+	end process;
 end Behavioral;
 
