@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="microprocessador">
+		<CBX_INST_ENTRY INSTANCE_NAME="|microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_luc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_t2d1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

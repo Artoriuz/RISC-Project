@@ -47,11 +47,11 @@ begin
 		--	result <= in0 nor in1;
 		when "1000" => -- shift left
 			temp(0) <= '0';
-			temp(8 downto 1) <= in1;
+			temp(8 downto 1) <= in0;
 			result(7 downto 0) <= temp(7 downto 0);
 		when "1001" => -- shift right
 			temp(8) <= '0';
-			temp(7 downto 0) <= in1;
+			temp(7 downto 0) <= in0;
 			result(7 downto 0) <= temp(8 downto 1);
 		when others => 
 			temp(8 downto 0) <= "000000000";

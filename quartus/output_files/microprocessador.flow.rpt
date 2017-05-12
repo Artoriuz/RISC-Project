@@ -1,5 +1,5 @@
 Flow report for microprocessador
-Thu May 11 00:18:25 2017
+Fri May 12 19:23:03 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu May 11 00:18:25 2017           ;
+; Flow Status                        ; Successful - Fri May 12 19:23:03 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 208                                             ;
-;     Total combinational functions  ; 183                                             ;
-;     Dedicated logic registers      ; 56                                              ;
-; Total registers                    ; 56                                              ;
-; Total pins                         ; 29                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/11/2017 00:18:14 ;
+; Start date & time ; 05/12/2017 19:23:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; microprocessador    ;
 +-------------------+---------------------+
@@ -75,12 +75,18 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163683366975411.149447269405336       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163683366975411.149462778204088       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; progmem.cmp                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; datamem.cmp                           ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
@@ -90,35 +96,29 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 538 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 406 MB              ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 406 MB              ; 00:00:01                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:02     ; 1.0                     ; 526 MB              ; 00:00:01                           ;
+; Total                  ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-FLTM9MA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-FLTM9MA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-FLTM9MA  ; Windows 7 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++-------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                     ;
++------------------------+------------------+-----------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++------------------------+------------------+-----------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-FLTM9MA  ; Windows 7 ; 6.2        ; x86_64         ;
++------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog microprocessador -c microprocessador --vector_source="E:/GitHub Repos/RISC-Project/microprocessador/Waveform.vwf" --testbench_file=./simulation/qsim/microprocessador.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog microprocessador -c microprocessador
+quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador --analysis_and_elaboration
 
 
 
