@@ -1,5 +1,5 @@
 Analysis & Synthesis report for microprocessador
-Mon May 15 15:26:26 2017
+Tue May 16 21:38:45 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -54,15 +54,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 15 15:26:25 2017           ;
+; Analysis & Synthesis Status        ; Successful - Tue May 16 21:38:45 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; 225                                             ;
-;     Total combinational functions  ; 198                                             ;
-;     Dedicated logic registers      ; 66                                              ;
-; Total registers                    ; 66                                              ;
+;     Total combinational functions  ; 197                                             ;
+;     Dedicated logic registers      ; 67                                              ;
+; Total registers                    ; 67                                              ;
 ; Total pins                         ; 21                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,304                                           ;
@@ -204,27 +204,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Estimated Total logic elements              ; 225   ;
 ;                                             ;       ;
-; Total combinational functions               ; 198   ;
+; Total combinational functions               ; 197   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 102   ;
+;     -- 4 input functions                    ; 103   ;
 ;     -- 3 input functions                    ; 68    ;
-;     -- <=2 input functions                  ; 28    ;
+;     -- <=2 input functions                  ; 26    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 156   ;
+;     -- normal mode                          ; 155   ;
 ;     -- arithmetic mode                      ; 42    ;
 ;                                             ;       ;
-; Total registers                             ; 66    ;
-;     -- Dedicated logic registers            ; 66    ;
+; Total registers                             ; 67    ;
+;     -- Dedicated logic registers            ; 67    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 21    ;
 ; Total memory bits                           ; 2304  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 82    ;
-; Total fan-out                               ; 1086  ;
-; Average fan-out                             ; 3.61  ;
+; Maximum fan-out                             ; 83    ;
+; Total fan-out                               ; 1089  ;
+; Average fan-out                             ; 3.62  ;
 +---------------------------------------------+-------+
 
 
@@ -233,8 +233,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
-; |microprocessador                            ; 198 (1)           ; 66 (0)       ; 2304        ; 0            ; 0       ; 0         ; 21   ; 0            ; |microprocessador                                                                                                    ; work         ;
-;    |controlador:controlador0|                ; 52 (52)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                                                                           ; work         ;
+; |microprocessador                            ; 197 (1)           ; 67 (0)       ; 2304        ; 0            ; 0       ; 0         ; 21   ; 0            ; |microprocessador                                                                                                    ; work         ;
+;    |controlador:controlador0|                ; 51 (51)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                                                                           ; work         ;
 ;    |datapath:datapath0|                      ; 145 (0)           ; 49 (0)       ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
 ;       |ALU:ALU0|                             ; 58 (58)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
 ;       |datamem:datamem0|                     ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0                                                                ; work         ;
@@ -278,29 +278,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |microprocessador|controlador:controlador0|state                                                                                                                                                                      ;
-+---------------+------------+-----------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
-; Name          ; state.MVI2 ; state.JZ2 ; state.SHR ; state.SHL ; state.JZ ; state.JMP ; state.ST ; state.LD ; state.instOUT ; state.instIN ; state.SUB ; state.ADD ; state.MVI ; state.MOV ; state.decode ; state.busca ; state.start ;
-+---------------+------------+-----------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
-; state.start   ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 0           ;
-; state.busca   ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 1           ; 1           ;
-; state.decode  ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 1            ; 0           ; 1           ;
-; state.MOV     ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 1         ; 0            ; 0           ; 1           ;
-; state.MVI     ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 1         ; 0         ; 0            ; 0           ; 1           ;
-; state.ADD     ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 1         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.SUB     ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 1         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.instIN  ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 1            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.instOUT ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 1             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.LD      ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 1        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.ST      ; 0          ; 0         ; 0         ; 0         ; 0        ; 0         ; 1        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.JMP     ; 0          ; 0         ; 0         ; 0         ; 0        ; 1         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.JZ      ; 0          ; 0         ; 0         ; 0         ; 1        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.SHL     ; 0          ; 0         ; 0         ; 1         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.SHR     ; 0          ; 0         ; 1         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.JZ2     ; 0          ; 1         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.MVI2    ; 1          ; 0         ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-+---------------+------------+-----------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |microprocessador|controlador:controlador0|state                                                                                                                                                                                   ;
++---------------+------------+-----------+------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
+; Name          ; state.MVI2 ; state.JZ2 ; state.JMP2 ; state.SHR ; state.SHL ; state.JZ ; state.JMP ; state.ST ; state.LD ; state.instOUT ; state.instIN ; state.SUB ; state.ADD ; state.MVI ; state.MOV ; state.decode ; state.busca ; state.start ;
++---------------+------------+-----------+------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
+; state.start   ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 0           ;
+; state.busca   ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 1           ; 1           ;
+; state.decode  ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 1            ; 0           ; 1           ;
+; state.MOV     ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 1         ; 0            ; 0           ; 1           ;
+; state.MVI     ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 1         ; 0         ; 0            ; 0           ; 1           ;
+; state.ADD     ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 1         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.SUB     ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 1         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.instIN  ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 1            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.instOUT ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 1             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.LD      ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 1        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.ST      ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 1        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.JMP     ; 0          ; 0         ; 0          ; 0         ; 0         ; 0        ; 1         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.JZ      ; 0          ; 0         ; 0          ; 0         ; 0         ; 1        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.SHL     ; 0          ; 0         ; 0          ; 0         ; 1         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.SHR     ; 0          ; 0         ; 0          ; 1         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.JMP2    ; 0          ; 0         ; 1          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.JZ2     ; 0          ; 1         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
+; state.MVI2    ; 1          ; 0         ; 0          ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
++---------------+------------+-----------+------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -308,16 +309,16 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+--------------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal                  ; Free of Timing Hazards ;
 +-----------------------------------------------------+--------------------------------------+------------------------+
-; controlador:controlador0|mux1select[1]              ; controlador:controlador0|WideOr13    ; yes                    ;
-; controlador:controlador0|mux1select[0]              ; controlador:controlador0|WideOr13    ; yes                    ;
-; controlador:controlador0|alucontrol[3]              ; controlador:controlador0|WideOr15    ; yes                    ;
+; controlador:controlador0|mux1select[1]              ; controlador:controlador0|WideOr14    ; yes                    ;
+; controlador:controlador0|mux1select[0]              ; controlador:controlador0|WideOr14    ; yes                    ;
+; controlador:controlador0|alucontrol[3]              ; controlador:controlador0|WideOr16    ; yes                    ;
 ; datapath:datapath0|ALU:ALU0|temp[8]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
-; controlador:controlador0|mux2select[1]              ; controlador:controlador0|WideOr11    ; yes                    ;
-; controlador:controlador0|mux2select[0]              ; controlador:controlador0|WideOr11    ; yes                    ;
-; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|WideOr15    ; yes                    ;
-; controlador:controlador0|mux0select[1]              ; controlador:controlador0|WideOr7     ; yes                    ;
-; controlador:controlador0|mux0select[2]              ; controlador:controlador0|WideOr7     ; yes                    ;
-; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr7     ; yes                    ;
+; controlador:controlador0|mux2select[1]              ; controlador:controlador0|WideOr12    ; yes                    ;
+; controlador:controlador0|mux2select[0]              ; controlador:controlador0|WideOr12    ; yes                    ;
+; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|WideOr16    ; yes                    ;
+; controlador:controlador0|mux0select[1]              ; controlador:controlador0|WideOr8     ; yes                    ;
+; controlador:controlador0|mux0select[2]              ; controlador:controlador0|WideOr8     ; yes                    ;
+; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr8     ; yes                    ;
 ; datapath:datapath0|ALU:ALU0|temp[0]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
 ; datapath:datapath0|ALU:ALU0|temp[1]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
 ; datapath:datapath0|ALU:ALU0|temp[2]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
@@ -326,7 +327,7 @@ Encoding Type:  One-Hot
 ; datapath:datapath0|ALU:ALU0|temp[5]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
 ; datapath:datapath0|ALU:ALU0|temp[6]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
 ; datapath:datapath0|ALU:ALU0|temp[7]                 ; datapath:datapath0|mux5to1:mux0|Mux1 ; yes                    ;
-; controlador:controlador0|datamem_write_enable       ; controlador:controlador0|WideOr3     ; yes                    ;
+; controlador:controlador0|datamem_write_enable       ; controlador:controlador0|WideOr4     ; yes                    ;
 ; Number of user-specified and inferred latches = 19  ;                                      ;                        ;
 +-----------------------------------------------------+--------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -348,10 +349,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66    ;
+; Total registers                              ; 67    ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 7     ;
-; Number of registers using Asynchronous Clear ; 66    ;
+; Number of registers using Asynchronous Clear ; 67    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 47    ;
 ; Number of registers using Preset             ; 0     ;
@@ -367,7 +368,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux1|Mux0                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|ALU:ALU0|Mux13                            ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux2|Mux3                         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |microprocessador|controlador:controlador0|Selector8                           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |microprocessador|controlador:controlador0|Selector9                           ;
 ; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |microprocessador|datapath:datapath0|mux5to1:mux0|Mux1                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
@@ -567,7 +568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -577,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon May 15 15:26:23 2017
+    Info: Processing started: Tue May 16 21:38:38 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/programcounter.vhdl
@@ -616,24 +617,24 @@ Info (12021): Found 2 design units, including 1 entities, in source file datamem
 Info (12127): Elaborating entity "microprocessador" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at microprocessador.vhdl(26): used implicit default value for signal "externaldata_proc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "controlador" for hierarchy "controlador:controlador0"
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(529): signal "zero_sign_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(84): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(84): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(84): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(84): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(84): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux1select[0]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux1select[1]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux2select[0]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux2select[1]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux0select[0]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux0select[1]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "mux0select[2]" at controlador.vhdl(84)
-Info (10041): Inferred latch for "datamem_write_enable" at controlador.vhdl(84)
+Warning (10492): VHDL Process Statement warning at controlador.vhdl(535): signal "zero_sign_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(86): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(86): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(86): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(86): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(86): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux1select[0]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux1select[1]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux2select[0]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux2select[1]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux0select[0]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux0select[1]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "mux0select[2]" at controlador.vhdl(86)
+Info (10041): Inferred latch for "datamem_write_enable" at controlador.vhdl(86)
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath0"
 Warning (10541): VHDL Signal Declaration warning at datapath.vhdl(28): used implicit default value for signal "zero_sign_dp" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "programcounter" for hierarchy "datapath:datapath0|programcounter:programcounter0"
@@ -751,9 +752,9 @@ Info (21057): Implemented 278 device resources after synthesis - the final resou
     Info (21061): Implemented 241 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 541 megabytes
-    Info: Processing ended: Mon May 15 15:26:26 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 544 megabytes
+    Info: Processing ended: Tue May 16 21:38:45 2017
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:03
 
 
