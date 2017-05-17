@@ -19,7 +19,7 @@ entity controlador is
 end entity controlador;
 
 architecture Behavioral of controlador is
-	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR, JZ2, MVI2);
+	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR, JMP2, JZ2, MVI2);
 	signal state, next_state : state_type;
 	begin
 		sincronia : process (clk, reset)
@@ -74,6 +74,8 @@ architecture Behavioral of controlador is
 				end case;
 			when MVI =>
 				next_state <= MVI2;
+			when JMP =>
+				next_state <= JMP2;
 			when JZ =>
 				next_state <= JZ2;
 			when others =>
@@ -515,6 +517,10 @@ architecture Behavioral of controlador is
 						mux1select <= "11"; --Selecionando Reg11
 				end case;
 			when JMP =>
+				finished <= '0';
+				regload <= "00000000";
+				pcounter_control <= "11";	
+			when JMP2 =>
 				finished <= '1';
 				regload <= "00000000";
 				pcounter_control <= "10";
