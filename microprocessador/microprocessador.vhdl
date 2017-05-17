@@ -20,13 +20,14 @@ signal instruction_proc : std_logic_vector(7 downto 0);
 signal mux0select_proc : std_logic_vector(2 downto 0);
 signal mux1select_proc, mux2select_proc : std_logic_vector(1 downto 0);
 signal alucontrol_proc : std_logic_vector(3 downto 0);
-signal regload_proc : std_logic_vector(6 downto 0);
+signal regload_proc : std_logic_vector(7 downto 0);
 signal datamem_write_enable_proc : std_logic;
 signal pcounter_control_proc : std_logic_vector(1 downto 0);
 signal externaldata_proc : std_logic_vector (7 downto 0);
+signal zero_sign_proc : std_logic;
 
 begin
-controlador0 : controlador port map (clk, reset, execute, instruction_proc, finished, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc);
-datapath0 : datapath port map (clk, instruction_proc, saida, carryflag, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, reset, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, externaldata_proc);
+controlador0 : controlador port map (clk, reset, execute, instruction_proc, finished, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, zero_sign_proc);
+datapath0 : datapath port map (clk, instruction_proc, saida, carryflag, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, reset, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, externaldata_proc, zero_sign_proc);
 
 end architecture Behavioral;

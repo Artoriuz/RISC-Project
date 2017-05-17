@@ -24,11 +24,11 @@ begin
 				when "00" => -- Nao faz nada
 					current <= current;
 				when "01" => -- Incremento 
-					current <= std_logic_vector(unsigned(current) + 1);
+					current <= std_logic_vector(unsigned(current) + 2);
 				when "10" => -- Seta de um valor externo
 					current <= in0;
 				when "11" => -- Reset
-					current <= "00000000"; 
+					current <= std_logic_vector(unsigned(current) + 1);
 			end case;
 		end if;
 	out0 <= current;

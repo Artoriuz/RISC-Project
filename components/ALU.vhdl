@@ -8,7 +8,8 @@ entity ALU is
 		in0, in1 : in std_logic_vector(7 downto 0); 
 		operation : in std_logic_vector(3 downto 0);
 		carryflag : out std_logic;
-		result : out std_logic_vector(7 downto 0)
+		result : out std_logic_vector(7 downto 0);
+		zero_sign : out std_logic
 	);
 end entity ALU;
  
@@ -25,6 +26,11 @@ begin
 			temp <= ('0' & in0) + ('0' & in1);
 			result <= temp(7 downto 0);
 			carryflag <= temp(8);
+			if (temp = "000000000") then
+				zero_sign <= '1';
+			else 
+				zero_sign <= '0';
+			end if; 
 		when "0001" => -- result = |in0 - in1|, flag = 1 if in1 > in0
 			if (in0 >= in1) then
 				result <= in0 - in1;
@@ -33,6 +39,11 @@ begin
 				result <= in1 - in0;
 				carryflag <= '1';
             end if;
+            if (temp = "000000000") then
+				zero_sign <= '1';
+			else 
+				zero_sign <= '0';
+			end if; 
 		--when "0010" => -- and port --futuras instruções extras comentadas abaixo
 		--	result <= in0 and in1;
 		--when "0011" => -- or port 

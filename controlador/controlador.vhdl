@@ -10,15 +10,16 @@ entity controlador is
 		finished : out std_logic; 
 		mux0select : out std_logic_vector(2 downto 0); 
 		mux1select, mux2select : out std_logic_vector(1 downto 0);
-		regload : out std_logic_vector(6 downto 0); -- ordem = Reg00 Reg01 Reg10 Reg11 Regin Regout Regcarryflag
+		regload : out std_logic_vector(7 downto 0); -- ordem = Reg00 Reg01 Reg10 Reg11 Regin Regout Regcarryflag RegZero
 		alucontrol : out std_logic_vector(3 downto 0);
 		datamem_write_enable : out std_logic;
-		pcounter_control: out std_logic_vector(1 downto 0)
+		pcounter_control: out std_logic_vector(1 downto 0);
+		zero_sign_in : in std_logic
 	);
 end entity controlador;
 
 architecture Behavioral of controlador is
-	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR);
+	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR, JZ2, MVI2);
 	signal state, next_state : state_type;
 	begin
 		sincronia : process (clk, reset)
@@ -71,6 +72,10 @@ architecture Behavioral of controlador is
 					when others =>
 						next_state <= busca; --Volta para busca caso o usuario entre com uma instrucao invalida
 				end case;
+			when MVI =>
+				next_state <= MVI2;
+			when JZ =>
+				next_state <= JZ2;
 			when others =>
 				next_state <= busca;
 		end case;
@@ -80,77 +85,77 @@ architecture Behavioral of controlador is
 	begin
 		case (state) is
 			when start =>
-				regload <= "0000000";
+				regload <= "00000000";
 				finished <= '0';
 				datamem_write_enable <= '0';
 				pcounter_control <= "00";
 			when busca =>
-				regload <= "0000000";	
+				regload <= "00000000";	
 				finished <= '0';
 				datamem_write_enable <= '0';
 				pcounter_control <= "00";
 			when decode =>
-				regload <= "0000000";
+				regload <= "00000000";
 				finished <= '0';
 				datamem_write_enable <= '0';
 				pcounter_control <= "00";
-			when LD => --nao confundir com ST, essa instrucao aqui so carrega um valor da propria memoria de dados em um dos regs internos
+			when LD => --nao confundir com ST, essa instrucao aqui so carrega um valor de origem propria memoria de dados em um dos regs internos
 				finished <= '1';
  				pcounter_control <= "01";
 				mux0select <= "011";
 				--MANDAR O VALOR QUE ESTÁ EM RY (O QUE SAI DO MUX2) COMO ENDEREÇO EM DATAMEM
  				case (instruction(3 downto 0)) is 
 					when "0000" =>
-						regload <= "1000000"; --Load em Reg00
+						regload <= "10000000"; --Load em Reg00
 						mux2select <= "00";
 					when "0001" =>
-						regload <= "1000000"; --Load em Reg00
+						regload <= "10000000"; --Load em Reg00
 						mux2select <= "01";
 					when "0010" =>
-						regload <= "1000000"; --Load em Reg00
+						regload <= "10000000"; --Load em Reg00
 						mux2select <= "10";
 					when "0011" =>
-						regload <= "1000000"; --Load em Reg00
+						regload <= "10000000"; --Load em Reg00
 						mux2select <= "11";
 					when "0100" =>
-						regload <= "0100000"; --Load em Reg00
+						regload <= "01000000"; --Load em Reg00
 						mux2select <= "00";
 					when "0101" =>
-						regload <= "0100000"; --Load em Reg01
+						regload <= "01000000"; --Load em Reg01
 						mux2select <= "01";
 					when "0110" =>
-						regload <= "0100000"; --Load em Reg01
+						regload <= "01000000"; --Load em Reg01
 						mux2select <= "10";
 					when "0111" =>
-						regload <= "0100000"; --Load em Reg01
+						regload <= "01000000"; --Load em Reg01
 						mux2select <= "11";
 					when "1000" =>
-						regload <= "0010000"; --Load em Reg10
+						regload <= "00100000"; --Load em Reg10
 						mux2select <= "00";
 					when "1001" =>
-						regload <= "0010000"; --Load em Reg10
+						regload <= "00100000"; --Load em Reg10
 						mux2select <= "01";
 					when "1010" =>
-						regload <= "0010000"; --Load em Reg10
+						regload <= "00100000"; --Load em Reg10
 						mux2select <= "10";
 					when "1011" =>
-						regload <= "0010000"; --Load em Reg10
+						regload <= "00100000"; --Load em Reg10
 						mux2select <= "11";
 					when "1100" =>
-						regload <= "0001000"; --Load em Reg11
+						regload <= "00010000"; --Load em Reg11
 						mux2select <= "00";
 					when "1101" =>
-						regload <= "0001000"; --Load em Reg11
+						regload <= "00010000"; --Load em Reg11
 						mux2select <= "01";
 					when "1110" =>
-						regload <= "0001000"; --Load em Reg11
+						regload <= "00010000"; --Load em Reg11
 						mux2select <= "10";
 					when "1111" =>
-						regload <= "0001000"; --Load em Reg11
+						regload <= "00010000"; --Load em Reg11
 						mux2select <= "11";
 				end case;
 			when ST =>
-				regload <= "0000000";
+				regload <= "00000000";
 				finished <= '1';
  				pcounter_control <= "01";
 				--MANDAR A ENTRADA QUE DIZ EM QUAL POSICAO IREMOS ESCREVER O VALOR NA MEMORIA DE DADOS (Isso esta definido no switch case)
@@ -212,27 +217,31 @@ architecture Behavioral of controlador is
 				pcounter_control <= "01";
 				case (instruction(3 downto 2)) is 
 					when "00" =>
-						regload <= "1000000";
+						regload <= "10000000"; --Load em Reg00
 					when "01" =>
-						regload <= "0100000";
+						regload <= "01000000"; --Load em Reg01
 					when "10" =>
-						regload <= "0010000";
+						regload <= "00100000"; --Load em Reg10
 					when "11" =>
-						regload <= "0001000";
+						regload <= "00010000"; --Load em Reg11
 				end case;
 			when MVI =>
+				finished <= '0';
+				pcounter_control <= "11";
+				regload <= "00000000";
+			when MVI2 =>
 				finished <= '1';
 				mux0select <= "010";
-				pcounter_control <= "01";
+				pcounter_control <= "11";
 				case (instruction(3 downto 2)) is 
 					when "00" =>
-						regload <= "1000000";
+						regload <= "10000000"; --Load em Reg00
 					when "01" =>
-						regload <= "0100000";
+						regload <= "01000000"; --Load em Reg01
 					when "10" =>
-						regload <= "0010000";
+						regload <= "00100000"; --Load em Reg10
 					when "11" =>
-						regload <= "0001000";
+						regload <= "00010000"; --Load em Reg11
 				end case;
 			when ADD =>
 				finished <= '1';
@@ -241,67 +250,67 @@ architecture Behavioral of controlador is
 				pcounter_control <= "01";
 				case (instruction(3 downto 0)) is 
 					when "0000" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "00";
 					when "0001" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "01";
 					when "0010" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "10";
 					when "0011" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "11";
 					when "0100" =>
-						regload <= "0100001"; --Load em Reg00 e Rcarryflag
+						regload <= "01000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "00";
 					when "0101" =>
-						regload <= "0100001"; --Load em Reg01 e Rcarryflag
+						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
 						mux1select <= "01";
 						mux2select <= "01";
 					when "0110" =>
-						regload <= "0100001"; --Load em Reg01 e Rcarryflag
+						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
 						mux1select <= "01";
 						mux2select <= "10";
 					when "0111" =>
-						regload <= "0100001"; --Load em Reg01 e Rcarryflag
+						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
 						mux1select <= "01";
 						mux2select <= "11";
 					when "1000" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "00";
 					when "1001" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "01";
 					when "1010" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "10";
 					when "1011" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "11";
 					when "1100" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "00";
 					when "1101" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "01";
 					when "1110" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "10";
 					when "1111" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "11";
 				end case;
@@ -312,67 +321,67 @@ architecture Behavioral of controlador is
 				pcounter_control <= "01";
 				case (instruction(3 downto 0)) is 
 					when "0000" =>
-						regload <= "1000001";
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "00";
 					when "0001" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "01";
 					when "0010" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "10";
 					when "0011" =>
-						regload <= "1000001"; --Load em Reg00 e Rcarryflag
+						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
 						mux2select <= "11";
 					when "0100" =>
-						regload <= "0100001"; --Load em Reg00 e Rcarryflag
+						regload <= "01000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "00";
 					when "0101" =>
-						regload <= "0100001"; --Load em Reg01 e Rcarryflag
+						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
 						mux1select <= "01";
 						mux2select <= "01";
 					when "0110" =>
-						regload <= "0100001"; --Load em Reg01 e Rcarryflag
+						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
 						mux1select <= "01";
 						mux2select <= "10";
 					when "0111" =>
-						regload <= "0100001"; --Load em Reg01 e Rcarryflag
+						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
 						mux1select <= "01";
 						mux2select <= "11";
 					when "1000" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "00";
 					when "1001" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "01";
 					when "1010" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "10";
 					when "1011" =>
-						regload <= "0010001"; --Load em Reg10 e Rcarryflag
+						regload <= "00100011"; --Load em Reg10, Rcarryflag e Rzero
 						mux1select <= "10";
 						mux2select <= "11";
 					when "1100" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "00";
 					when "1101" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "01";
 					when "1110" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "10";
 					when "1111" =>
-						regload <= "0001001"; --Load em Reg11 e Rcarryflag
+						regload <= "00010011"; --Load em Reg11, Rcarryflag e Rzero
 						mux1select <= "11";
 						mux2select <= "11";
 				end case;
@@ -383,53 +392,53 @@ architecture Behavioral of controlador is
 				pcounter_control <= "01";
 				case (instruction(3 downto 0)) is 
 					when "0000" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
+						regload <= "10000000"; --Load em Reg00
 						mux1select <= "00"; --Vai receber o shift
 					when "0001" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "01";
+						regload <= "10000000"; --Load em Reg00
+						mux1select <= "01"; --Vai receber o shift
 					when "0010" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "10";
+						regload <= "10000000"; --Load em Reg00
+						mux1select <= "10"; --Vai receber o shift
 					when "0011" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "11";
+						regload <= "10000000"; --Load em Reg00
+						mux1select <= "11"; --Vai receber o shift
 					when "0100" =>
-						regload <= "0100000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "00";
+						regload <= "01000000"; --Load em Reg00
+						mux1select <= "00"; --Vai receber o shift
 					when "0101" =>
-						regload <= "0100000"; --Load em Reg01 e Rcarryflag
-						mux1select <= "01";
+						regload <= "01000000"; --Load em Reg01
+						mux1select <= "01"; --Vai receber o shift
 					when "0110" =>
-						regload <= "0100000"; --Load em Reg01 e Rcarryflag
-						mux1select <= "10";
+						regload <= "01000000"; --Load em Reg01
+						mux1select <= "10"; --Vai receber o shift
 					when "0111" =>
-						regload <= "0100000"; --Load em Reg01 e Rcarryflag
-						mux1select <= "11";
+						regload <= "01000000"; --Load em Reg01
+						mux1select <= "11"; --Vai receber o shift
 					when "1000" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "00";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "00"; --Vai receber o shift
 					when "1001" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "01";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "01"; --Vai receber o shift
 					when "1010" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "10";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "10"; --Vai receber o shift
 					when "1011" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "11";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "11"; --Vai receber o shift
 					when "1100" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "00";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "00"; --Vai receber o shift
 					when "1101" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "01";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "01"; --Vai receber o shift
 					when "1110" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "10";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "10"; --Vai receber o shift
 					when "1111" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "11";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "11"; --Vai receber o shift
 				end case;
 			when SHR =>
 				finished <= '1';
@@ -438,62 +447,62 @@ architecture Behavioral of controlador is
 				pcounter_control <= "01";
 				case (instruction(3 downto 0)) is 
 					when "0000" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
+						regload <= "10000000"; --Load em Reg00
 						mux1select <= "00"; --Vai receber o shift
 					when "0001" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "01";
+						regload <= "10000000"; --Load em Reg00
+						mux1select <= "01"; --Vai receber o shift
 					when "0010" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "10";
+						regload <= "10000000"; --Load em Reg00
+						mux1select <= "10"; --Vai receber o shift
 					when "0011" =>
-						regload <= "1000000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "11";
+						regload <= "10000000"; --Load em Reg00
+						mux1select <= "11"; --Vai receber o shift
 					when "0100" =>
-						regload <= "0100000"; --Load em Reg00 e Rcarryflag
-						mux1select <= "00";
+						regload <= "01000000"; --Load em Reg00
+						mux1select <= "00"; --Vai receber o shift
 					when "0101" =>
-						regload <= "0100000"; --Load em Reg01 e Rcarryflag
-						mux1select <= "01";
+						regload <= "01000000"; --Load em Reg01
+						mux1select <= "01"; --Vai receber o shift
 					when "0110" =>
-						regload <= "0100000"; --Load em Reg01 e Rcarryflag
-						mux1select <= "10";
+						regload <= "01000000"; --Load em Reg01
+						mux1select <= "10"; --Vai receber o shift
 					when "0111" =>
-						regload <= "0100000"; --Load em Reg01 e Rcarryflag
-						mux1select <= "11";
+						regload <= "01000000"; --Load em Reg01
+						mux1select <= "11"; --Vai receber o shift
 					when "1000" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "00";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "00"; --Vai receber o shift
 					when "1001" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "01";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "01"; --Vai receber o shift
 					when "1010" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "10";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "10"; --Vai receber o shift
 					when "1011" =>
-						regload <= "0010000"; --Load em Reg10 e Rcarryflag
-						mux1select <= "11";
+						regload <= "00100000"; --Load em Reg10
+						mux1select <= "11"; --Vai receber o shift
 					when "1100" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "00";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "00"; --Vai receber o shift
 					when "1101" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "01";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "01"; --Vai receber o shift
 					when "1110" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "10";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "10"; --Vai receber o shift
 					when "1111" =>
-						regload <= "0001000"; --Load em Reg11 e Rcarryflag
-						mux1select <= "11";
+						regload <= "00010000"; --Load em Reg11
+						mux1select <= "11"; --Vai receber o shift
 				end case;
 			when instIN =>
 				finished <= '1';
 				mux0select <= "100";
-				regload <= "0000100";
+				regload <= "00001000";
 				pcounter_control <= "01";
 			when instOUT =>
 				finished <= '1';
-				regload <= "0000010"; --Regout
+				regload <= "00000100"; --Regout
 				pcounter_control <= "01";
 				case (instruction(3 downto 2)) is 
 					when "00" =>
@@ -507,13 +516,21 @@ architecture Behavioral of controlador is
 				end case;
 			when JMP =>
 				finished <= '1';
-				regload <= "0000000";
-				pcounter_control <= "01";
+				regload <= "00000000";
+				pcounter_control <= "10";
 				--FORCAR O CONTADOR DE PROGRAMA A IR PARA O "ADDRESS"
 			when JZ =>
+				finished <= '0';
+				regload <= "00000000";
+				pcounter_control <= "11";
+			when JZ2 =>
 				finished <= '1';
-				regload <= "0000000";
-				pcounter_control <= "01";
+				regload <= "00000000";
+				if (zero_sign_in = '1') then
+					pcounter_control <= "10";
+				else 
+					pcounter_control <= "11";
+				end if;
 				--FORCAR O CONTADOR DE PROGRAMA A IR PARA O "ADDRESS" se o ultimo resultado for 0 (acho que se o regout tiver 0 nele)
 		end case;
 	end process;	
