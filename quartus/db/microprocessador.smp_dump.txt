@@ -1,21 +1,18 @@
 
 State Machine - |microprocessador|controlador:controlador0|state
-Name state.MVI2 state.JZ2 state.JMP2 state.SHR state.SHL state.JZ state.JMP state.ST state.LD state.instOUT state.instIN state.SUB state.ADD state.MVI state.MOV state.decode state.busca state.start 
-state.start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.busca 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.decode 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.MOV 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.MVI 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.ADD 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.SUB 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.instIN 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.instOUT 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.LD 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.ST 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.JMP 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.JZ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.SHL 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.SHR 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.JMP2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.JZ2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.MVI2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Name state.SHR state.SHL state.JZ state.JMP state.ST state.LD state.instOUT state.instIN state.SUB state.ADD state.MVI state.MOV state.decode state.busca state.start 
+state.start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.busca 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.decode 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.MOV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.MVI 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.ADD 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.SUB 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.instIN 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.instOUT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.LD 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.ST 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.JMP 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.JZ 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.SHL 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.SHR 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

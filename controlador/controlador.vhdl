@@ -19,7 +19,7 @@ entity controlador is
 end entity controlador;
 
 architecture Behavioral of controlador is
-	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR, JMP2, JZ2, MVI2);
+	type state_type is (start, busca, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR);
 	signal state, next_state : state_type;
 	begin
 		sincronia : process (clk, reset)
@@ -72,12 +72,6 @@ architecture Behavioral of controlador is
 					when others =>
 						next_state <= busca; --Volta para busca caso o usuario entre com uma instrucao invalida
 				end case;
-			when MVI =>
-				next_state <= MVI2;
-			when JMP =>
-				next_state <= JMP2;
-			when JZ =>
-				next_state <= JZ2;
 			when others =>
 				next_state <= busca;
 		end case;
@@ -100,7 +94,7 @@ architecture Behavioral of controlador is
 				regload <= "00000000";
 				finished <= '0';
 				datamem_write_enable <= '0';
-				pcounter_control <= "00";
+				pcounter_control <= "01";
 			when LD => --nao confundir com ST, essa instrucao aqui so carrega um valor de origem propria memoria de dados em um dos regs internos
 				finished <= '1';
  				pcounter_control <= "01";
@@ -228,13 +222,9 @@ architecture Behavioral of controlador is
 						regload <= "00010000"; --Load em Reg11
 				end case;
 			when MVI =>
-				finished <= '0';
-				pcounter_control <= "11";
-				regload <= "00000000";
-			when MVI2 =>
 				finished <= '1';
 				mux0select <= "010";
-				pcounter_control <= "11";
+				pcounter_control <= "01";
 				case (instruction(3 downto 2)) is 
 					when "00" =>
 						regload <= "10000000"; --Load em Reg00
@@ -517,25 +507,17 @@ architecture Behavioral of controlador is
 						mux1select <= "11"; --Selecionando Reg11
 				end case;
 			when JMP =>
-				finished <= '0';
-				regload <= "00000000";
-				pcounter_control <= "11";	
-			when JMP2 =>
 				finished <= '1';
 				regload <= "00000000";
 				pcounter_control <= "10";
 				--FORCAR O CONTADOR DE PROGRAMA A IR PARA O "ADDRESS"
 			when JZ =>
-				finished <= '0';
-				regload <= "00000000";
-				pcounter_control <= "11";
-			when JZ2 =>
 				finished <= '1';
 				regload <= "00000000";
 				if (zero_sign_in = '1') then
 					pcounter_control <= "10";
 				else 
-					pcounter_control <= "11";
+					pcounter_control <= "01";
 				end if;
 				--FORCAR O CONTADOR DE PROGRAMA A IR PARA O "ADDRESS" se o ultimo resultado for 0 (acho que se o regout tiver 0 nele)
 		end case;
