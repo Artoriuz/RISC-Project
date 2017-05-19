@@ -13,7 +13,7 @@ entity microprocessador is
 		carryflag : out std_logic
 	);
 end entity microprocessador;
-		
+	
 architecture Behavioral of microprocessador is 
 
 signal instruction_proc : std_logic_vector(7 downto 0);

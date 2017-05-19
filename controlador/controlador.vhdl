@@ -89,17 +89,17 @@ architecture Behavioral of controlador is
 				regload <= "00000000";	
 				finished <= '0';
 				datamem_write_enable <= '0';
-				pcounter_control <= "00";
+				pcounter_control <= "01";
 			when decode =>
 				regload <= "00000000";
 				finished <= '0';
 				datamem_write_enable <= '0';
-				pcounter_control <= "01";
+				pcounter_control <= "00";
 			when LD => --nao confundir com ST, essa instrucao aqui so carrega um valor de origem propria memoria de dados em um dos regs internos
-				finished <= '1';
+				finished <= '1'; 
  				pcounter_control <= "01";
 				mux0select <= "011";
-				--MANDAR O VALOR QUE ESTÁ EM RY (O QUE SAI DO MUX2) COMO ENDEREÇO EM DATAMEM
+				--MANDAR O VALOR QUE ESTÃ EM RY (O QUE SAI DO MUX2) COMO ENDEREÃ‡O EM DATAMEM
  				case (instruction(3 downto 0)) is 
 					when "0000" =>
 						regload <= "10000000"; --Load em Reg00

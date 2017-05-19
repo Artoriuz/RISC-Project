@@ -5,8 +5,7 @@ entity microprocessador is
         clk             : in     vl_logic;
         execute         : in     vl_logic;
         reset           : in     vl_logic;
-        instruction     : in     vl_logic_vector(7 downto 0);
-        address         : in     vl_logic_vector(7 downto 0);
+        externaldata    : in     vl_logic_vector(7 downto 0);
         finished        : out    vl_logic;
         saida           : out    vl_logic_vector(7 downto 0);
         carryflag       : out    vl_logic

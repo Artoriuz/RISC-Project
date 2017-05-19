@@ -12,7 +12,7 @@ entity datapath is
 		carryflag : out std_logic;
 		mux0select : in std_logic_vector(2 downto 0); 
 		mux1select, mux2select : in std_logic_vector(1 downto 0);
-		regload : in std_logic_vector(7 downto 0); -- ordem = Reg00 Reg01 Reg10 Reg11 Regout Regout Regcarryflag RegZero
+		regload : in std_logic_vector(7 downto 0); -- ordem = Reg00 Reg01 Reg10 Reg11 Regin Regout Regcarryflag RegZero
 		reset: in std_logic;
 		alucontrol : in std_logic_vector(3 downto 0);
 		datamem_write_enable : in std_logic;
@@ -31,7 +31,7 @@ signal progmem_out : std_logic_vector(7 downto 0);
 signal internaldata :std_logic_vector(7 downto 0);
 
 begin
-programcounter0 : programcounter port map (clk, progmemaddress, pcounter_control, reset, progmemaddress);
+programcounter0 : programcounter port map (clk, progmem_out, pcounter_control, reset, progmemaddress);
 
 progmem0 : progmem port map (progmemaddress, clk, "00000000", '0', progmem_out);
 datamem0 : datamem port map (mux2out(4 downto 0), clk, mux1out, datamem_write_enable, internaldata);

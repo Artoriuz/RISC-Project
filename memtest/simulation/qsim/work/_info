@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\GitHub Repos\RISC-Project\memtest\simulation\qsim
+vmemtest
+Z1 IB]9FilIgNA@VgS2JC9Z=]1
+Z2 VHUDU?5QWVJolfDmgm0XmG3
+Z3 dE:\GitHub Repos\RISC-Project\memtest\simulation\qsim
+Z4 w1495219181
+Z5 8memtest.vo
+Z6 Fmemtest.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|memtest.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 Lk[n?Ra2K[PE1hn2fW<2K0
+!s85 0
+Z11 !s108 1495219182.659000
+Z12 !s107 memtest.vo|
+!s101 -O0
+vmemtest_vlg_check_tst
+!i10b 1
+Z13 !s100 0lD3SdfTPOjao7RWOAF382
+Z14 INIm`ZG8oRJad>2?DZ:UEi0
+Z15 V@OLdHC;0:KkWJfZ[C6N?O1
+R3
+R4
+Z16 8memtest.vt
+Z17 Fmemtest.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z18 !s108 1495219182.784000
+Z19 !s107 memtest.vt|
+Z20 !s90 -work|work|memtest.vt|
+!s101 -O0
+R9
+vmemtest_vlg_sample_tst
+!i10b 1
+Z21 !s100 T=M0h9jjDoMAgT30AjSU=0
+Z22 IZ0kIdn0kEm?QP5bfnP2;z3
+Z23 V8^fdI_h_z]5lN@QVlz]9I0
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+vmemtest_vlg_vec_tst
+!i10b 1
+!s100 mHRi<E`8UVhm<3I:H`Lai0
+Ikz`koze;o9Q]lNAb?Kbia0
+Z24 VOoTdb4j1G<kHidITzk=WO0
+R3
+R4
+R16
+R17
+Z25 L0 281
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
