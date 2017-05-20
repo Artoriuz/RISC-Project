@@ -1052,7 +1052,7 @@ SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|Selector1~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|Selector9~0_combout")
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2482,6 +2482,596 @@ SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|regcarryflag|out0~regout")
 	PARENT = "";
 }
 
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux1select[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux1select[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -2723,596 +3313,6 @@ SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[1]")
 }
 
 SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux1select[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux1select[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -3914,8 +3914,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|saida[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 185.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -3924,9 +3923,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|saida[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 815.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -3935,9 +3932,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|saida[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 65.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 875.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -4208,8 +4203,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4218,9 +4212,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4229,8 +4221,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~4_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4239,8 +4230,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~6_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4249,8 +4239,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~8_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4259,8 +4248,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~10_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4269,8 +4257,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~12_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4279,8 +4266,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~14_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4289,8 +4275,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|regcarryflag|out0~0_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4299,8 +4284,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~18_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -4310,9 +4295,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~20_combout"
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -4371,8 +4354,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~31_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -5644,7 +5626,33 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Mux7~0_combout")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
 	}
 }
 
@@ -5659,7 +5667,33 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|state.instOUT~rego
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 815.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 35.0;
 	}
 }
 
@@ -5677,7 +5711,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Selector5~1_combou
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -5722,9 +5789,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr8~0_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 845.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -5737,11 +5802,35 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr12~2_combout
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 815.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 35.0;
 	}
 }
 
@@ -5752,13 +5841,38 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Selector3~0_combou
 		REPEAT = 1;
 		LEVEL 0 FOR 25.001;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 854.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -5768,18 +5882,39 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Mux7~5_combout")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 824.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 24.999;
 	}
 }
 
@@ -5788,61 +5923,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|state.LD~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 205.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -5851,63 +5932,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr10~0_combout
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 145.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -5920,7 +5945,37 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Mux7~4_combout")
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 914.999;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 14.999;
 	}
 }
 
@@ -5933,7 +5988,37 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|state.MVI~regout")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 905.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
 	}
 }
 
@@ -5950,57 +6035,31 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr0~0_combout"
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 	}
@@ -6020,78 +6079,83 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Selector1~0_combou
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 85.001;
+		LEVEL 0 FOR 25.001;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 894.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Selector9~0_combout")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 59.999;
+		LEVEL 1 FOR 0.001;
+		LEVEL 0 FOR 14.999;
 	}
 }
 
@@ -6100,8 +6164,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux7~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6110,7 +6173,41 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Mux15~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL 0 FOR 5.0;
 	}
 }
 
@@ -6119,8 +6216,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux7~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6129,7 +6225,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Selector6~0_combou
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -6138,7 +6267,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Selector6~1_combou
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -6148,9 +6310,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux1|Mux6~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 845.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6160,9 +6320,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux1|Mux6~1_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 845.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6181,9 +6339,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux1|Mux5~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6193,9 +6349,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux1|Mux5~1_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6262,7 +6416,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Mux7~11_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -6286,7 +6473,33 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr6~0_combout"
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 35.0;
 	}
 }
 
@@ -6303,57 +6516,31 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr6~combout")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 	}
@@ -6365,9 +6552,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 1 FOR 975.0;
 	}
 }
 
@@ -6376,8 +6561,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 95.0;
-		LEVEL 1 FOR 905.0;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6386,9 +6571,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6397,9 +6581,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 854.999;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6408,9 +6591,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6419,9 +6601,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~8_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6439,8 +6619,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6449,8 +6628,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 95.0;
-		LEVEL 0 FOR 905.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6459,10 +6638,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 9.999;
-		LEVEL 1 FOR 845.0;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6471,10 +6648,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6483,8 +6658,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6493,8 +6668,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~8_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6512,8 +6686,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~25_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6542,9 +6715,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~9")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 854.999;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6553,9 +6725,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~10_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6564,8 +6734,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~9")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6574,8 +6744,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~10_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6584,8 +6753,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~27_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6594,8 +6762,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux2~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6604,8 +6771,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux2~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6620,7 +6786,35 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr9~combout")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 845.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
 	}
 }
 
@@ -6629,9 +6823,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|WideOr8~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 145.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 845.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -6641,9 +6833,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~3_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 795.0;
+		LEVEL 0 FOR 975.0;
 	}
 }
 
@@ -6656,7 +6846,37 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~4_combout")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 905.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -6670,8 +6890,36 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux2~2_combout")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -6681,13 +6929,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux2~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 9.999;
+		LEVEL 1 FOR 10.0;
 		LEVEL X FOR 50.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 9.999;
+		LEVEL 1 FOR 10.0;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -6716,9 +6991,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~11")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6727,9 +7001,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~12_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6738,8 +7010,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~11")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6748,8 +7020,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~12_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6758,8 +7029,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~29_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6768,8 +7038,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~5_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6778,8 +7047,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~6_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6793,8 +7061,36 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~7_combout")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -6804,11 +7100,57 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -6837,8 +7179,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~13")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6847,8 +7189,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~15")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6857,8 +7199,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~16_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6867,8 +7209,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Mux20~0_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 55.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -6877,9 +7219,8 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~13")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 854.999;
+		LEVEL X FOR 55.0;
+		LEVEL 1 FOR 945.0;
 	}
 }
 
@@ -6888,9 +7229,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~14_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6899,10 +7238,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 55.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL X FOR 50.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6911,8 +7247,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6921,8 +7256,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6931,8 +7265,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6941,8 +7274,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~9")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6951,8 +7283,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~11")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6961,8 +7292,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~13")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6971,8 +7301,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add1~14_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6981,8 +7310,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux0~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -6991,8 +7319,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux0~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7006,8 +7333,36 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux0~2_combout")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -7017,11 +7372,57 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux0~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -7030,8 +7431,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux0~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7040,8 +7440,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux0~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7050,8 +7449,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux1~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7060,8 +7458,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux1~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7070,8 +7467,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux2~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7080,8 +7476,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux2~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7090,10 +7485,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~1_cout
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 55.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7102,8 +7494,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~3_cout
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7112,8 +7503,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~5_cout
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7122,8 +7512,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~7_cout
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7132,8 +7521,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~9_cout
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7142,8 +7530,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~11_cou
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7152,8 +7539,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~13_cou
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7162,8 +7548,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|LessThan0~14_com
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7172,8 +7557,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux1~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7182,8 +7566,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux3~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7192,8 +7575,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux3~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7207,8 +7589,36 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux3~2_combout")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -7218,13 +7628,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux3~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 9.999;
+		LEVEL 1 FOR 10.0;
 		LEVEL X FOR 50.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 9.999;
+		LEVEL 1 FOR 10.0;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -7233,8 +7670,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux3~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7243,8 +7679,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux3~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7253,9 +7688,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~6_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7264,10 +7697,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~6_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7276,10 +7706,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~23_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7288,10 +7715,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux4~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7300,10 +7724,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux4~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7318,7 +7739,35 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux4~2_combout")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 845.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -7328,13 +7777,57 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux4~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 795.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -7343,8 +7836,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux4~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7353,8 +7845,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux4~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7363,9 +7854,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~4_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7374,10 +7863,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~4_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7386,10 +7872,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~21_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7398,10 +7881,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux5~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7410,10 +7890,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux5~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7427,10 +7904,36 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux5~2_combout")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -7440,13 +7943,57 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux5~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
 		LEVEL 0 FOR 0.001;
 		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -7455,10 +8002,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux5~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7467,10 +8011,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux5~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7479,9 +8020,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7490,9 +8029,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7501,9 +8038,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~19_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7512,9 +8047,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux6~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7523,9 +8056,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux6~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7538,9 +8069,37 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux6~2_combout")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 50.001;
-		LEVEL 0 FOR 59.999;
-		LEVEL 1 FOR 795.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -7550,13 +8109,57 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux6~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
 		LEVEL 0 FOR 0.001;
 		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -7565,10 +8168,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux6~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7577,10 +8177,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux2|Mux6~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7589,8 +8186,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add2~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7599,8 +8195,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Add0~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7609,8 +8204,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|Mux11~0_combout"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7619,8 +8213,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux7~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7629,8 +8222,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux7~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -7644,8 +8236,36 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux7~2_combout")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -7658,10 +8278,54 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux0|Mux7~combout")
 		LEVEL 0 FOR 0.001;
 		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 9.999;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
 		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 0.001;
+		LEVEL 1 FOR 9.999;
+		LEVEL X FOR 5.0;
 	}
 }
 
@@ -7671,8 +8335,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux1|Mux7~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 905.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -7682,8 +8345,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|mux1|Mux7~1_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 55.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 905.0;
+		LEVEL 0 FOR 945.0;
 	}
 }
 
@@ -7692,9 +8354,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|Mux7~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 135.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 854.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -7703,9 +8363,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|state.ADD~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 145.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 845.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -7727,279 +8385,45 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|regcarryflag|out0~reg
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 155.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 95.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 845.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 905.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 785.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 0.001;
-		LEVEL 1 FOR 9.999;
-		LEVEL 0 FOR 845.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
 TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 45.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8008,15 +8432,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 45.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8026,10 +8475,39 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 914.999;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 24.999;
 	}
 }
 
@@ -8039,16 +8517,39 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 24.999;
 	}
 }
 
@@ -8057,7 +8558,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8066,7 +8600,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8075,9 +8642,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 85.001;
+		LEVEL 0 FOR 25.001;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 894.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8088,17 +8686,42 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 		REPEAT = 1;
 		LEVEL 0 FOR 25.001;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 854.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[7]")
 {
 	NODE
 	{
@@ -8107,7 +8730,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[6]")
 {
 	NODE
 	{
@@ -8116,7 +8739,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[5]")
 {
 	NODE
 	{
@@ -8125,7 +8748,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[4]")
 {
 	NODE
 	{
@@ -8134,7 +8757,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[3]")
 {
 	NODE
 	{
@@ -8143,7 +8766,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[2]")
 {
 	NODE
 	{
@@ -8152,7 +8775,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[1]")
 {
 	NODE
 	{
@@ -8161,7 +8784,79 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[0]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[0]")
 {
 	NODE
 	{
@@ -8397,8 +9092,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -8425,101 +9119,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 0 FOR 855.0;
-	}
-}
-
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 145.0;
-		LEVEL 1 FOR 0.001;
-		LEVEL 0 FOR 854.999;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -8595,80 +9195,101 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[0]")
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[7]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[6]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|mux2select[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[5]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[4]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[3]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[2]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 185.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[1]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 815.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
 	}
 }
 
-TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[0]")
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 65.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 875.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 965.0;
 	}
 }
 
@@ -8688,9 +9309,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 25.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 1 FOR 975.0;
 	}
 }
 
@@ -8704,8 +9323,269 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|controlador0|mux0select[0]")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 795.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL X FOR 994.999;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -8714,13 +9594,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 45.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8729,15 +9636,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 45.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8748,13 +9680,38 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 		REPEAT = 1;
 		LEVEL 0 FOR 25.001;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 854.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8764,8 +9721,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8774,7 +9730,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8783,7 +9772,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8792,9 +9814,40 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 85.001;
+		LEVEL 0 FOR 25.001;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 894.999;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 14.999;
 	}
 }
 
@@ -8804,10 +9857,39 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 914.999;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 24.999;
 	}
 }
 
@@ -8817,16 +9899,39 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 824.999;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 24.999;
 	}
 }
 
@@ -8836,8 +9941,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8847,8 +9951,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8858,8 +9961,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8869,8 +9971,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8880,8 +9981,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8891,8 +9991,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -8902,8 +10001,7 @@ TRANSITION_LIST("microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_c
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL X FOR 150.0;
-		LEVEL 0 FOR 844.999;
+		LEVEL X FOR 994.999;
 	}
 }
 
@@ -9836,7 +10934,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|Selector9~0_combout";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -11123,7 +12221,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 245;
@@ -11132,7 +12230,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 246;
@@ -11141,7 +12239,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 247;
@@ -11150,7 +12248,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 248;
@@ -11159,7 +12257,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 249;
@@ -11168,7 +12266,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 250;
@@ -11177,7 +12275,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 251;
@@ -11186,7 +12284,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 252;
@@ -11195,7 +12293,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 253;
@@ -11204,7 +12302,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 254;
@@ -11213,7 +12311,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 255;
@@ -11222,7 +12320,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 256;
@@ -11231,7 +12329,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 257;
@@ -11240,7 +12338,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 258;
@@ -11249,7 +12347,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 259;
@@ -11258,7 +12356,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 260;
@@ -11267,7 +12365,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[8]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 261;
@@ -11276,7 +12374,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 262;
@@ -11285,7 +12383,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 263;
@@ -11294,7 +12392,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 264;
@@ -11303,7 +12401,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 265;
@@ -11312,7 +12410,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 266;
@@ -11321,7 +12419,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 267;
@@ -11330,7 +12428,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 268;
@@ -11339,7 +12437,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 269;
@@ -11348,7 +12446,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 270;
@@ -11357,7 +12455,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 271;
@@ -11366,7 +12464,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 272;
@@ -11375,7 +12473,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 273;
@@ -11384,7 +12482,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 274;
@@ -11393,7 +12491,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 275;
@@ -11402,7 +12500,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 276;
@@ -11411,7 +12509,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|progmem0|altsyncram_component|auto_generated|q_a[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux1select[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 277;
@@ -11420,7 +12518,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux1select[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 278;
@@ -11429,7 +12527,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 279;
@@ -11438,7 +12536,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 280;
@@ -11447,7 +12545,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 281;
@@ -11456,7 +12554,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 282;
@@ -11465,7 +12563,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 283;
@@ -11474,7 +12572,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 284;
@@ -11483,7 +12581,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 285;
@@ -11492,7 +12590,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 286;
@@ -11501,7 +12599,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 287;
@@ -11510,7 +12608,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 288;
@@ -11519,7 +12617,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 289;
@@ -11528,7 +12626,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 290;
@@ -11537,7 +12635,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux2select[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 291;
@@ -11546,7 +12644,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux2select[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 292;
@@ -11555,7 +12653,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|programcounter0|current[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 293;
@@ -11564,7 +12662,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux1select[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 294;
@@ -11573,7 +12671,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux1select[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 295;
@@ -11582,7 +12680,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 296;
@@ -11591,7 +12689,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 297;
@@ -11600,7 +12698,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 298;
@@ -11609,7 +12707,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|alucontrol[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 299;
@@ -11618,7 +12716,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg11|out0[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 300;
@@ -11627,7 +12725,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux0select[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 301;
@@ -11636,7 +12734,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux0select[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 302;
@@ -11645,7 +12743,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux0select[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 303;
@@ -11654,7 +12752,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 304;
@@ -11663,7 +12761,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 305;
@@ -11672,7 +12770,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 306;
@@ -11681,7 +12779,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg10|out0[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 307;
@@ -11690,7 +12788,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux2select[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 308;
@@ -11699,7 +12797,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux2select[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 309;
@@ -11708,7 +12806,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 310;
@@ -11717,7 +12815,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|datamem0|altsyncram_component|auto_generated|q_a[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 311;
@@ -11726,7 +12824,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 312;
@@ -11735,7 +12833,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 313;
@@ -11744,7 +12842,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 314;
@@ -11753,7 +12851,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 315;
@@ -11762,7 +12860,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 316;
@@ -11771,7 +12869,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg01|out0[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 317;
@@ -11780,7 +12878,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[7]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 318;
@@ -11789,7 +12887,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[6]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reg00|out0[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 319;
@@ -11798,7 +12896,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[5]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 320;
@@ -11807,7 +12905,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[4]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 321;
@@ -11816,7 +12914,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[3]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 322;
@@ -11825,7 +12923,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 323;
@@ -11834,7 +12932,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 324;
@@ -11843,7 +12941,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|reout|out0[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 325;
@@ -11852,7 +12950,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux0select[2]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 326;
@@ -11861,7 +12959,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux0select[1]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 327;
@@ -11870,7 +12968,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "microprocessador_vlg_vec_tst|i1|controlador0|mux0select[0]";
+	CHANNEL = "microprocessador_vlg_vec_tst|i1|datapath0|ALU0|temp[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 328;

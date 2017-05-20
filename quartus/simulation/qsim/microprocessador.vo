@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "05/19/2017 15:51:26"
+// DATE "05/19/2017 16:56:58"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -128,7 +128,7 @@ wire \controlador0|state.MVI~regout ;
 wire \controlador0|WideOr0~0_combout ;
 wire \controlador0|Mux15~0_combout ;
 wire \controlador0|Selector1~0_combout ;
-wire \controlador0|Selector9~0_combout ;
+wire \datapath0|reg00|out0[7]~0_combout ;
 wire \datapath0|mux2|Mux7~0_combout ;
 wire \controlador0|Mux15~2_combout ;
 wire \datapath0|mux2|Mux7~1_combout ;
@@ -271,19 +271,19 @@ wire \controlador0|Mux7~1_combout ;
 wire \controlador0|state.ADD~regout ;
 wire \datapath0|regcarryflag|out0~1_combout ;
 wire \datapath0|regcarryflag|out0~regout ;
-wire [7:0] \datapath0|datamem0|altsyncram_component|auto_generated|q_a ;
-wire [7:0] \datapath0|reg00|out0 ;
-wire [8:0] \datapath0|ALU0|temp ;
 wire [7:0] \datapath0|progmem0|altsyncram_component|auto_generated|q_a ;
-wire [7:0] \datapath0|reg11|out0 ;
+wire [7:0] \datapath0|reg10|out0 ;
+wire [7:0] \datapath0|reout|out0 ;
 wire [7:0] \datapath0|programcounter0|current ;
 wire [1:0] \controlador0|mux1select ;
 wire [3:0] \controlador0|alucontrol ;
-wire [7:0] \datapath0|reg10|out0 ;
-wire [1:0] \controlador0|mux2select ;
 wire [7:0] \datapath0|reg01|out0 ;
-wire [7:0] \datapath0|reout|out0 ;
+wire [1:0] \controlador0|mux2select ;
+wire [7:0] \datapath0|reg11|out0 ;
 wire [2:0] \controlador0|mux0select ;
+wire [7:0] \datapath0|datamem0|altsyncram_component|auto_generated|q_a ;
+wire [7:0] \datapath0|reg00|out0 ;
+wire [8:0] \datapath0|ALU0|temp ;
 
 wire [0:0] \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7_PORTADATAOUT_bus ;
 wire [0:0] \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6_PORTADATAOUT_bus ;
@@ -1066,7 +1066,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000544;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .mem_init0 = 256'h6666666666666666666666666666666666666666666666666666666666666666;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[6] (
@@ -1128,7 +1128,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000011;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .mem_init0 = 256'h3333333333333333333333333333333333333333333333333333333333333333;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[5] (
@@ -1190,7 +1190,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000455;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .mem_init0 = 256'h7777777777777777777777777777777777777777777777777777777777777777;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[4] (
@@ -1252,7 +1252,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .mem_init0 = 256'h2222222222222222222222222222222222222222222222222222222222222222;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[3] (
@@ -1314,7 +1314,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .mem_init0 = 256'h2222222222222222222222222222222222222222222222222222222222222222;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[2] (
@@ -1376,7 +1376,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000020;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = 256'h2222222222222222222222222222222222222222222222222222222222222222;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[1] (
@@ -1438,7 +1438,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000152;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h2222222222222222222222222222222222222222222222222222222222222222;
 // synopsys translate_on
 
 cycloneii_lcell_ff \datapath0|programcounter0|current[0] (
@@ -1500,7 +1500,7 @@ defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .p
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .port_b_data_width = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .ram_block_type = "M4K";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .safe_write = "err_on_2clk";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000444;
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .mem_init0 = 256'h6666666666666666666666666666666666666666666666666666666666666666;
 // synopsys translate_on
 
 cycloneii_lcell_comb \controlador0|Selector2~1 (
@@ -2002,43 +2002,43 @@ defparam \controlador0|mux2select[1] .lut_mask = 16'hCCF0;
 defparam \controlador0|mux2select[1] .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \controlador0|Selector9~0 (
+cycloneii_lcell_comb \datapath0|reg00|out0[7]~0 (
 // Equation(s):
-// \controlador0|Selector9~0_combout  = (\controlador0|WideOr0~0_combout  & (!\datapath0|progmem0|altsyncram_component|auto_generated|q_a [3] & !\datapath0|progmem0|altsyncram_component|auto_generated|q_a [2]))
+// \datapath0|reg00|out0[7]~0_combout  = (\datapath0|reg00|out0 [7]) # ((\controlador0|WideOr0~0_combout  & (!\datapath0|progmem0|altsyncram_component|auto_generated|q_a [3] & !\datapath0|progmem0|altsyncram_component|auto_generated|q_a [2])))
 
-	.dataa(\controlador0|WideOr0~0_combout ),
-	.datab(vcc),
+	.dataa(\datapath0|reg00|out0 [7]),
+	.datab(\controlador0|WideOr0~0_combout ),
 	.datac(\datapath0|progmem0|altsyncram_component|auto_generated|q_a [3]),
 	.datad(\datapath0|progmem0|altsyncram_component|auto_generated|q_a [2]),
 	.cin(gnd),
-	.combout(\controlador0|Selector9~0_combout ),
+	.combout(\datapath0|reg00|out0[7]~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \controlador0|Selector9~0 .lut_mask = 16'h000A;
-defparam \controlador0|Selector9~0 .sum_lutc_input = "datac";
+defparam \datapath0|reg00|out0[7]~0 .lut_mask = 16'hAAAE;
+defparam \datapath0|reg00|out0[7]~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_ff \datapath0|reg00|out0[0] (
+cycloneii_lcell_ff \datapath0|reg00|out0[7] (
 	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux7~combout ),
+	.datain(\datapath0|reg00|out0[7]~0_combout ),
 	.sdata(gnd),
 	.aclr(\reset~combout ),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
+	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [0]));
+	.regout(\datapath0|reg00|out0 [7]));
 
 cycloneii_lcell_comb \datapath0|mux2|Mux7~0 (
 // Equation(s):
 // \datapath0|mux2|Mux7~0_combout  = (\controlador0|mux2select [0] & (((\controlador0|mux2select [1])))) # (!\controlador0|mux2select [0] & ((\controlador0|mux2select [1] & (\datapath0|reg10|out0 [0])) # (!\controlador0|mux2select [1] & 
-// ((\datapath0|reg00|out0 [0])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [0]),
 	.datab(\datapath0|reg10|out0 [0]),
 	.datac(\controlador0|mux2select [1]),
-	.datad(\datapath0|reg00|out0 [0]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux7~0_combout ),
 	.cout());
@@ -2154,27 +2154,15 @@ cycloneii_lcell_ff \datapath0|reg10|out0[1] (
 	.devpor(devpor),
 	.regout(\datapath0|reg10|out0 [1]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[1] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux6~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [1]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux6~0 (
 // Equation(s):
 // \datapath0|mux1|Mux6~0_combout  = (\controlador0|mux1select [0] & (((\controlador0|mux1select [1])))) # (!\controlador0|mux1select [0] & ((\controlador0|mux1select [1] & (\datapath0|reg10|out0 [1])) # (!\controlador0|mux1select [1] & 
-// ((\datapath0|reg00|out0 [1])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [0]),
 	.datab(\datapath0|reg10|out0 [1]),
 	.datac(\controlador0|mux1select [1]),
-	.datad(\datapath0|reg00|out0 [1]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux6~0_combout ),
 	.cout());
@@ -2240,27 +2228,15 @@ cycloneii_lcell_ff \datapath0|reg01|out0[2] (
 	.devpor(devpor),
 	.regout(\datapath0|reg01|out0 [2]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[2] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux5~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [2]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux5~0 (
 // Equation(s):
 // \datapath0|mux1|Mux5~0_combout  = (\controlador0|mux1select [1] & (((\controlador0|mux1select [0])))) # (!\controlador0|mux1select [1] & ((\controlador0|mux1select [0] & (\datapath0|reg01|out0 [2])) # (!\controlador0|mux1select [0] & 
-// ((\datapath0|reg00|out0 [2])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [1]),
 	.datab(\datapath0|reg01|out0 [2]),
 	.datac(\controlador0|mux1select [0]),
-	.datad(\datapath0|reg00|out0 [2]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux5~0_combout ),
 	.cout());
@@ -2310,27 +2286,15 @@ cycloneii_lcell_ff \datapath0|reg10|out0[3] (
 	.devpor(devpor),
 	.regout(\datapath0|reg10|out0 [3]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[3] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux4~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [3]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux4~0 (
 // Equation(s):
 // \datapath0|mux1|Mux4~0_combout  = (\controlador0|mux1select [0] & (((\controlador0|mux1select [1])))) # (!\controlador0|mux1select [0] & ((\controlador0|mux1select [1] & (\datapath0|reg10|out0 [3])) # (!\controlador0|mux1select [1] & 
-// ((\datapath0|reg00|out0 [3])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [0]),
 	.datab(\datapath0|reg10|out0 [3]),
 	.datac(\controlador0|mux1select [1]),
-	.datad(\datapath0|reg00|out0 [3]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux4~0_combout ),
 	.cout());
@@ -2380,27 +2344,15 @@ cycloneii_lcell_ff \datapath0|reg01|out0[4] (
 	.devpor(devpor),
 	.regout(\datapath0|reg01|out0 [4]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[4] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux3~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [4]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux3~0 (
 // Equation(s):
 // \datapath0|mux1|Mux3~0_combout  = (\controlador0|mux1select [1] & (((\controlador0|mux1select [0])))) # (!\controlador0|mux1select [1] & ((\controlador0|mux1select [0] & (\datapath0|reg01|out0 [4])) # (!\controlador0|mux1select [0] & 
-// ((\datapath0|reg00|out0 [4])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [1]),
 	.datab(\datapath0|reg01|out0 [4]),
 	.datac(\controlador0|mux1select [0]),
-	.datad(\datapath0|reg00|out0 [4]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux3~0_combout ),
 	.cout());
@@ -2904,18 +2856,6 @@ cycloneii_lcell_ff \datapath0|reg10|out0[7] (
 	.devpor(devpor),
 	.regout(\datapath0|reg10|out0 [7]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[7] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux0~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [7]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux0~0 (
 // Equation(s):
 // \datapath0|mux1|Mux0~0_combout  = (\controlador0|mux1select [0] & (((\controlador0|mux1select [1])))) # (!\controlador0|mux1select [0] & ((\controlador0|mux1select [1] & (\datapath0|reg10|out0 [7])) # (!\controlador0|mux1select [1] & 
@@ -3344,27 +3284,15 @@ cycloneii_lcell_ff \datapath0|reg10|out0[5] (
 	.devpor(devpor),
 	.regout(\datapath0|reg10|out0 [5]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[5] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux2~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [5]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux2~0 (
 // Equation(s):
 // \datapath0|mux1|Mux2~0_combout  = (\controlador0|mux1select [0] & (((\controlador0|mux1select [1])))) # (!\controlador0|mux1select [0] & ((\controlador0|mux1select [1] & (\datapath0|reg10|out0 [5])) # (!\controlador0|mux1select [1] & 
-// ((\datapath0|reg00|out0 [5])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [0]),
 	.datab(\datapath0|reg10|out0 [5]),
 	.datac(\controlador0|mux1select [1]),
-	.datad(\datapath0|reg00|out0 [5]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux2~0_combout ),
 	.cout());
@@ -3548,27 +3476,15 @@ cycloneii_lcell_ff \datapath0|reg01|out0[6] (
 	.devpor(devpor),
 	.regout(\datapath0|reg01|out0 [6]));
 
-cycloneii_lcell_ff \datapath0|reg00|out0[6] (
-	.clk(\clk~combout ),
-	.datain(\datapath0|mux0|Mux1~combout ),
-	.sdata(gnd),
-	.aclr(\reset~combout ),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\controlador0|Selector9~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\datapath0|reg00|out0 [6]));
-
 cycloneii_lcell_comb \datapath0|mux1|Mux1~0 (
 // Equation(s):
 // \datapath0|mux1|Mux1~0_combout  = (\controlador0|mux1select [1] & (((\controlador0|mux1select [0])))) # (!\controlador0|mux1select [1] & ((\controlador0|mux1select [0] & (\datapath0|reg01|out0 [6])) # (!\controlador0|mux1select [0] & 
-// ((\datapath0|reg00|out0 [6])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [1]),
 	.datab(\datapath0|reg01|out0 [6]),
 	.datac(\controlador0|mux1select [0]),
-	.datad(\datapath0|reg00|out0 [6]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux1~0_combout ),
 	.cout());
@@ -3815,12 +3731,12 @@ cycloneii_lcell_ff \datapath0|reg10|out0[6] (
 cycloneii_lcell_comb \datapath0|mux2|Mux1~0 (
 // Equation(s):
 // \datapath0|mux2|Mux1~0_combout  = (\controlador0|mux2select [0] & (((\controlador0|mux2select [1])))) # (!\controlador0|mux2select [0] & ((\controlador0|mux2select [1] & (\datapath0|reg10|out0 [6])) # (!\controlador0|mux2select [1] & 
-// ((\datapath0|reg00|out0 [6])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [0]),
 	.datab(\datapath0|reg10|out0 [6]),
 	.datac(\controlador0|mux2select [1]),
-	.datad(\datapath0|reg00|out0 [6]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux1~0_combout ),
 	.cout());
@@ -3861,12 +3777,12 @@ cycloneii_lcell_ff \datapath0|reg01|out0[5] (
 cycloneii_lcell_comb \datapath0|mux2|Mux2~0 (
 // Equation(s):
 // \datapath0|mux2|Mux2~0_combout  = (\controlador0|mux2select [1] & (((\controlador0|mux2select [0])))) # (!\controlador0|mux2select [1] & ((\controlador0|mux2select [0] & (\datapath0|reg01|out0 [5])) # (!\controlador0|mux2select [0] & 
-// ((\datapath0|reg00|out0 [5])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [1]),
 	.datab(\datapath0|reg01|out0 [5]),
 	.datac(\controlador0|mux2select [0]),
-	.datad(\datapath0|reg00|out0 [5]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux2~0_combout ),
 	.cout());
@@ -4126,12 +4042,12 @@ cycloneii_lcell_ff \datapath0|reg10|out0[4] (
 cycloneii_lcell_comb \datapath0|mux2|Mux3~0 (
 // Equation(s):
 // \datapath0|mux2|Mux3~0_combout  = (\controlador0|mux2select [0] & (((\controlador0|mux2select [1])))) # (!\controlador0|mux2select [0] & ((\controlador0|mux2select [1] & (\datapath0|reg10|out0 [4])) # (!\controlador0|mux2select [1] & 
-// ((\datapath0|reg00|out0 [4])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [0]),
 	.datab(\datapath0|reg10|out0 [4]),
 	.datac(\controlador0|mux2select [1]),
-	.datad(\datapath0|reg00|out0 [4]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux3~0_combout ),
 	.cout());
@@ -4318,12 +4234,12 @@ cycloneii_lcell_ff \datapath0|reg01|out0[3] (
 cycloneii_lcell_comb \datapath0|mux2|Mux4~0 (
 // Equation(s):
 // \datapath0|mux2|Mux4~0_combout  = (\controlador0|mux2select [1] & (((\controlador0|mux2select [0])))) # (!\controlador0|mux2select [1] & ((\controlador0|mux2select [0] & (\datapath0|reg01|out0 [3])) # (!\controlador0|mux2select [0] & 
-// ((\datapath0|reg00|out0 [3])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [1]),
 	.datab(\datapath0|reg01|out0 [3]),
 	.datac(\controlador0|mux2select [0]),
-	.datad(\datapath0|reg00|out0 [3]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux4~0_combout ),
 	.cout());
@@ -4510,12 +4426,12 @@ cycloneii_lcell_ff \datapath0|reg10|out0[2] (
 cycloneii_lcell_comb \datapath0|mux2|Mux5~0 (
 // Equation(s):
 // \datapath0|mux2|Mux5~0_combout  = (\controlador0|mux2select [0] & (((\controlador0|mux2select [1])))) # (!\controlador0|mux2select [0] & ((\controlador0|mux2select [1] & (\datapath0|reg10|out0 [2])) # (!\controlador0|mux2select [1] & 
-// ((\datapath0|reg00|out0 [2])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [0]),
 	.datab(\datapath0|reg10|out0 [2]),
 	.datac(\controlador0|mux2select [1]),
-	.datad(\datapath0|reg00|out0 [2]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux5~0_combout ),
 	.cout());
@@ -4702,12 +4618,12 @@ cycloneii_lcell_ff \datapath0|reg01|out0[1] (
 cycloneii_lcell_comb \datapath0|mux2|Mux6~0 (
 // Equation(s):
 // \datapath0|mux2|Mux6~0_combout  = (\controlador0|mux2select [1] & (((\controlador0|mux2select [0])))) # (!\controlador0|mux2select [1] & ((\controlador0|mux2select [0] & (\datapath0|reg01|out0 [1])) # (!\controlador0|mux2select [0] & 
-// ((\datapath0|reg00|out0 [1])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux2select [1]),
 	.datab(\datapath0|reg01|out0 [1]),
 	.datac(\controlador0|mux2select [0]),
-	.datad(\datapath0|reg00|out0 [1]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux2|Mux6~0_combout ),
 	.cout());
@@ -4894,12 +4810,12 @@ cycloneii_lcell_ff \datapath0|reg01|out0[0] (
 cycloneii_lcell_comb \datapath0|mux1|Mux7~0 (
 // Equation(s):
 // \datapath0|mux1|Mux7~0_combout  = (\controlador0|mux1select [1] & (((\controlador0|mux1select [0])))) # (!\controlador0|mux1select [1] & ((\controlador0|mux1select [0] & (\datapath0|reg01|out0 [0])) # (!\controlador0|mux1select [0] & 
-// ((\datapath0|reg00|out0 [0])))))
+// ((\datapath0|reg00|out0 [7])))))
 
 	.dataa(\controlador0|mux1select [1]),
 	.datab(\datapath0|reg01|out0 [0]),
 	.datac(\controlador0|mux1select [0]),
-	.datad(\datapath0|reg00|out0 [0]),
+	.datad(\datapath0|reg00|out0 [7]),
 	.cin(gnd),
 	.combout(\datapath0|mux1|Mux7~0_combout ),
 	.cout());

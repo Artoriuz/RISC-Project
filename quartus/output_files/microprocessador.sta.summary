@@ -3,48 +3,48 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -8.722
-TNS   : -431.352
+Slack : -9.285
+TNS   : -476.635
 
 Type  : Slow Model Setup 'controlador:controlador0|alucontrol[0]'
-Slack : -6.238
-TNS   : -52.597
-
-Type  : Slow Model Setup 'controlador:controlador0|state.ST'
-Slack : -4.033
-TNS   : -18.009
+Slack : -6.050
+TNS   : -52.754
 
 Type  : Slow Model Setup 'controlador:controlador0|state.ADD'
-Slack : -3.829
-TNS   : -21.530
+Slack : -5.042
+TNS   : -25.765
+
+Type  : Slow Model Setup 'controlador:controlador0|state.ST'
+Slack : -4.665
+TNS   : -19.885
 
 Type  : Slow Model Setup 'controlador:controlador0|state.JMP'
-Slack : -1.718
-TNS   : -3.881
+Slack : -1.604
+TNS   : -3.179
 
 Type  : Slow Model Hold 'controlador:controlador0|state.ST'
-Slack : -3.070
-TNS   : -16.308
+Slack : -3.655
+TNS   : -16.365
 
 Type  : Slow Model Hold 'controlador:controlador0|state.ADD'
-Slack : -2.624
-TNS   : -9.781
+Slack : -2.282
+TNS   : -7.956
 
 Type  : Slow Model Hold 'controlador:controlador0|state.JMP'
-Slack : -1.856
-TNS   : -3.551
+Slack : -2.077
+TNS   : -4.264
 
 Type  : Slow Model Hold 'controlador:controlador0|alucontrol[0]'
-Slack : -1.757
-TNS   : -13.495
+Slack : -2.067
+TNS   : -14.610
 
 Type  : Slow Model Hold 'clk'
-Slack : -1.624
-TNS   : -14.752
+Slack : -1.506
+TNS   : -13.538
 
 Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -2.000
-TNS   : -241.380
+TNS   : -249.380
 
 Type  : Slow Model Minimum Pulse Width 'controlador:controlador0|alucontrol[0]'
 Slack : 0.500
@@ -63,48 +63,48 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'clk'
-Slack : -3.437
-TNS   : -184.174
-
-Type  : Fast Model Setup 'controlador:controlador0|alucontrol[0]'
-Slack : -2.474
-TNS   : -20.802
+Slack : -3.641
+TNS   : -196.168
 
 Type  : Fast Model Setup 'controlador:controlador0|state.ST'
-Slack : -2.221
-TNS   : -8.571
+Slack : -2.568
+TNS   : -9.943
 
 Type  : Fast Model Setup 'controlador:controlador0|state.ADD'
-Slack : -2.144
-TNS   : -11.201
+Slack : -2.492
+TNS   : -13.553
+
+Type  : Fast Model Setup 'controlador:controlador0|alucontrol[0]'
+Slack : -2.266
+TNS   : -19.740
 
 Type  : Fast Model Setup 'controlador:controlador0|state.JMP'
-Slack : -0.175
-TNS   : -0.346
-
-Type  : Fast Model Hold 'controlador:controlador0|state.ADD'
-Slack : -1.545
-TNS   : -5.902
+Slack : -0.150
+TNS   : -0.283
 
 Type  : Fast Model Hold 'controlador:controlador0|state.ST'
-Slack : -1.468
-TNS   : -9.342
+Slack : -1.703
+TNS   : -9.119
 
-Type  : Fast Model Hold 'clk'
-Slack : -1.189
-TNS   : -21.378
+Type  : Fast Model Hold 'controlador:controlador0|state.ADD'
+Slack : -1.327
+TNS   : -4.722
 
 Type  : Fast Model Hold 'controlador:controlador0|state.JMP'
-Slack : -1.145
-TNS   : -2.215
+Slack : -1.278
+TNS   : -2.551
 
 Type  : Fast Model Hold 'controlador:controlador0|alucontrol[0]'
-Slack : -1.126
-TNS   : -8.999
+Slack : -1.266
+TNS   : -9.582
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.180
+TNS   : -21.403
 
 Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -2.000
-TNS   : -241.380
+TNS   : -249.380
 
 Type  : Fast Model Minimum Pulse Width 'controlador:controlador0|alucontrol[0]'
 Slack : 0.500

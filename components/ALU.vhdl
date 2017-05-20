@@ -21,6 +21,7 @@ begin
 	process(in0, in1, operation, temp) is
 	begin
 		carryflag <= '0';
+		temp <= "000000000";
 		case operation is
 		when "0000" => -- result = in0 + in1, flag = carry = Overflow
 			temp <= ('0' & in0) + ('0' & in1);

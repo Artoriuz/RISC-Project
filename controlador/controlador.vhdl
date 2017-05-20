@@ -14,7 +14,8 @@ entity controlador is
 		alucontrol : out std_logic_vector(3 downto 0);
 		datamem_write_enable : out std_logic;
 		pcounter_control: out std_logic_vector(1 downto 0);
-		zero_sign_in : in std_logic
+		zero_sign_in : in std_logic;
+		prev_instruction : in std_logic_vector(7 downto 0)
 	);
 end entity controlador;
 
@@ -77,7 +78,7 @@ architecture Behavioral of controlador is
 		end case;
 	end process;
 
-	sinais_de_controle : process (state, instruction)
+	sinais_de_controle : process (state, instruction, zero_sign_in, prev_instruction)
 	begin
 		case (state) is
 			when start =>
@@ -99,8 +100,8 @@ architecture Behavioral of controlador is
 				finished <= '1'; 
  				pcounter_control <= "01";
 				mux0select <= "011";
-				--MANDAR O VALOR QUE ESTÃ EM RY (O QUE SAI DO MUX2) COMO ENDEREÃ‡O EM DATAMEM
- 				case (instruction(3 downto 0)) is 
+				--MANDAR O VALOR EM RY (O QUE SAI DO MUX2) COMO ENDEREÇO EM DATAMEM
+ 				case (prev_instruction(3 downto 0)) is 
 					when "0000" =>
 						regload <= "10000000"; --Load em Reg00
 						mux2select <= "00";
@@ -156,7 +157,7 @@ architecture Behavioral of controlador is
  				pcounter_control <= "01";
 				--MANDAR A ENTRADA QUE DIZ EM QUAL POSICAO IREMOS ESCREVER O VALOR NA MEMORIA DE DADOS (Isso esta definido no switch case)
  				datamem_write_enable <= '1';
- 				case (instruction(3 downto 0)) is 
+ 				case (prev_instruction(3 downto 0)) is 
 					when "0000" =>
 						mux2select <= "00"; --mux2select indica qual o endereco de mem de destino
 						mux1select <= "00"; --mux1select indica o valor que ira para esse endereco
@@ -209,9 +210,9 @@ architecture Behavioral of controlador is
 			when MOV =>		
 				finished <= '1';
 				mux0select <= "001";
-				mux1select <= instruction(1 downto 0);
+				mux1select <= prev_instruction(1 downto 0);
 				pcounter_control <= "01";
-				case (instruction(3 downto 2)) is 
+				case (prev_instruction(3 downto 2)) is 
 					when "00" =>
 						regload <= "10000000"; --Load em Reg00
 					when "01" =>
@@ -225,7 +226,7 @@ architecture Behavioral of controlador is
 				finished <= '1';
 				mux0select <= "010";
 				pcounter_control <= "01";
-				case (instruction(3 downto 2)) is 
+				case (prev_instruction(3 downto 2)) is 
 					when "00" =>
 						regload <= "10000000"; --Load em Reg00
 					when "01" =>
@@ -240,7 +241,7 @@ architecture Behavioral of controlador is
 				mux0select <= "000";
 				alucontrol <= "0000";
 				pcounter_control <= "01";
-				case (instruction(3 downto 0)) is 
+				case (prev_instruction(3 downto 0)) is 
 					when "0000" =>
 						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
@@ -259,7 +260,7 @@ architecture Behavioral of controlador is
 						mux2select <= "11";
 					when "0100" =>
 						regload <= "01000011"; --Load em Reg00, Rcarryflag e Rzero
-						mux1select <= "10";
+						mux1select <= "01";
 						mux2select <= "00";
 					when "0101" =>
 						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
@@ -311,7 +312,7 @@ architecture Behavioral of controlador is
 				mux0select <= "000";
 				alucontrol <= "0001";
 				pcounter_control <= "01";
-				case (instruction(3 downto 0)) is 
+				case (prev_instruction(3 downto 0)) is 
 					when "0000" =>
 						regload <= "10000011"; --Load em Reg00, Rcarryflag e Rzero
 						mux1select <= "00";
@@ -330,7 +331,7 @@ architecture Behavioral of controlador is
 						mux2select <= "11";
 					when "0100" =>
 						regload <= "01000011"; --Load em Reg00, Rcarryflag e Rzero
-						mux1select <= "10";
+						mux1select <= "01";
 						mux2select <= "00";
 					when "0101" =>
 						regload <= "01000011"; --Load em Reg01, Rcarryflag e Rzero
@@ -382,7 +383,7 @@ architecture Behavioral of controlador is
 				alucontrol <="1000";
 				mux0select <= "000";
 				pcounter_control <= "01";
-				case (instruction(3 downto 0)) is 
+				case (prev_instruction(3 downto 0)) is 
 					when "0000" =>
 						regload <= "10000000"; --Load em Reg00
 						mux1select <= "00"; --Vai receber o shift
@@ -437,7 +438,7 @@ architecture Behavioral of controlador is
 				alucontrol <="1001";
 				mux0select <= "000";
 				pcounter_control <= "01";
-				case (instruction(3 downto 0)) is 
+				case (prev_instruction(3 downto 0)) is 
 					when "0000" =>
 						regload <= "10000000"; --Load em Reg00
 						mux1select <= "00"; --Vai receber o shift
@@ -496,7 +497,7 @@ architecture Behavioral of controlador is
 				finished <= '1';
 				regload <= "00000100"; --Regout
 				pcounter_control <= "01";
-				case (instruction(3 downto 2)) is 
+				case (prev_instruction(3 downto 2)) is 
 					when "00" =>
 						mux1select <= "00"; --Selecionando Reg00
 					when "01" =>
