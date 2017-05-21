@@ -1,5 +1,5 @@
 Flow report for microprocessador
-Sat May 20 13:01:11 2017
+Sun May 21 16:49:14 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat May 20 13:01:11 2017           ;
+; Flow Status                        ; Successful - Sun May 21 16:49:14 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 208                                             ;
-;     Total combinational functions  ; 179                                             ;
-;     Dedicated logic registers      ; 69                                              ;
-; Total registers                    ; 69                                              ;
+; Total logic elements               ; 266                                             ;
+;     Total combinational functions  ; 236                                             ;
+;     Dedicated logic registers      ; 74                                              ;
+; Total registers                    ; 74                                              ;
 ; Total pins                         ; 21                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,304                                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/20/2017 13:01:09 ;
+; Start date & time ; 05/21/2017 16:49:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; microprocessador    ;
 +-------------------+---------------------+
@@ -75,15 +75,18 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163683366975411.149529606906336       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163683366975411.149539614710140       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; MISC_FILE                           ; progmem.cmp                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; datamem.cmp                           ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
@@ -98,8 +101,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 541 MB              ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 542 MB              ; 00:00:02                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

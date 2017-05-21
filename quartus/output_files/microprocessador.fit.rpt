@@ -1,5 +1,5 @@
 Fitter report for microprocessador
-Fri May 19 17:01:27 2017
+Sun May 21 15:36:37 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -65,17 +65,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri May 19 17:01:27 2017           ;
+; Fitter Status                      ; Successful - Sun May 21 15:36:36 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 208 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 187 / 33,216 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 64 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 64                                              ;
+; Total logic elements               ; 205 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 183 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 69 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 69                                              ;
 ; Total pins                         ; 21 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,304 / 483,840 ( < 1 % )                       ;
@@ -151,8 +151,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 296 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 296 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 298 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 298 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -175,7 +175,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 293     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 295     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -191,46 +191,46 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 208 / 33,216 ( < 1 % )    ;
-;     -- Combinational with no register       ; 144                       ;
-;     -- Register only                        ; 21                        ;
-;     -- Combinational with a register        ; 43                        ;
+; Total logic elements                        ; 205 / 33,216 ( < 1 % )    ;
+;     -- Combinational with no register       ; 136                       ;
+;     -- Register only                        ; 22                        ;
+;     -- Combinational with a register        ; 47                        ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 99                        ;
-;     -- 3 input functions                    ; 67                        ;
+;     -- 4 input functions                    ; 106                       ;
+;     -- 3 input functions                    ; 56                        ;
 ;     -- <=2 input functions                  ; 21                        ;
-;     -- Register only                        ; 21                        ;
+;     -- Register only                        ; 22                        ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 151                       ;
+;     -- normal mode                          ; 147                       ;
 ;     -- arithmetic mode                      ; 36                        ;
 ;                                             ;                           ;
-; Total registers*                            ; 64 / 34,593 ( < 1 % )     ;
-;     -- Dedicated logic registers            ; 64 / 33,216 ( < 1 % )     ;
+; Total registers*                            ; 69 / 34,593 ( < 1 % )     ;
+;     -- Dedicated logic registers            ; 69 / 33,216 ( < 1 % )     ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )         ;
 ;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 15 / 2,076 ( < 1 % )      ;
+; Total LABs:  partially or completely used   ; 16 / 2,076 ( < 1 % )      ;
 ; Virtual pins                                ; 0                         ;
 ; I/O pins                                    ; 21 / 475 ( 4 % )          ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )            ;
 ;                                             ;                           ;
-; Global signals                              ; 6                         ;
+; Global signals                              ; 7                         ;
 ; M4Ks                                        ; 2 / 105 ( 2 % )           ;
 ; Total block memory bits                     ; 2,304 / 483,840 ( < 1 % ) ;
 ; Total block memory implementation bits      ; 9,216 / 483,840 ( 2 % )   ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )            ;
 ; PLLs                                        ; 0 / 4 ( 0 % )             ;
-; Global clocks                               ; 6 / 16 ( 38 % )           ;
+; Global clocks                               ; 7 / 16 ( 44 % )           ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )             ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )             ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%              ;
-; Peak interconnect usage (total/H/V)         ; 4% / 3% / 6%              ;
-; Maximum fan-out                             ; 87                        ;
-; Highest non-global fan-out                  ; 20                        ;
-; Total fan-out                               ; 907                       ;
-; Average fan-out                             ; 3.05                      ;
+; Peak interconnect usage (total/H/V)         ; 4% / 3% / 5%              ;
+; Maximum fan-out                             ; 70                        ;
+; Highest non-global fan-out                  ; 21                        ;
+; Total fan-out                               ; 935                       ;
+; Average fan-out                             ; 3.10                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -243,25 +243,25 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 208 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 144                   ; 0                              ;
-;     -- Register only                        ; 21                    ; 0                              ;
-;     -- Combinational with a register        ; 43                    ; 0                              ;
+; Total logic elements                        ; 205 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 136                   ; 0                              ;
+;     -- Register only                        ; 22                    ; 0                              ;
+;     -- Combinational with a register        ; 47                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 99                    ; 0                              ;
-;     -- 3 input functions                    ; 67                    ; 0                              ;
+;     -- 4 input functions                    ; 106                   ; 0                              ;
+;     -- 3 input functions                    ; 56                    ; 0                              ;
 ;     -- <=2 input functions                  ; 21                    ; 0                              ;
-;     -- Register only                        ; 21                    ; 0                              ;
+;     -- Register only                        ; 22                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 151                   ; 0                              ;
+;     -- normal mode                          ; 147                   ; 0                              ;
 ;     -- arithmetic mode                      ; 36                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 64                    ; 0                              ;
-;     -- Dedicated logic registers            ; 64 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
+; Total registers                             ; 69                    ; 0                              ;
+;     -- Dedicated logic registers            ; 69 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 15 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 16 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 21                    ; 0                              ;
@@ -269,7 +269,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; Total memory bits                           ; 2304                  ; 0                              ;
 ; Total RAM block bits                        ; 9216                  ; 0                              ;
 ; M4K                                         ; 2 / 105 ( 1 % )       ; 0 / 105 ( 0 % )                ;
-; Clock control block                         ; 6 / 20 ( 30 % )       ; 0 / 20 ( 0 % )                 ;
+; Clock control block                         ; 7 / 20 ( 35 % )       ; 0 / 20 ( 0 % )                 ;
 ;                                             ;                       ;                                ;
 ; Connections                                 ;                       ;                                ;
 ;     -- Input Connections                    ; 0                     ; 0                              ;
@@ -278,8 +278,8 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 962                   ; 0                              ;
-;     -- Registered Connections               ; 167                   ; 0                              ;
+;     -- Total Connections                    ; 979                   ; 0                              ;
+;     -- Registered Connections               ; 175                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -312,15 +312,15 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; Name            ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +-----------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; clk             ; P2    ; 1        ; 0            ; 18           ; 2           ; 11                    ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; execute         ; E12   ; 3        ; 24           ; 36           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; execute         ; B14   ; 4        ; 33           ; 36           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; externaldata[0] ; D13   ; 3        ; 31           ; 36           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[1] ; AA7   ; 1        ; 0            ; 2            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[2] ; AF13  ; 8        ; 31           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[3] ; W3    ; 1        ; 0            ; 9            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[4] ; D12   ; 3        ; 24           ; 36           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[5] ; H16   ; 4        ; 42           ; 36           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[6] ; V10   ; 8        ; 5            ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; externaldata[7] ; W25   ; 6        ; 65           ; 10           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[1] ; G6    ; 2        ; 0            ; 33           ; 4           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[2] ; E15   ; 4        ; 40           ; 36           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[3] ; AE15  ; 7        ; 35           ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[4] ; AB12  ; 8        ; 24           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[5] ; AE4   ; 8        ; 1            ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[6] ; D21   ; 4        ; 63           ; 36           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; externaldata[7] ; V1    ; 1        ; 0            ; 12           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; reset           ; C13   ; 3        ; 31           ; 36           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +-----------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
@@ -330,16 +330,16 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 +-----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +-----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; carryflag ; C12   ; 3        ; 29           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; finished  ; J14   ; 3        ; 24           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; carryflag ; J10   ; 3        ; 27           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; finished  ; B12   ; 3        ; 29           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 ; saida[0]  ; J11   ; 3        ; 27           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[1]  ; B14   ; 4        ; 33           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[2]  ; J10   ; 3        ; 27           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[3]  ; B12   ; 3        ; 29           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[4]  ; F12   ; 3        ; 27           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[5]  ; C11   ; 3        ; 29           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[6]  ; B11   ; 3        ; 29           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; saida[7]  ; G12   ; 3        ; 27           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[1]  ; C11   ; 3        ; 29           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[2]  ; G12   ; 3        ; 27           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[3]  ; B11   ; 3        ; 29           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[4]  ; V11   ; 8        ; 29           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[5]  ; F12   ; 3        ; 27           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[6]  ; C12   ; 3        ; 29           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; saida[7]  ; U12   ; 8        ; 29           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +-----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -348,14 +348,14 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 3 / 64 ( 5 % )   ; 3.3V          ; --           ;
-; 2        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
-; 3        ; 13 / 56 ( 23 % ) ; 3.3V          ; --           ;
-; 4        ; 2 / 58 ( 3 % )   ; 3.3V          ; --           ;
+; 1        ; 2 / 64 ( 3 % )   ; 3.3V          ; --           ;
+; 2        ; 3 / 59 ( 5 % )   ; 3.3V          ; --           ;
+; 3        ; 10 / 56 ( 18 % ) ; 3.3V          ; --           ;
+; 4        ; 3 / 58 ( 5 % )   ; 3.3V          ; --           ;
 ; 5        ; 0 / 65 ( 0 % )   ; 3.3V          ; --           ;
-; 6        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
-; 7        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
-; 8        ; 2 / 56 ( 4 % )   ; 3.3V          ; --           ;
+; 6        ; 1 / 59 ( 2 % )   ; 3.3V          ; --           ;
+; 7        ; 1 / 58 ( 2 % )   ; 3.3V          ; --           ;
+; 8        ; 4 / 56 ( 7 % )   ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -394,7 +394,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; AA4      ; 116        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA5      ; 120        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA6      ; 130        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; AA7      ; 129        ; 1        ; externaldata[1]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA7      ; 129        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA8      ;            ;          ; VCCA_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AA9      ; 152        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA10     ; 153        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -425,7 +425,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; AB9      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB10     ; 154        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB11     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AB12     ; 171        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AB12     ; 171        ; 8        ; externaldata[4]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB13     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB14     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB15     ; 198        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -495,7 +495,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; AE1      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE2      ; 124        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE3      ; 125        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; AE4      ; 131        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE4      ; 131        ; 8        ; externaldata[5]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AE5      ; 137        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE6      ; 150        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE7      ; 157        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -506,7 +506,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; AE12     ; 182        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE13     ; 183        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE14     ; 188        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AE15     ; 189        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE15     ; 189        ; 7        ; externaldata[3]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AE16     ; 200        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE17     ; 206        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE18     ; 212        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -529,7 +529,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; AF10     ; 170        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF11     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF12     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AF13     ; 184        ; 8        ; externaldata[2]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF13     ; 184        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF14     ; 187        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AF15     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AF16     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -552,10 +552,10 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; B8       ; 458        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B9       ; 452        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B10      ; 448        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B11      ; 435        ; 3        ; saida[6]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B12      ; 433        ; 3        ; saida[3]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B11      ; 435        ; 3        ; saida[3]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 433        ; 3        ; finished                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ; 429        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; B14      ; 428        ; 4        ; saida[1]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B14      ; 428        ; 4        ; execute                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B15      ; 420        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B16      ; 419        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B17      ; 411        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -578,8 +578,8 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; C8       ; 463        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C9       ; 459        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C11      ; 436        ; 3        ; saida[5]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; C12      ; 434        ; 3        ; carryflag                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 436        ; 3        ; saida[1]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C12      ; 434        ; 3        ; saida[6]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C13      ; 431        ; 3        ; reset                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -605,7 +605,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; D9       ; 460        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D10      ; 449        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D11      ; 445        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; D12      ; 443        ; 3        ; externaldata[4]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D12      ; 443        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D13      ; 432        ; 3        ; externaldata[0]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D14      ; 426        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D15      ; 417        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -614,7 +614,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; D18      ; 396        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D19      ; 392        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D20      ; 387        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D21      ; 376        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; D21      ; 376        ; 4        ; externaldata[6]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D22      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; D23      ; 369        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D24      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -631,10 +631,10 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; E9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E10      ; 453        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E12      ; 444        ; 3        ; execute                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E12      ; 444        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E13      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; E15      ; 416        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E15      ; 416        ; 4        ; externaldata[2]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E16      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E17      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E18      ; 395        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -657,7 +657,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; F9       ; 470        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F10      ; 462        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F11      ; 454        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F12      ; 440        ; 3        ; saida[4]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F12      ; 440        ; 3        ; saida[5]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F13      ; 423        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F14      ; 425        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F15      ; 409        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -677,13 +677,13 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; G3       ; 24         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G4       ; 23         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G5       ; 8          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; G6       ; 9          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; G6       ; 9          ; 2        ; externaldata[1]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G7       ;            ;          ; GND_PLL3                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G8       ;            ;          ; VCCA_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G9       ; 471        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G10      ; 461        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G11      ; 446        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G12      ; 439        ; 3        ; saida[7]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G12      ; 439        ; 3        ; saida[2]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G13      ; 422        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G14      ; 424        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G15      ; 410        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -713,7 +713,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; H13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H15      ; 414        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H16      ; 413        ; 4        ; externaldata[5]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H16      ; 413        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H17      ; 400        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; H19      ; 335        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -733,11 +733,11 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; J7       ; 17         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J8       ; 16         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J9       ; 475        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J10      ; 438        ; 3        ; saida[2]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J10      ; 438        ; 3        ; carryflag                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J11      ; 437        ; 3        ; saida[0]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J12      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J13      ; 442        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J14      ; 441        ; 3        ; finished                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J14      ; 441        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J15      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J16      ; 385        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J17      ; 399        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -943,7 +943,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; U9       ; 86         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U10      ; 87         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; U12      ; 178        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; U12      ; 178        ; 8        ; saida[7]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; U13      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U14      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U15      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -958,7 +958,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; U24      ; 283        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U25      ; 285        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U26      ; 286        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V1       ; 90         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; V1       ; 90         ; 1        ; externaldata[7]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V2       ; 91         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V3       ; 95         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V4       ; 94         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -967,8 +967,8 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; V7       ; 112        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V8       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; V9       ; 142        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; V10      ; 141        ; 8        ; externaldata[6]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; V11      ; 177        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; V10      ; 141        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; V11      ; 177        ; 8        ; saida[4]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; V12      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; V13      ; 176        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V14      ; 175        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -986,7 +986,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; V26      ; 278        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W1       ; 97         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W2       ; 96         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W3       ; 102        ; 1        ; externaldata[3]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W3       ; 102        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W4       ; 101        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W5       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W6       ; 113        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -1008,7 +1008,7 @@ The pin-out file can be found in E:/GitHub Repos/RISC-Project/quartus/output_fil
 ; W22      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W23      ; 272        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W24      ; 271        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W25      ; 273        ; 6        ; externaldata[7]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W25      ; 273        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W26      ; 274        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y1       ; 103        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y2       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1082,26 +1082,28 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                  ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------+--------------+
-; |microprocessador                            ; 208 (1)     ; 64 (0)                    ; 0 (0)         ; 2304        ; 2    ; 0            ; 0       ; 0         ; 21   ; 0            ; 144 (1)      ; 21 (0)            ; 43 (0)           ; |microprocessador                                                                                                    ; work         ;
-;    |controlador:controlador0|                ; 49 (49)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (31)      ; 0 (0)             ; 18 (18)          ; |microprocessador|controlador:controlador0                                                                           ; work         ;
-;    |datapath:datapath0|                      ; 161 (0)     ; 49 (0)                    ; 0 (0)         ; 2304        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 112 (0)      ; 21 (0)            ; 28 (0)           ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
-;       |ALU:ALU0|                             ; 58 (58)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (57)      ; 0 (0)             ; 1 (1)            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
+; |microprocessador                            ; 205 (1)     ; 69 (0)                    ; 0 (0)         ; 2304        ; 2    ; 0            ; 0       ; 0         ; 21   ; 0            ; 136 (1)      ; 22 (0)            ; 47 (0)           ; |microprocessador                                                                                                    ; work         ;
+;    |controlador:controlador0|                ; 51 (51)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 1 (1)             ; 20 (20)          ; |microprocessador|controlador:controlador0                                                                           ; work         ;
+;    |datapath:datapath0|                      ; 159 (0)     ; 54 (0)                    ; 0 (0)         ; 2304        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 105 (0)      ; 21 (0)            ; 33 (0)           ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
+;       |ALU:ALU0|                             ; 53 (53)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 50 (50)      ; 0 (0)             ; 3 (3)            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
 ;       |datamem:datamem0|                     ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|datamem:datamem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_luc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated ; work         ;
-;       |mux4to1:mux1|                         ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 4 (4)            ; |microprocessador|datapath:datapath0|mux4to1:mux1                                                                    ; work         ;
+;             |altsyncram_cuc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated ; work         ;
+;       |mux4to1:mux1|                         ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 8 (8)            ; |microprocessador|datapath:datapath0|mux4to1:mux1                                                                    ; work         ;
 ;       |mux4to1:mux2|                         ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 6 (6)            ; |microprocessador|datapath:datapath0|mux4to1:mux2                                                                    ; work         ;
-;       |mux5to1:mux0|                         ; 37 (37)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 5 (5)            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
+;       |mux5to1:mux0|                         ; 38 (38)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 36 (36)      ; 0 (0)             ; 2 (2)            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
 ;       |progmem:progmem0|                     ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|progmem:progmem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_n2d1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated ; work         ;
-;       |programcounter:programcounter0|       ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |microprocessador|datapath:datapath0|programcounter:programcounter0                                                  ; work         ;
-;       |register1:regcarryflag|               ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |microprocessador|datapath:datapath0|register1:regcarryflag                                                          ; work         ;
-;       |register8:reg00|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 3 (3)            ; |microprocessador|datapath:datapath0|register8:reg00                                                                 ; work         ;
+;             |altsyncram_51d1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated ; work         ;
+;       |programcounter:programcounter0|       ; 9 (9)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; |microprocessador|datapath:datapath0|programcounter:programcounter0                                                  ; work         ;
+;       |register1:regcarryflag|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |microprocessador|datapath:datapath0|register1:regcarryflag                                                          ; work         ;
+;       |register1:regzero|                    ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |microprocessador|datapath:datapath0|register1:regzero                                                               ; work         ;
+;       |register8:reg00|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |microprocessador|datapath:datapath0|register8:reg00                                                                 ; work         ;
 ;       |register8:reg01|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 4 (4)            ; |microprocessador|datapath:datapath0|register8:reg01                                                                 ; work         ;
-;       |register8:reg10|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 4 (4)            ; |microprocessador|datapath:datapath0|register8:reg10                                                                 ; work         ;
-;       |register8:reg11|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 6 (6)            ; |microprocessador|datapath:datapath0|register8:reg11                                                                 ; work         ;
-;       |register8:reout|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 2 (2)            ; |microprocessador|datapath:datapath0|register8:reout                                                                 ; work         ;
+;       |register8:reg10|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 3 (3)            ; |microprocessador|datapath:datapath0|register8:reg10                                                                 ; work         ;
+;       |register8:reg11|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 3 (3)            ; |microprocessador|datapath:datapath0|register8:reg11                                                                 ; work         ;
+;       |register8:reg_prev_isnt|              ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 3 (3)            ; |microprocessador|datapath:datapath0|register8:reg_prev_isnt                                                         ; work         ;
+;       |register8:reout|                      ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 3 (3)            ; |microprocessador|datapath:datapath0|register8:reout                                                                 ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1114,7 +1116,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; externaldata[0] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; externaldata[1] ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; externaldata[2] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; externaldata[3] ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; externaldata[3] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; externaldata[4] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; externaldata[5] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; externaldata[6] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
@@ -1129,9 +1131,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; saida[6]        ; Output   ; --            ; --            ; --                    ; --  ;
 ; saida[7]        ; Output   ; --            ; --            ; --                    ; --  ;
 ; carryflag       ; Output   ; --            ; --            ; --                    ; --  ;
+; execute         ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; clk             ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; reset           ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; execute         ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 +-----------------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1148,51 +1150,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; externaldata[5]                             ;                   ;         ;
 ; externaldata[6]                             ;                   ;         ;
 ; externaldata[7]                             ;                   ;         ;
+; execute                                     ;                   ;         ;
+;      - controlador:controlador0|Selector4~0 ; 0                 ; 6       ;
 ; clk                                         ;                   ;         ;
 ; reset                                       ;                   ;         ;
-; execute                                     ;                   ;         ;
-;      - controlador:controlador0|Selector2~0 ; 1                 ; 6       ;
 +---------------------------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                            ;
-+-----------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                          ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk                                           ; PIN_P2             ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk                                           ; PIN_P2             ; 56      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; controlador:controlador0|Mux15~0              ; LCCOMB_X28_Y28_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|Mux15~1              ; LCCOMB_X28_Y28_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|Mux15~2              ; LCCOMB_X28_Y28_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|Selector9~0          ; LCCOMB_X28_Y28_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|WideOr10~0           ; LCCOMB_X27_Y28_N0  ; 2       ; Latch enable ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; controlador:controlador0|WideOr12~2           ; LCCOMB_X28_Y28_N10 ; 2       ; Latch enable ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; controlador:controlador0|WideOr2~0            ; LCCOMB_X25_Y28_N26 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|WideOr4~0            ; LCCOMB_X25_Y28_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|WideOr6              ; LCCOMB_X27_Y28_N18 ; 3       ; Latch enable ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; controlador:controlador0|WideOr8~0            ; LCCOMB_X28_Y28_N16 ; 6       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|datamem_write_enable ; LCCOMB_X27_Y28_N2  ; 2       ; Write enable ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|state.JMP            ; LCFF_X27_Y28_N23   ; 9       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|state.decode         ; LCFF_X25_Y28_N29   ; 16      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; controlador:controlador0|state.instOUT        ; LCFF_X27_Y28_N25   ; 12      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; datapath:datapath0|mux5to1:mux0|Mux1~1        ; LCCOMB_X29_Y28_N30 ; 9       ; Latch enable ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; reset                                         ; PIN_C13            ; 64      ; Async. clear ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-+-----------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                           ;
++-----------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                                            ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; clk                                                             ; PIN_P2             ; 11      ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; clk                                                             ; PIN_P2             ; 61      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; controlador:controlador0|Selector13~0                           ; LCCOMB_X31_Y20_N18 ; 8       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|WideOr10~0                             ; LCCOMB_X32_Y21_N0  ; 2       ; Latch enable              ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; controlador:controlador0|WideOr12~0                             ; LCCOMB_X32_Y21_N4  ; 2       ; Latch enable              ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; controlador:controlador0|WideOr2~0                              ; LCCOMB_X32_Y20_N30 ; 2       ; Latch enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|WideOr6                                ; LCCOMB_X31_Y20_N8  ; 3       ; Latch enable              ; yes    ; Global Clock         ; GCLK12           ; --                        ;
+; controlador:controlador0|WideOr8~0                              ; LCCOMB_X32_Y21_N22 ; 2       ; Latch enable              ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; controlador:controlador0|alucontrol[3]                          ; LCCOMB_X28_Y19_N0  ; 21      ; Latch enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|datamem_write_enable                   ; LCCOMB_X32_Y20_N20 ; 2       ; Write enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|regload[1]~2                           ; LCCOMB_X28_Y20_N28 ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|regload[4]                             ; LCCOMB_X32_Y20_N18 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|regload[5]                             ; LCCOMB_X32_Y20_N16 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|regload[6]                             ; LCCOMB_X32_Y20_N8  ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|regload[7]                             ; LCCOMB_X31_Y20_N30 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|state.busca                            ; LCFF_X31_Y20_N21   ; 4       ; Latch enable              ; yes    ; Global Clock         ; GCLK14           ; --                        ;
+; controlador:controlador0|state.decode                           ; LCFF_X32_Y20_N15   ; 16      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; controlador:controlador0|state.instOUT                          ; LCFF_X32_Y20_N1    ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; datapath:datapath0|programcounter:programcounter0|current[1]~10 ; LCCOMB_X31_Y20_N26 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; reset                                                           ; PIN_C13            ; 69      ; Async. clear              ; yes    ; Global Clock         ; GCLK11           ; --                        ;
++-----------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                 ;
-+----------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
-; Name                                   ; Location           ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
-; clk                                    ; PIN_P2             ; 56      ; Global Clock         ; GCLK3            ; --                        ;
-; controlador:controlador0|WideOr10~0    ; LCCOMB_X27_Y28_N0  ; 2       ; Global Clock         ; GCLK10           ; --                        ;
-; controlador:controlador0|WideOr12~2    ; LCCOMB_X28_Y28_N10 ; 2       ; Global Clock         ; GCLK9            ; --                        ;
-; controlador:controlador0|WideOr6       ; LCCOMB_X27_Y28_N18 ; 3       ; Global Clock         ; GCLK2            ; --                        ;
-; datapath:datapath0|mux5to1:mux0|Mux1~1 ; LCCOMB_X29_Y28_N30 ; 9       ; Global Clock         ; GCLK8            ; --                        ;
-; reset                                  ; PIN_C13            ; 64      ; Global Clock         ; GCLK11           ; --                        ;
-+----------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                               ;
++--------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
+; Name                                 ; Location           ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
+; clk                                  ; PIN_P2             ; 61      ; Global Clock         ; GCLK3            ; --                        ;
+; controlador:controlador0|WideOr10~0  ; LCCOMB_X32_Y21_N0  ; 2       ; Global Clock         ; GCLK10           ; --                        ;
+; controlador:controlador0|WideOr12~0  ; LCCOMB_X32_Y21_N4  ; 2       ; Global Clock         ; GCLK9            ; --                        ;
+; controlador:controlador0|WideOr6     ; LCCOMB_X31_Y20_N8  ; 3       ; Global Clock         ; GCLK12           ; --                        ;
+; controlador:controlador0|WideOr8~0   ; LCCOMB_X32_Y21_N22 ; 2       ; Global Clock         ; GCLK8            ; --                        ;
+; controlador:controlador0|state.busca ; LCFF_X31_Y20_N21   ; 4       ; Global Clock         ; GCLK14           ; --                        ;
+; reset                                ; PIN_C13            ; 69      ; Global Clock         ; GCLK11           ; --                        ;
++--------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -1200,21 +1205,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                      ; Fan-Out ;
 +-----------------------------------------------------------------------------------------------------------+---------+
-; controlador:controlador0|alucontrol[3]                                                                    ; 20      ;
-; datapath:datapath0|mux5to1:mux0|Mux1~1                                                                    ; 16      ;
+; controlador:controlador0|alucontrol[0]                                                                    ; 21      ;
+; controlador:controlador0|alucontrol[3]                                                                    ; 21      ;
 ; controlador:controlador0|state.decode                                                                     ; 16      ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[6] ; 15      ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[7] ; 15      ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[4] ; 14      ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[5] ; 14      ;
-; controlador:controlador0|alucontrol[0]                                                                    ; 13      ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[6] ; 15      ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[7] ; 15      ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[4] ; 14      ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[5] ; 14      ;
 ; controlador:controlador0|mux2select[0]                                                                    ; 13      ;
 ; controlador:controlador0|mux2select[1]                                                                    ; 13      ;
 ; controlador:controlador0|mux1select[0]                                                                    ; 13      ;
 ; controlador:controlador0|mux1select[1]                                                                    ; 13      ;
+; datapath:datapath0|mux5to1:mux0|Mux7~2                                                                    ; 12      ;
+; datapath:datapath0|mux5to1:mux0|Mux7~1                                                                    ; 12      ;
 ; controlador:controlador0|state.instOUT                                                                    ; 12      ;
 ; clk                                                                                                       ; 10      ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[2] ; 10      ;
+; controlador:controlador0|regload[4]                                                                       ; 9       ;
+; controlador:controlador0|regload[7]                                                                       ; 9       ;
+; controlador:controlador0|regload[6]                                                                       ; 9       ;
+; controlador:controlador0|regload[5]                                                                       ; 9       ;
 ; datapath:datapath0|mux4to1:mux1|Mux0~1                                                                    ; 9       ;
 ; datapath:datapath0|mux4to1:mux1|Mux1~1                                                                    ; 9       ;
 ; datapath:datapath0|mux4to1:mux1|Mux2~1                                                                    ; 9       ;
@@ -1223,27 +1232,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|mux4to1:mux1|Mux5~1                                                                    ; 9       ;
 ; datapath:datapath0|mux4to1:mux1|Mux6~1                                                                    ; 9       ;
 ; datapath:datapath0|mux4to1:mux1|Mux7~1                                                                    ; 9       ;
-; controlador:controlador0|state.JMP                                                                        ; 9       ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[3] ; 9       ;
 ; ~GND                                                                                                      ; 8       ;
-; controlador:controlador0|WideOr4~0                                                                        ; 8       ;
-; controlador:controlador0|Mux15~2                                                                          ; 8       ;
-; controlador:controlador0|Selector9~0                                                                      ; 8       ;
-; controlador:controlador0|Mux15~1                                                                          ; 8       ;
-; controlador:controlador0|Mux15~0                                                                          ; 8       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~4                                                                    ; 8       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~3                                                                    ; 8       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~2                                                                    ; 8       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~0                                                                    ; 8       ;
-; controlador:controlador0|state.ST                                                                         ; 8       ;
-; controlador:controlador0|WideOr8~0                                                                        ; 6       ;
+; datapath:datapath0|programcounter:programcounter0|current[1]~10                                           ; 8       ;
+; controlador:controlador0|Selector13~0                                                                     ; 8       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~7                                                                    ; 8       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~6                                                                    ; 8       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~0                                                                    ; 8       ;
+; controlador:controlador0|state.instIN                                                                     ; 7       ;
+; datapath:datapath0|register8:reg_prev_isnt|out0[2]                                                        ; 6       ;
+; datapath:datapath0|register8:reg_prev_isnt|out0[3]                                                        ; 6       ;
+; controlador:controlador0|state.ST                                                                         ; 6       ;
+; controlador:controlador0|WideOr0~0                                                                        ; 5       ;
 ; datapath:datapath0|mux4to1:mux2|Mux7~1                                                                    ; 5       ;
 ; datapath:datapath0|mux4to1:mux2|Mux6~1                                                                    ; 5       ;
 ; datapath:datapath0|mux4to1:mux2|Mux5~1                                                                    ; 5       ;
 ; datapath:datapath0|mux4to1:mux2|Mux4~1                                                                    ; 5       ;
 ; datapath:datapath0|mux4to1:mux2|Mux3~1                                                                    ; 5       ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[1] ; 5       ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|q_a[0] ; 5       ;
 ; controlador:controlador0|mux0select[2]                                                                    ; 4       ;
 ; controlador:controlador0|mux0select[1]                                                                    ; 4       ;
 ; datapath:datapath0|mux5to1:mux0|Mux0                                                                      ; 4       ;
@@ -1253,31 +1257,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|mux5to1:mux0|Mux4                                                                      ; 4       ;
 ; datapath:datapath0|mux5to1:mux0|Mux5                                                                      ; 4       ;
 ; datapath:datapath0|mux5to1:mux0|Mux6                                                                      ; 4       ;
-; controlador:controlador0|WideOr0~0                                                                        ; 4       ;
 ; datapath:datapath0|mux5to1:mux0|Mux7                                                                      ; 4       ;
+; controlador:controlador0|regload[1]~2                                                                     ; 4       ;
 ; datapath:datapath0|mux4to1:mux2|Mux2~1                                                                    ; 4       ;
 ; datapath:datapath0|mux4to1:mux2|Mux1~1                                                                    ; 4       ;
 ; datapath:datapath0|mux4to1:mux2|Mux0~1                                                                    ; 4       ;
-; controlador:controlador0|state.SHR                                                                        ; 4       ;
-; controlador:controlador0|state.MOV                                                                        ; 4       ;
 ; controlador:controlador0|state.SUB                                                                        ; 4       ;
-; datapath:datapath0|ALU:ALU0|temp[7]                                                                       ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[6]                                                                       ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[5]                                                                       ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[4]                                                                       ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[3]                                                                       ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[2]                                                                       ; 3       ;
 ; controlador:controlador0|mux0select[0]                                                                    ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[1]                                                                       ; 3       ;
-; datapath:datapath0|ALU:ALU0|temp[8]                                                                       ; 3       ;
-; controlador:controlador0|WideOr13~0                                                                       ; 3       ;
-; controlador:controlador0|state.busca                                                                      ; 3       ;
+; controlador:controlador0|WideOr8~0                                                                        ; 3       ;
 ; controlador:controlador0|state.start                                                                      ; 3       ;
-; controlador:controlador0|state.instIN                                                                     ; 3       ;
-; controlador:controlador0|state.SHL                                                                        ; 3       ;
+; controlador:controlador0|state.busca                                                                      ; 3       ;
+; controlador:controlador0|state.JZ                                                                         ; 3       ;
+; controlador:controlador0|state.SHR                                                                        ; 3       ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[1] ; 3       ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[2] ; 3       ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[3] ; 3       ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|q_a[0] ; 3       ;
 ; controlador:controlador0|state.ADD                                                                        ; 3       ;
+; datapath:datapath0|ALU:ALU0|zero_sign                                                                     ; 2       ;
 ; controlador:controlador0|datamem_write_enable                                                             ; 2       ;
-; datapath:datapath0|ALU:ALU0|temp[0]                                                                       ; 2       ;
+; controlador:controlador0|WideOr2~0                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux2~1                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux3~1                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux4~1                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux5~1                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux6~1                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux7~1                                                                        ; 2       ;
+; datapath:datapath0|register8:reg_prev_isnt|out0[0]                                                        ; 2       ;
+; datapath:datapath0|register8:reg_prev_isnt|out0[1]                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux8~1                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Mux1~0                                                                        ; 2       ;
 ; datapath:datapath0|register8:reg11|out0[7]                                                                ; 2       ;
 ; datapath:datapath0|register8:reg00|out0[7]                                                                ; 2       ;
 ; datapath:datapath0|register8:reg10|out0[7]                                                                ; 2       ;
@@ -1310,11 +1319,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|register8:reg00|out0[0]                                                                ; 2       ;
 ; datapath:datapath0|register8:reg01|out0[0]                                                                ; 2       ;
 ; datapath:datapath0|register8:reg10|out0[0]                                                                ; 2       ;
-; controlador:controlador0|Selector2~0                                                                      ; 2       ;
-; datapath:datapath0|register1:regcarryflag|out0                                                            ; 2       ;
-; controlador:controlador0|WideOr1~0                                                                        ; 2       ;
-; controlador:controlador0|state.LD                                                                         ; 2       ;
-; controlador:controlador0|state.MVI                                                                        ; 2       ;
+; controlador:controlador0|Selector4~0                                                                      ; 2       ;
+; controlador:controlador0|state.JMP                                                                        ; 2       ;
+; controlador:controlador0|state.SHL                                                                        ; 2       ;
+; controlador:controlador0|state.MOV                                                                        ; 2       ;
 ; datapath:datapath0|programcounter:programcounter0|current[7]                                              ; 2       ;
 ; datapath:datapath0|programcounter:programcounter0|current[6]                                              ; 2       ;
 ; datapath:datapath0|programcounter:programcounter0|current[5]                                              ; 2       ;
@@ -1323,75 +1331,79 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|programcounter:programcounter0|current[2]                                              ; 2       ;
 ; datapath:datapath0|programcounter:programcounter0|current[1]                                              ; 2       ;
 ; datapath:datapath0|programcounter:programcounter0|current[0]                                              ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~16                                                                       ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~14                                                                       ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~12                                                                       ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~10                                                                       ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~8                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~6                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~4                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~2                                                                        ; 2       ;
+; datapath:datapath0|ALU:ALU0|Add0~0                                                                        ; 2       ;
 ; datapath:datapath0|ALU:ALU0|LessThan0~14                                                                  ; 2       ;
 ; controlador:controlador0|state.start~feeder                                                               ; 1       ;
 ; execute                                                                                                   ; 1       ;
+; datapath:datapath0|ALU:ALU0|Equal0~2                                                                      ; 1       ;
+; datapath:datapath0|ALU:ALU0|Equal0~1                                                                      ; 1       ;
+; datapath:datapath0|ALU:ALU0|Equal0~0                                                                      ; 1       ;
 ; controlador:controlador0|Mux7~11                                                                          ; 1       ;
 ; controlador:controlador0|Mux7~10                                                                          ; 1       ;
-; controlador:controlador0|WideOr2~0                                                                        ; 1       ;
 ; controlador:controlador0|Mux7~9                                                                           ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~31                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~30                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~29                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~28                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~27                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~26                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~25                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~24                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~23                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~22                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~21                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~20                                                                       ; 1       ;
 ; controlador:controlador0|Mux7~8                                                                           ; 1       ;
 ; controlador:controlador0|Mux7~7                                                                           ; 1       ;
+; controlador:controlador0|Mux14~2                                                                          ; 1       ;
+; controlador:controlador0|Selector24~0                                                                     ; 1       ;
+; controlador:controlador0|Mux14~1                                                                          ; 1       ;
 ; controlador:controlador0|Mux7~6                                                                           ; 1       ;
 ; controlador:controlador0|Mux7~5                                                                           ; 1       ;
 ; controlador:controlador0|Mux7~4                                                                           ; 1       ;
 ; controlador:controlador0|Mux7~3                                                                           ; 1       ;
+; controlador:controlador0|Mux14~0                                                                          ; 1       ;
 ; controlador:controlador0|WideOr9                                                                          ; 1       ;
-; datapath:datapath0|ALU:ALU0|Mux11~0                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~19                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~18                                                                       ; 1       ;
 ; controlador:controlador0|WideOr8                                                                          ; 1       ;
+; datapath:datapath0|register1:regzero|out0                                                                 ; 1       ;
 ; controlador:controlador0|Mux7~2                                                                           ; 1       ;
 ; controlador:controlador0|Mux7~1                                                                           ; 1       ;
-; controlador:controlador0|WideOr13~1                                                                       ; 1       ;
+; controlador:controlador0|alucontrol~1                                                                     ; 1       ;
 ; controlador:controlador0|alucontrol~0                                                                     ; 1       ;
-; datapath:datapath0|ALU:ALU0|Mux20~0                                                                       ; 1       ;
+; controlador:controlador0|Selector5~0                                                                      ; 1       ;
 ; controlador:controlador0|Selector3~0                                                                      ; 1       ;
-; controlador:controlador0|Selector1~0                                                                      ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux0~2                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux0~1                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux0~0                                                                    ; 1       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~7                                                                    ; 1       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~6                                                                    ; 1       ;
-; datapath:datapath0|mux5to1:mux0|Mux1~5                                                                    ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux1~2                                                                    ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux1~1                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux2~0                                                                        ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux1~0                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux2~2                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux2~1                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux3~0                                                                        ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux2~0                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux3~2                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux3~1                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux4~0                                                                        ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux3~0                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux4~2                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux4~1                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux5~0                                                                        ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux4~0                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux5~2                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux5~1                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux6~0                                                                        ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux5~0                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux6~2                                                                    ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux6~1                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux7~0                                                                        ; 1       ;
 ; datapath:datapath0|mux5to1:mux0|Mux6~0                                                                    ; 1       ;
 ; controlador:controlador0|Mux7~0                                                                           ; 1       ;
-; controlador:controlador0|Selector6~1                                                                      ; 1       ;
-; controlador:controlador0|Selector6~0                                                                      ; 1       ;
-; controlador:controlador0|WideOr6~0                                                                        ; 1       ;
-; controlador:controlador0|Selector5~1                                                                      ; 1       ;
-; controlador:controlador0|Selector5~0                                                                      ; 1       ;
-; datapath:datapath0|mux5to1:mux0|Mux7~2                                                                    ; 1       ;
-; datapath:datapath0|mux5to1:mux0|Mux7~1                                                                    ; 1       ;
-; datapath:datapath0|mux5to1:mux0|Mux7~0                                                                    ; 1       ;
-; datapath:datapath0|register1:regcarryflag|out0~1                                                          ; 1       ;
-; datapath:datapath0|register1:regcarryflag|out0~0                                                          ; 1       ;
+; controlador:controlador0|Selector8~0                                                                      ; 1       ;
+; controlador:controlador0|Selector7~0                                                                      ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~8                                                                    ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~5                                                                    ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~4                                                                    ; 1       ;
+; datapath:datapath0|mux5to1:mux0|Mux7~3                                                                    ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux8~0                                                                        ; 1       ;
+; datapath:datapath0|ALU:ALU0|Mux18~0                                                                       ; 1       ;
 ; datapath:datapath0|mux4to1:mux2|Mux7~0                                                                    ; 1       ;
 ; datapath:datapath0|mux4to1:mux2|Mux6~0                                                                    ; 1       ;
 ; datapath:datapath0|mux4to1:mux2|Mux5~0                                                                    ; 1       ;
@@ -1408,7 +1420,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|mux4to1:mux1|Mux5~0                                                                    ; 1       ;
 ; datapath:datapath0|mux4to1:mux1|Mux6~0                                                                    ; 1       ;
 ; datapath:datapath0|mux4to1:mux1|Mux7~0                                                                    ; 1       ;
-; controlador:controlador0|Selector2~1                                                                      ; 1       ;
+; controlador:controlador0|Selector4~1                                                                      ; 1       ;
 ; datapath:datapath0|register8:reout|out0[7]                                                                ; 1       ;
 ; datapath:datapath0|register8:reout|out0[6]                                                                ; 1       ;
 ; datapath:datapath0|register8:reout|out0[5]                                                                ; 1       ;
@@ -1417,41 +1429,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|register8:reout|out0[2]                                                                ; 1       ;
 ; datapath:datapath0|register8:reout|out0[1]                                                                ; 1       ;
 ; datapath:datapath0|register8:reout|out0[0]                                                                ; 1       ;
-; controlador:controlador0|state.JZ                                                                         ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[7]~22                                           ; 1       ;
+; controlador:controlador0|WideOr1                                                                          ; 1       ;
+; controlador:controlador0|state.MVI                                                                        ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[7]~23                                           ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[6]~22                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[6]~21                                           ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[6]~20                                           ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[5]~20                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[5]~19                                           ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[5]~18                                           ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[4]~18                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[4]~17                                           ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[4]~16                                           ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[3]~16                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[3]~15                                           ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[3]~14                                           ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[2]~14                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[2]~13                                           ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[2]~12                                           ; 1       ;
+; datapath:datapath0|programcounter:programcounter0|current[1]~12                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[1]~11                                           ; 1       ;
-; datapath:datapath0|programcounter:programcounter0|current[1]~10                                           ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[0]~9                                            ; 1       ;
 ; datapath:datapath0|programcounter:programcounter0|current[0]~8                                            ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~16                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~15                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~14                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~13                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~12                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~11                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~10                                                                       ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~9                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~8                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~7                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~6                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~5                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~4                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~3                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~2                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~1                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add0~0                                                                        ; 1       ;
-; datapath:datapath0|ALU:ALU0|Add1~14                                                                       ; 1       ;
+; controlador:controlador0|state.LD                                                                         ; 1       ;
 ; datapath:datapath0|ALU:ALU0|Add2~14                                                                       ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add1~14                                                                       ; 1       ;
 ; datapath:datapath0|ALU:ALU0|Add2~13                                                                       ; 1       ;
 ; datapath:datapath0|ALU:ALU0|Add2~12                                                                       ; 1       ;
 ; datapath:datapath0|ALU:ALU0|Add1~13                                                                       ; 1       ;
@@ -1480,14 +1477,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|ALU:ALU0|Add2~0                                                                        ; 1       ;
 ; datapath:datapath0|ALU:ALU0|Add1~1                                                                        ; 1       ;
 ; datapath:datapath0|ALU:ALU0|Add1~0                                                                        ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[1] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[2] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[3] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[4] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[5] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[6] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[7] ; 1       ;
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|q_a[0] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[1] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[2] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[3] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[4] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[5] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[6] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[7] ; 1       ;
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|q_a[0] ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~15                                                                       ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~13                                                                       ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~11                                                                       ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~9                                                                        ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~7                                                                        ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~5                                                                        ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~3                                                                        ; 1       ;
+; datapath:datapath0|ALU:ALU0|Add0~1                                                                        ; 1       ;
 ; datapath:datapath0|ALU:ALU0|LessThan0~13                                                                  ; 1       ;
 ; datapath:datapath0|ALU:ALU0|LessThan0~11                                                                  ; 1       ;
 ; datapath:datapath0|ALU:ALU0|LessThan0~9                                                                   ; 1       ;
@@ -1495,17 +1500,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:datapath0|ALU:ALU0|LessThan0~5                                                                   ; 1       ;
 ; datapath:datapath0|ALU:ALU0|LessThan0~3                                                                   ; 1       ;
 ; datapath:datapath0|ALU:ALU0|LessThan0~1                                                                   ; 1       ;
+; datapath:datapath0|register1:regcarryflag|out0                                                            ; 1       ;
 +-----------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------+-------------+----------------------+-----------------+-----------------+
-; Name                                                                                                          ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF          ; Location    ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------+-------------+----------------------+-----------------+-----------------+
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 32           ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 256  ; 32                          ; 8                           ; --                          ; --                          ; 256                 ; 1    ; None         ; M4K_X26_Y28 ; Don't care           ; Don't care      ; Don't care      ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 256          ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 2048 ; 256                         ; 8                           ; --                          ; --                          ; 2048                ; 1    ; progmem2.mif ; M4K_X26_Y27 ; Don't care           ; Don't care      ; Don't care      ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------+-------------+----------------------+-----------------+-----------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------+-------------+----------------------+-----------------+-----------------+
+; Name                                                                                                          ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF         ; Location    ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------+-------------+----------------------+-----------------+-----------------+
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 32           ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 256  ; 32                          ; 8                           ; --                          ; --                          ; 256                 ; 1    ; datamem.mif ; M4K_X26_Y20 ; Don't care           ; Don't care      ; Don't care      ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 256          ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 2048 ; 256                         ; 8                           ; --                          ; --                          ; 2048                ; 1    ; progmem.mif ; M4K_X26_Y19 ; Don't care           ; Don't care      ; Don't care      ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------+-------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -1514,37 +1520,37 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 391 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 2 / 3,315 ( < 1 % )    ;
-; C4 interconnects            ; 259 / 60,840 ( < 1 % ) ;
-; Direct links                ; 62 / 94,460 ( < 1 % )  ;
-; Global clocks               ; 6 / 16 ( 38 % )        ;
-; Local interconnects         ; 121 / 33,216 ( < 1 % ) ;
+; Block interconnects         ; 398 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 5 / 3,315 ( < 1 % )    ;
+; C4 interconnects            ; 241 / 60,840 ( < 1 % ) ;
+; Direct links                ; 75 / 94,460 ( < 1 % )  ;
+; Global clocks               ; 7 / 16 ( 44 % )        ;
+; Local interconnects         ; 124 / 33,216 ( < 1 % ) ;
 ; R24 interconnects           ; 4 / 3,091 ( < 1 % )    ;
-; R4 interconnects            ; 221 / 81,294 ( < 1 % ) ;
+; R4 interconnects            ; 227 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.87) ; Number of LABs  (Total = 15) ;
+; Number of Logic Elements  (Average = 12.81) ; Number of LABs  (Total = 16) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 1                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 2                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
+; 6                                           ; 0                            ;
 ; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 1                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
+; 11                                          ; 1                            ;
 ; 12                                          ; 0                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 1                            ;
-; 15                                          ; 1                            ;
+; 15                                          ; 0                            ;
 ; 16                                          ; 10                           ;
 +---------------------------------------------+------------------------------+
 
@@ -1552,22 +1558,22 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.67) ; Number of LABs  (Total = 15) ;
+; LAB-wide Signals  (Average = 2.81) ; Number of LABs  (Total = 16) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 14                           ;
+; 1 Async. clear                     ; 15                           ;
 ; 1 Clock                            ; 13                           ;
-; 1 Clock enable                     ; 2                            ;
+; 1 Clock enable                     ; 6                            ;
 ; 1 Sync. clear                      ; 1                            ;
 ; 1 Sync. load                       ; 1                            ;
-; 2 Clock enables                    ; 8                            ;
-; 2 Clocks                           ; 1                            ;
+; 2 Clock enables                    ; 7                            ;
+; 2 Clocks                           ; 2                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 17.20) ; Number of LABs  (Total = 15) ;
+; Number of Signals Sourced  (Average = 16.38) ; Number of LABs  (Total = 16) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
@@ -1575,62 +1581,61 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 3                                            ; 0                            ;
 ; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 0                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 1                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 2                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 1                            ;
-; 17                                           ; 3                            ;
+; 17                                           ; 1                            ;
 ; 18                                           ; 3                            ;
-; 19                                           ; 0                            ;
+; 19                                           ; 1                            ;
 ; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
+; 21                                           ; 0                            ;
 ; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 1                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
+; 25                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 10.60) ; Number of LABs  (Total = 15) ;
+; Number of Signals Sourced Out  (Average = 10.56) ; Number of LABs  (Total = 16) ;
 +--------------------------------------------------+------------------------------+
 ; 0                                                ; 0                            ;
 ; 1                                                ; 0                            ;
 ; 2                                                ; 0                            ;
 ; 3                                                ; 1                            ;
-; 4                                                ; 1                            ;
-; 5                                                ; 0                            ;
-; 6                                                ; 1                            ;
-; 7                                                ; 1                            ;
-; 8                                                ; 1                            ;
+; 4                                                ; 2                            ;
+; 5                                                ; 1                            ;
+; 6                                                ; 0                            ;
+; 7                                                ; 0                            ;
+; 8                                                ; 0                            ;
 ; 9                                                ; 1                            ;
-; 10                                               ; 2                            ;
-; 11                                               ; 0                            ;
-; 12                                               ; 1                            ;
+; 10                                               ; 1                            ;
+; 11                                               ; 3                            ;
+; 12                                               ; 3                            ;
 ; 13                                               ; 1                            ;
-; 14                                               ; 1                            ;
-; 15                                               ; 2                            ;
+; 14                                               ; 0                            ;
+; 15                                               ; 0                            ;
 ; 16                                               ; 1                            ;
 ; 17                                               ; 1                            ;
+; 18                                               ; 0                            ;
+; 19                                               ; 1                            ;
 +--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 22.40) ; Number of LABs  (Total = 15) ;
+; Number of Distinct Inputs  (Average = 21.94) ; Number of LABs  (Total = 16) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
@@ -1638,33 +1643,33 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
+; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 2                            ;
 ; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
+; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 1                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 2                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 0                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 1                            ;
-; 28                                           ; 1                            ;
-; 29                                           ; 2                            ;
-; 30                                           ; 1                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 3                            ;
+; 30                                           ; 0                            ;
 ; 31                                           ; 1                            ;
-; 32                                           ; 1                            ;
+; 32                                           ; 3                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1702,7 +1707,7 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------+-----------------------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s)              ; Delay Added in ns ;
 +-----------------+-----------------------------------+-------------------+
-; clk             ; controlador:controlador0|state.ST ; 10.0              ;
+; clk             ; controlador:controlador0|state.ST ; 3.7               ;
 +-----------------+-----------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -1713,15 +1718,17 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------------+-----------------------------------------------+-------------------+
 ; Source Register                       ; Destination Register                          ; Delay Added in ns ;
 +---------------------------------------+-----------------------------------------------+-------------------+
-; controlador:controlador0|state.busca  ; controlador:controlador0|datamem_write_enable ; 3.687             ;
-; controlador:controlador0|state.start  ; controlador:controlador0|datamem_write_enable ; 3.643             ;
-; controlador:controlador0|state.decode ; controlador:controlador0|datamem_write_enable ; 3.643             ;
-; controlador:controlador0|state.ST     ; controlador:controlador0|datamem_write_enable ; 2.740             ;
-; controlador:controlador0|state.SUB    ; controlador:controlador0|mux2select[0]        ; 0.132             ;
-; controlador:controlador0|state.LD     ; controlador:controlador0|mux2select[0]        ; 0.132             ;
-; controlador:controlador0|state.ADD    ; controlador:controlador0|mux2select[0]        ; 0.131             ;
+; controlador:controlador0|state.start  ; controlador:controlador0|datamem_write_enable ; 3.736             ;
+; controlador:controlador0|state.ST     ; controlador:controlador0|datamem_write_enable ; 3.736             ;
+; controlador:controlador0|state.decode ; controlador:controlador0|datamem_write_enable ; 3.736             ;
+; controlador:controlador0|state.busca  ; controlador:controlador0|regload[6]           ; 0.406             ;
+; controlador:controlador0|state.ADD    ; controlador:controlador0|alucontrol[0]        ; 0.398             ;
+; controlador:controlador0|state.SHL    ; controlador:controlador0|alucontrol[0]        ; 0.398             ;
+; controlador:controlador0|state.SHR    ; controlador:controlador0|alucontrol[0]        ; 0.398             ;
+; controlador:controlador0|state.SUB    ; controlador:controlador0|alucontrol[0]        ; 0.398             ;
+; controlador:controlador0|state.LD     ; controlador:controlador0|mux2select[0]        ; 0.026             ;
 +---------------------------------------+-----------------------------------------------+-------------------+
-Note: This table only shows the top 7 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 9 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1732,14 +1739,14 @@ Info (119006): Selected device EP2C35F672C6 for design "microprocessador"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (119042): Found following RAM instances in design that are actually implemented as ROM because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a7" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a6" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a0" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a3" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a2" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a1" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a5" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ram_block1a4" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a7" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a6" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a0" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a5" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a4" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a1" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a2" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info (119043): Atom "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ram_block1a3" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -1769,10 +1776,10 @@ Critical Warning (169085): No exact pin location assignment(s) for 21 pins of 21
     Info (169086): Pin saida[6] not assigned to an exact location on the device
     Info (169086): Pin saida[7] not assigned to an exact location on the device
     Info (169086): Pin carryflag not assigned to an exact location on the device
+    Info (169086): Pin execute not assigned to an exact location on the device
     Info (169086): Pin clk not assigned to an exact location on the device
     Info (169086): Pin reset not assigned to an exact location on the device
-    Info (169086): Pin execute not assigned to an exact location on the device
-Warning (335093): TimeQuest Timing Analyzer is analyzing 19 combinational loops as latches.
+Warning (335093): TimeQuest Timing Analyzer is analyzing 15 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'microprocessador.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
@@ -1780,35 +1787,33 @@ Info (176353): Automatically promoted node clk (placed in PIN P2 (CLK2, LVDSCLK1
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node controlador:controlador0|state.start
-        Info (176357): Destination node controlador:controlador0|state.busca
         Info (176357): Destination node controlador:controlador0|state.decode
         Info (176357): Destination node controlador:controlador0|state.instOUT
         Info (176357): Destination node controlador:controlador0|state.SUB
         Info (176357): Destination node controlador:controlador0|state.MOV
-        Info (176357): Destination node controlador:controlador0|state.LD
         Info (176357): Destination node controlador:controlador0|state.SHL
         Info (176357): Destination node controlador:controlador0|state.SHR
         Info (176357): Destination node controlador:controlador0|state.JZ
-Info (176353): Automatically promoted node datapath:datapath0|mux5to1:mux0|Mux1~1 
+        Info (176357): Destination node controlador:controlador0|state.JMP
+        Info (176357): Destination node controlador:controlador0|state.LD
+Info (176353): Automatically promoted node controlador:controlador0|state.busca 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux7~0
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux7~1
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux6~0
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux6~1
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux5~0
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux5~1
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux4~0
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux4~1
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux3~0
-        Info (176357): Destination node datapath:datapath0|mux5to1:mux0|Mux3~1
-        Info (176358): Non-global destination nodes limited to 10 nodes
+        Info (176357): Destination node controlador:controlador0|WideOr1
+        Info (176357): Destination node controlador:controlador0|Selector4~0
+        Info (176357): Destination node controlador:controlador0|WideOr6
 Info (176353): Automatically promoted node controlador:controlador0|WideOr6 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node controlador:controlador0|WideOr10~0 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node controlador:controlador0|WideOr12~2 
+Info (176353): Automatically promoted node controlador:controlador0|WideOr12~0 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node controlador:controlador0|WideOr8~0 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node controlador:controlador0|WideOr12~0
+        Info (176357): Destination node controlador:controlador0|WideOr8
+        Info (176357): Destination node controlador:controlador0|WideOr9
 Info (176353): Automatically promoted node reset (placed in PIN C13 (CLK10, LVDSCLK5n, Input))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G11
 Info (176233): Starting register packing
@@ -1827,7 +1832,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1835,11 +1840,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
+    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X22_Y12 to location X32_Y23
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.67 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.61 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 10 output pins without output pin load capacitance assignment
     Info (306007): Pin "finished" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1860,10 +1865,10 @@ Info (176045): Design uses memory blocks. Violating setup or hold times of memor
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file E:/GitHub Repos/RISC-Project/quartus/output_files/microprocessador.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 767 megabytes
-    Info: Processing ended: Fri May 19 17:01:27 2017
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 775 megabytes
+    Info: Processing ended: Sun May 21 15:36:37 2017
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+

@@ -1,18 +1,23 @@
 
 State Machine - |microprocessador|controlador:controlador0|state
-Name state.SHR state.SHL state.JZ state.JMP state.ST state.LD state.instOUT state.instIN state.SUB state.ADD state.MVI state.MOV state.decode state.busca state.start 
-state.start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.busca 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.decode 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.MOV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.MVI 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.ADD 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.SUB 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.instIN 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.instOUT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.LD 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.ST 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.JMP 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.JZ 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.SHL 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.SHR 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Name state.instXOR state.instNOT state.instOR state.instAND state.SHR state.SHL state.JZ state.JMP state.ST state.LD state.instOUT state.instIN state.SUB state.ADD state.MVI state.MOV state.decode state.busca_LD state.busca state.start 
+state.start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.busca 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.busca_LD 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.decode 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.MOV 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.MVI 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.ADD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.SUB 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.instIN 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.instOUT 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.LD 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.ST 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.JMP 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.JZ 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.SHL 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.SHR 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.instAND 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.instOR 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.instNOT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.instXOR 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

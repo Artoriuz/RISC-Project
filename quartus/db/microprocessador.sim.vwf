@@ -267,7 +267,8 @@ TRANSITION_LIST("saida[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 155.0;
+		LEVEL 1 FOR 845.0;
 	}
 }
 
@@ -285,7 +286,8 @@ TRANSITION_LIST("saida[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 155.0;
+		LEVEL 1 FOR 845.0;
 	}
 }
 
@@ -303,7 +305,8 @@ TRANSITION_LIST("saida[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 155.0;
+		LEVEL 1 FOR 845.0;
 	}
 }
 
@@ -321,9 +324,8 @@ TRANSITION_LIST("saida[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 815.0;
+		LEVEL 0 FOR 155.0;
+		LEVEL 1 FOR 845.0;
 	}
 }
 
@@ -332,14 +334,7 @@ TRANSITION_LIST("saida[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 65.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 60.0;
-			LEVEL 0 FOR 60.0;
-		}
-		LEVEL 1 FOR 695.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for microprocessador
-Sat May 20 13:01:11 2017
+Sun May 21 16:49:14 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -20,8 +20,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  12. Registers Removed During Synthesis
  13. General Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated
- 16. Source assignments for datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated
+ 15. Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated
+ 16. Source assignments for datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated
  17. Parameter Settings for User Entity Instance: datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component
  18. Parameter Settings for User Entity Instance: datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component
  19. altsyncram Parameter Settings by Entity Instance
@@ -54,15 +54,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 20 13:01:11 2017           ;
+; Analysis & Synthesis Status        ; Successful - Sun May 21 16:49:14 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 208                                             ;
-;     Total combinational functions  ; 179                                             ;
-;     Dedicated logic registers      ; 69                                              ;
-; Total registers                    ; 69                                              ;
+; Total logic elements               ; 266                                             ;
+;     Total combinational functions  ; 236                                             ;
+;     Dedicated logic registers      ; 74                                              ;
+; Total registers                    ; 74                                              ;
 ; Total pins                         ; 21                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,304                                           ;
@@ -172,6 +172,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path          ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                             ; Library ;
 +-------------------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------+---------+
+; progmem.mif                               ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project/quartus/progmem.mif                         ;         ;
 ; progmem.vhd                               ; yes             ; User Wizard-Generated File       ; E:/GitHub Repos/RISC-Project/quartus/progmem.vhd                         ;         ;
 ; datamem.vhd                               ; yes             ; User Wizard-Generated File       ; E:/GitHub Repos/RISC-Project/quartus/datamem.vhd                         ;         ;
 ; ../components/programcounter.vhdl         ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/programcounter.vhdl              ;         ;
@@ -183,7 +184,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; ../components/mux5to1.vhdl                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/mux5to1.vhdl                     ;         ;
 ; ../components/mux4to1.vhdl                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/mux4to1.vhdl                     ;         ;
 ; ../components/ALU.vhdl                    ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/ALU.vhdl                         ;         ;
-; progmem2.mif                              ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project/quartus/progmem2.mif                        ;         ;
+; datamem.mif                               ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project/quartus/datamem.mif                         ;         ;
 ; altsyncram.tdf                            ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc                     ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                               ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -193,8 +194,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                                ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                                ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                              ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_n2d1.tdf                    ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project/quartus/db/altsyncram_n2d1.tdf              ;         ;
-; db/altsyncram_luc1.tdf                    ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project/quartus/db/altsyncram_luc1.tdf              ;         ;
+; db/altsyncram_51d1.tdf                    ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project/quartus/db/altsyncram_51d1.tdf              ;         ;
+; db/altsyncram_cuc1.tdf                    ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project/quartus/db/altsyncram_cuc1.tdf              ;         ;
 +-------------------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------+---------+
 
 
@@ -203,29 +204,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 208   ;
+; Estimated Total logic elements              ; 266   ;
 ;                                             ;       ;
-; Total combinational functions               ; 179   ;
+; Total combinational functions               ; 236   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 104   ;
-;     -- 3 input functions                    ; 55    ;
-;     -- <=2 input functions                  ; 20    ;
+;     -- 4 input functions                    ; 139   ;
+;     -- 3 input functions                    ; 75    ;
+;     -- <=2 input functions                  ; 22    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 143   ;
+;     -- normal mode                          ; 200   ;
 ;     -- arithmetic mode                      ; 36    ;
 ;                                             ;       ;
-; Total registers                             ; 69    ;
-;     -- Dedicated logic registers            ; 69    ;
+; Total registers                             ; 74    ;
+;     -- Dedicated logic registers            ; 74    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 21    ;
 ; Total memory bits                           ; 2304  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 85    ;
-; Total fan-out                               ; 1055  ;
-; Average fan-out                             ; 3.70  ;
+; Maximum fan-out                             ; 90    ;
+; Total fan-out                               ; 1277  ;
+; Average fan-out                             ; 3.68  ;
 +---------------------------------------------+-------+
 
 
@@ -234,19 +235,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
-; |microprocessador                            ; 179 (1)           ; 69 (0)       ; 2304        ; 0            ; 0       ; 0         ; 21   ; 0            ; |microprocessador                                                                                                    ; work         ;
-;    |controlador:controlador0|                ; 46 (46)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                                                                           ; work         ;
-;    |datapath:datapath0|                      ; 132 (0)           ; 54 (0)       ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
-;       |ALU:ALU0|                             ; 53 (53)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
+; |microprocessador                            ; 236 (1)           ; 74 (0)       ; 2304        ; 0            ; 0       ; 0         ; 21   ; 0            ; |microprocessador                                                                                                    ; work         ;
+;    |controlador:controlador0|                ; 63 (63)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                                                                           ; work         ;
+;    |datapath:datapath0|                      ; 172 (0)           ; 54 (0)       ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
+;       |ALU:ALU0|                             ; 58 (58)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
 ;       |datamem:datamem0|                     ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_luc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated ; work         ;
+;             |altsyncram_cuc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated ; work         ;
 ;       |mux4to1:mux1|                         ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux4to1:mux1                                                                    ; work         ;
 ;       |mux4to1:mux2|                         ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux4to1:mux2                                                                    ; work         ;
-;       |mux5to1:mux0|                         ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
+;       |mux5to1:mux0|                         ; 73 (73)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
 ;       |progmem:progmem0|                     ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_n2d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated ; work         ;
+;             |altsyncram_51d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated ; work         ;
 ;       |programcounter:programcounter0|       ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|programcounter:programcounter0                                                  ; work         ;
 ;       |register1:regcarryflag|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regcarryflag                                                          ; work         ;
 ;       |register1:regzero|                    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regzero                                                               ; work         ;
@@ -260,14 +261,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
-; Name                                                                                                          ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 32           ; 8            ; --           ; --           ; 256  ; None         ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; progmem2.mif ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                    ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
+; Name                                                                                                          ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF         ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 32           ; 8            ; --           ; --           ; 256  ; datamem.mif ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; progmem.mif ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -275,53 +276,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------+--------------------------------------------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                       ; IP Include File                                  ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------+--------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|datamem:datamem0 ; E:/GitHub Repos/RISC-Project/quartus/datamem.vhd ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|datamem:datamem0 ; E:/GitHub Repos/RISC-Project/quartus/datamem.vhd ;
 ; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|progmem:progmem0 ; E:/GitHub Repos/RISC-Project/quartus/progmem.vhd ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------+--------------------------------------------------+
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |microprocessador|controlador:controlador0|state                                                                                                                                             ;
-+---------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
-; Name          ; state.SHR ; state.SHL ; state.JZ ; state.JMP ; state.ST ; state.LD ; state.instOUT ; state.instIN ; state.SUB ; state.ADD ; state.MVI ; state.MOV ; state.decode ; state.busca ; state.start ;
-+---------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
-; state.start   ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 0           ;
-; state.busca   ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 1           ; 1           ;
-; state.decode  ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 1            ; 0           ; 1           ;
-; state.MOV     ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 1         ; 0            ; 0           ; 1           ;
-; state.MVI     ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 1         ; 0         ; 0            ; 0           ; 1           ;
-; state.ADD     ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 1         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.SUB     ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 1         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.instIN  ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 1            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.instOUT ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 1             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.LD      ; 0         ; 0         ; 0        ; 0         ; 0        ; 1        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.ST      ; 0         ; 0         ; 0        ; 0         ; 1        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.JMP     ; 0         ; 0         ; 0        ; 1         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.JZ      ; 0         ; 0         ; 1        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.SHL     ; 0         ; 1         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-; state.SHR     ; 1         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0           ; 1           ;
-+---------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+-------------+-------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |microprocessador|controlador:controlador0|state                                                                                                                                                                                                                              ;
++----------------+---------------+---------------+--------------+---------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+----------------+-------------+-------------+
+; Name           ; state.instXOR ; state.instNOT ; state.instOR ; state.instAND ; state.SHR ; state.SHL ; state.JZ ; state.JMP ; state.ST ; state.LD ; state.instOUT ; state.instIN ; state.SUB ; state.ADD ; state.MVI ; state.MOV ; state.decode ; state.busca_LD ; state.busca ; state.start ;
++----------------+---------------+---------------+--------------+---------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+----------------+-------------+-------------+
+; state.start    ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 0           ;
+; state.busca    ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 1           ; 1           ;
+; state.busca_LD ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 1              ; 0           ; 1           ;
+; state.decode   ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 1            ; 0              ; 0           ; 1           ;
+; state.MOV      ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 1         ; 0            ; 0              ; 0           ; 1           ;
+; state.MVI      ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 1         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.ADD      ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 1         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.SUB      ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 1         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.instIN   ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 1            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.instOUT  ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 1             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.LD       ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 1        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.ST       ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 1        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.JMP      ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 1         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.JZ       ; 0             ; 0             ; 0            ; 0             ; 0         ; 0         ; 1        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.SHL      ; 0             ; 0             ; 0            ; 0             ; 0         ; 1         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.SHR      ; 0             ; 0             ; 0            ; 0             ; 1         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.instAND  ; 0             ; 0             ; 0            ; 1             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.instOR   ; 0             ; 0             ; 1            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.instNOT  ; 0             ; 1             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
+; state.instXOR  ; 1             ; 0             ; 0            ; 0             ; 0         ; 0         ; 0        ; 0         ; 0        ; 0        ; 0             ; 0            ; 0         ; 0         ; 0         ; 0         ; 0            ; 0              ; 0           ; 1           ;
++----------------+---------------+---------------+--------------+---------------+-----------+-----------+----------+-----------+----------+----------+---------------+--------------+-----------+-----------+-----------+-----------+--------------+----------------+-------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                   ;
-+-----------------------------------------------------+----------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
-+-----------------------------------------------------+----------------------------------------+------------------------+
-; controlador:controlador0|mux1select[1]              ; controlador:controlador0|WideOr12      ; yes                    ;
-; controlador:controlador0|mux1select[0]              ; controlador:controlador0|WideOr12      ; yes                    ;
-; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|WideOr15      ; yes                    ;
-; controlador:controlador0|mux2select[1]              ; controlador:controlador0|WideOr10      ; yes                    ;
-; controlador:controlador0|mux2select[0]              ; controlador:controlador0|WideOr10      ; yes                    ;
-; controlador:controlador0|alucontrol[3]              ; controlador:controlador0|WideOr15      ; yes                    ;
-; controlador:controlador0|mux0select[1]              ; controlador:controlador0|WideOr6       ; yes                    ;
-; controlador:controlador0|mux0select[2]              ; controlador:controlador0|WideOr6       ; yes                    ;
-; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr6       ; yes                    ;
-; controlador:controlador0|datamem_write_enable       ; controlador:controlador0|WideOr2       ; yes                    ;
-; datapath:datapath0|ALU:ALU0|zero_sign               ; controlador:controlador0|alucontrol[3] ; yes                    ;
-; Number of user-specified and inferred latches = 11  ;                                        ;                        ;
-+-----------------------------------------------------+----------------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                    ;
++-----------------------------------------------------+-----------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                     ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------------------+------------------------+
+; controlador:controlador0|mux1select[1]              ; controlador:controlador0|WideOr12       ; yes                    ;
+; controlador:controlador0|mux1select[0]              ; controlador:controlador0|WideOr12       ; yes                    ;
+; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|WideOr15       ; yes                    ;
+; controlador:controlador0|mux2select[1]              ; controlador:controlador0|WideOr10       ; yes                    ;
+; controlador:controlador0|mux2select[0]              ; controlador:controlador0|WideOr10       ; yes                    ;
+; controlador:controlador0|alucontrol[3]              ; controlador:controlador0|WideOr15       ; yes                    ;
+; controlador:controlador0|alucontrol[2]              ; controlador:controlador0|WideOr15       ; yes                    ;
+; controlador:controlador0|alucontrol[1]              ; controlador:controlador0|WideOr15       ; yes                    ;
+; controlador:controlador0|mux0select[1]              ; controlador:controlador0|WideOr6        ; yes                    ;
+; controlador:controlador0|mux0select[2]              ; controlador:controlador0|WideOr6        ; yes                    ;
+; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr6        ; yes                    ;
+; controlador:controlador0|regload[5]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
+; controlador:controlador0|regload[6]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
+; controlador:controlador0|regload[7]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
+; controlador:controlador0|regload[4]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
+; controlador:controlador0|datamem_write_enable       ; controlador:controlador0|WideOr2        ; yes                    ;
+; datapath:datapath0|ALU:ALU0|zero_sign               ; datapath:datapath0|ALU:ALU0|Mux18       ; yes                    ;
+; Number of user-specified and inferred latches = 17  ;                                         ;                        ;
++-----------------------------------------------------+-----------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -340,10 +352,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 69    ;
-; Number of registers using Synchronous Clear  ; 13    ;
+; Total registers                              ; 74    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 69    ;
+; Number of registers using Asynchronous Clear ; 74    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 50    ;
 ; Number of registers using Preset             ; 0     ;
@@ -355,16 +367,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |microprocessador|datapath:datapath0|programcounter:programcounter0|current[1] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux1|Mux4                         ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|ALU:ALU0|Mux7                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux2|Mux1                         ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |microprocessador|datapath:datapath0|mux5to1:mux0|Mux7                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |microprocessador|datapath:datapath0|programcounter:programcounter0|current[7] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux1|Mux2                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux2|Mux0                         ;
+; 10:1               ; 7 bits    ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; No         ; |microprocessador|datapath:datapath0|ALU:ALU0|Mux2                             ;
+; 17:1               ; 8 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; No         ; |microprocessador|datapath:datapath0|mux5to1:mux0|Mux2                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated ;
+; Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                          ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------+
@@ -373,7 +385,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated ;
+; Source assignments for datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                          ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------+
@@ -424,7 +436,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                              ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
-; INIT_FILE                          ; progmem2.mif         ; Untyped                                              ;
+; INIT_FILE                          ; progmem.mif          ; Untyped                                              ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                              ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                              ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                              ;
@@ -437,7 +449,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                              ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                              ;
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                              ;
-; CBXI_PARAMETER                     ; altsyncram_n2d1      ; Untyped                                              ;
+; CBXI_PARAMETER                     ; altsyncram_51d1      ; Untyped                                              ;
 +------------------------------------+----------------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -485,7 +497,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                              ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
-; INIT_FILE                          ; datamem.hex          ; Untyped                                              ;
+; INIT_FILE                          ; datamem.mif          ; Untyped                                              ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                              ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                              ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                              ;
@@ -498,7 +510,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                              ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                              ;
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                              ;
-; CBXI_PARAMETER                     ; altsyncram_luc1      ; Untyped                                              ;
+; CBXI_PARAMETER                     ; altsyncram_cuc1      ; Untyped                                              ;
 +------------------------------------+----------------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -568,7 +580,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat May 20 13:01:09 2017
+    Info: Processing started: Sun May 21 16:49:07 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file progmem.vhd
@@ -607,33 +619,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file /github
 Info (12127): Elaborating entity "microprocessador" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at microprocessador.vhdl(26): used implicit default value for signal "externaldata_proc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "controlador" for hierarchy "controlador:controlador0"
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(104): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(160): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(213): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(215): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(229): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(244): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(315): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(386): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(441): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(500): signal "prev_instruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(81): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(81): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(81): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(81): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(81): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux1select[0]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux1select[1]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux2select[0]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux2select[1]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux0select[0]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux0select[1]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "mux0select[2]" at controlador.vhdl(81)
-Info (10041): Inferred latch for "datamem_write_enable" at controlador.vhdl(81)
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(97): inferring latch(es) for signal or variable "regload", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(97): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(97): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(97): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(97): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhdl(97): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux1select[0]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux1select[1]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux2select[0]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux2select[1]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux0select[0]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux0select[1]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "mux0select[2]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "datamem_write_enable" at controlador.vhdl(97)
+Info (10041): Inferred latch for "regload[4]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "regload[5]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "regload[6]" at controlador.vhdl(97)
+Info (10041): Inferred latch for "regload[7]" at controlador.vhdl(97)
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath0"
 Info (12128): Elaborating entity "programcounter" for hierarchy "datapath:datapath0|programcounter:programcounter0"
 Info (12128): Elaborating entity "progmem" for hierarchy "datapath:datapath0|progmem:progmem0"
@@ -642,7 +649,7 @@ Info (12130): Elaborated megafunction instantiation "datapath:datapath0|progmem:
 Info (12133): Instantiated megafunction "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "progmem2.mif"
+    Info (12134): Parameter "init_file" = "progmem.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -654,16 +661,16 @@ Info (12133): Instantiated megafunction "datapath:datapath0|progmem:progmem0|alt
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_n2d1.tdf
-    Info (12023): Found entity 1: altsyncram_n2d1
-Info (12128): Elaborating entity "altsyncram_n2d1" for hierarchy "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_n2d1:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_51d1.tdf
+    Info (12023): Found entity 1: altsyncram_51d1
+Info (12128): Elaborating entity "altsyncram_51d1" for hierarchy "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated"
 Info (12128): Elaborating entity "datamem" for hierarchy "datapath:datapath0|datamem:datamem0"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component"
 Info (12133): Instantiated megafunction "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "datamem.hex"
+    Info (12134): Parameter "init_file" = "datamem.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -675,9 +682,9 @@ Info (12133): Instantiated megafunction "datapath:datapath0|datamem:datamem0|alt
     Info (12134): Parameter "widthad_a" = "5"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_luc1.tdf
-    Info (12023): Found entity 1: altsyncram_luc1
-Info (12128): Elaborating entity "altsyncram_luc1" for hierarchy "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_luc1:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cuc1.tdf
+    Info (12023): Found entity 1: altsyncram_cuc1
+Info (12128): Elaborating entity "altsyncram_cuc1" for hierarchy "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated"
 Info (12128): Elaborating entity "register8" for hierarchy "datapath:datapath0|register8:reg00"
 Info (12128): Elaborating entity "register1" for hierarchy "datapath:datapath0|register1:regcarryflag"
 Info (12128): Elaborating entity "mux5to1" for hierarchy "datapath:datapath0|mux5to1:mux0"
@@ -685,10 +692,6 @@ Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:datapath0|mux
 Info (12128): Elaborating entity "ALU" for hierarchy "datapath:datapath0|ALU:ALU0"
 Warning (10631): VHDL Process Statement warning at ALU.vhdl(21): inferring latch(es) for signal or variable "zero_sign", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "zero_sign" at ALU.vhdl(21)
-Warning (13012): Latch controlador:controlador0|mux1select[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
-Warning (13012): Latch controlador:controlador0|mux1select[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
 Warning (13012): Latch controlador:controlador0|alucontrol[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SUB
 Warning (13012): Latch controlador:controlador0|mux2select[1] has unsafe behavior
@@ -696,9 +699,15 @@ Warning (13012): Latch controlador:controlador0|mux2select[1] has unsafe behavio
 Warning (13012): Latch controlador:controlador0|mux2select[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
 Warning (13012): Latch controlador:controlador0|alucontrol[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SHL
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SHR
+Warning (13012): Latch controlador:controlador0|alucontrol[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instXOR
+Warning (13012): Latch controlador:controlador0|alucontrol[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instAND
 Warning (13012): Latch controlador:controlador0|datamem_write_enable has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
+Warning (13012): Latch datapath:datapath0|ALU:ALU0|zero_sign has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|alucontrol[2]
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
@@ -710,15 +719,15 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "externaldata[5]"
     Warning (15610): No output dependent on input pin "externaldata[6]"
     Warning (15610): No output dependent on input pin "externaldata[7]"
-Info (21057): Implemented 263 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 320 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 226 logic cells
+    Info (21061): Implemented 283 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 548 megabytes
-    Info: Processing ended: Sat May 20 13:01:11 2017
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 542 megabytes
+    Info: Processing ended: Sun May 21 16:49:14 2017
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -45,18 +45,14 @@ begin
 			else 
 				zero_sign <= '0';
 			end if; 
-		--when "0010" => -- and port --futuras instruções extras comentadas abaixo
-		--	result <= in0 and in1;
-		--when "0011" => -- or port 
-		--	result <= in0 or in1;
-		--when "0100" => -- xor port 
-		--	result <= in0 xor in1;
-		--when "0101" => -- not port primeira entrada
-		--	result <= not in0;
-		--when "0110" => -- nand
-		--	result <= in0 nand in1;
-		--when "0111" => -- nor 
-		--	result <= in0 nor in1;
+		when "0010" => -- and port 
+			result <= in0 and in1;
+		when "0011" => -- or port 
+			result <= in0 or in1;
+		when "0100" => -- xor port 
+			result <= in0 xor in1;
+		when "0101" => -- not port primeira entrada
+			result <= not in0;
 		when "1000" => -- shift left
 			temp(0) <= '0';
 			temp(8 downto 1) <= in0;

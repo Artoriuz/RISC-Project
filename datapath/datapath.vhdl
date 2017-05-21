@@ -29,7 +29,7 @@ signal mux0out, mux1out, mux2out, reg00out, reg01out, reg10out, reg11out, regino
 signal alucarryflag, zero_sign_dp : std_logic;
 signal progmemaddress : std_logic_vector(7 downto 0);
 signal progmem_out : std_logic_vector(7 downto 0);
-signal internaldata :std_logic_vector(7 downto 0);
+signal internaldata : std_logic_vector(7 downto 0);
 
 begin
 programcounter0 : programcounter port map (clk, progmem_out, pcounter_control, reset, progmemaddress);
@@ -44,9 +44,9 @@ reg11 : register8 port map (mux0out, regload(4), clk, reset, reg11out);
 
 regin : register8 port map (externaldata, regload(3), clk, reset, reginout); 
 reout : register8 port map (mux1out, regload(2), clk, reset, saida);
+reg_prev_isnt : register8 port map (progmem_out, '1', clk, reset, previous_instruction);
 regcarryflag : register1 port map (alucarryflag, regload(1), clk, reset, carryflag); 
 regzero : register1 port map (zero_sign_dp, regload(0), clk, reset, zero_sign_out);
-reg_prev_isnt : register8 port map (progmem_out, '1', clk, reset, previous_instruction);
 
 mux0 : mux5to1 port map (mux0select, aluout, mux1out, progmem_out, internaldata, reginout, mux0out);
 mux1 : mux4to1 port map (mux1select, reg00out, reg01out, reg10out, reg11out, mux1out);
