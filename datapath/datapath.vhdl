@@ -19,7 +19,8 @@ entity datapath is
 		pcounter_control: in std_logic_vector (1 downto 0);
 		externaldata : in std_logic_vector(7 downto 0);
 		zero_sign_out : out std_logic;
-		previous_instruction : out std_logic_vector(7 downto 0)
+		previous_instruction : out std_logic_vector(7 downto 0);
+		clk_out : out std_logic
 	);
 end entity datapath;
 		
@@ -30,23 +31,26 @@ signal alucarryflag, zero_sign_dp : std_logic;
 signal progmemaddress : std_logic_vector(7 downto 0);
 signal progmem_out : std_logic_vector(7 downto 0);
 signal internaldata : std_logic_vector(7 downto 0);
+signal clk_low : std_logic;
 
 begin
-programcounter0 : programcounter port map (clk, progmem_out, pcounter_control, reset, progmemaddress);
+clk0 : clk10Hz port map (clk, reset, clk_low);
 
-progmem0 : progmem port map (progmemaddress, clk, "00000000", '0', progmem_out);
-datamem0 : datamem port map (mux2out(4 downto 0), clk, mux1out, datamem_write_enable, internaldata);
+programcounter0 : programcounter port map (clk_low, progmem_out, pcounter_control, reset, progmemaddress);
 
-reg00 : register8 port map (mux0out, regload(7), clk, reset, reg00out);
-reg01 : register8 port map (mux0out, regload(6), clk, reset, reg01out);
-reg10 : register8 port map (mux0out, regload(5), clk, reset, reg10out);
-reg11 : register8 port map (mux0out, regload(4), clk, reset, reg11out);
+progmem0 : progmem port map (progmemaddress, clk_low, "00000000", '0', progmem_out);
+datamem0 : datamem port map (mux2out(4 downto 0), clk_low, mux1out, datamem_write_enable, internaldata);
 
-regin : register8 port map (externaldata, regload(3), clk, reset, reginout); 
-reout : register8 port map (mux1out, regload(2), clk, reset, saida);
-reg_prev_isnt : register8 port map (progmem_out, '1', clk, reset, previous_instruction);
-regcarryflag : register1 port map (alucarryflag, regload(1), clk, reset, carryflag); 
-regzero : register1 port map (zero_sign_dp, regload(0), clk, reset, zero_sign_out);
+reg00 : register8 port map (mux0out, regload(7), clk_low, reset, reg00out);
+reg01 : register8 port map (mux0out, regload(6), clk_low, reset, reg01out);
+reg10 : register8 port map (mux0out, regload(5), clk_low, reset, reg10out);
+reg11 : register8 port map (mux0out, regload(4), clk_low, reset, reg11out);
+
+regin : register8 port map (externaldata, regload(3), clk_low, reset, reginout); 
+reout : register8 port map (mux1out, regload(2), clk_low, reset, saida);
+reg_prev_isnt : register8 port map (progmem_out, '1', clk_low, reset, previous_instruction);
+regcarryflag : register1 port map (alucarryflag, regload(1), clk_low, reset, carryflag); 
+regzero : register1 port map (zero_sign_dp, regload(0), clk_low, reset, zero_sign_out);
 
 mux0 : mux5to1 port map (mux0select, aluout, mux1out, progmem_out, internaldata, reginout, mux0out);
 mux1 : mux4to1 port map (mux1select, reg00out, reg01out, reg10out, reg11out, mux1out);
@@ -55,5 +59,5 @@ mux2 : mux4to1 port map (mux2select, reg00out, reg01out, reg10out, reg11out, mux
 ALU0 : ALU port map (mux1out, mux2out, alucontrol, alucarryflag, aluout, zero_sign_dp);
 
 instructionout <= progmem_out;
-
+clk_out <= clk_low;
 end architecture Behavioral;

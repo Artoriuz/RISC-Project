@@ -26,9 +26,10 @@ signal pcounter_control_proc : std_logic_vector(1 downto 0);
 signal externaldata_proc : std_logic_vector (7 downto 0);
 signal zero_sign_proc : std_logic;
 signal prev_instruction : std_logic_vector(7 downto 0);
+signal clk_dp_proc : std_logic;
 
 begin
-controlador0 : controlador port map (clk, reset, execute, instruction_proc, finished, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, zero_sign_proc, prev_instruction);
-datapath0 : datapath port map (clk, instruction_proc, saida, carryflag, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, reset, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, externaldata_proc, zero_sign_proc, prev_instruction);
+controlador0 : controlador port map (clk_dp_proc, not reset, execute, instruction_proc, finished, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, zero_sign_proc, prev_instruction);
+datapath0 : datapath port map (clk, instruction_proc, saida, carryflag, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, not reset, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, externaldata_proc, zero_sign_proc, prev_instruction, clk_dp_proc);
 
 end architecture Behavioral;

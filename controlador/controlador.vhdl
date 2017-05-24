@@ -20,7 +20,7 @@ entity controlador is
 end entity controlador;
 
 architecture Behavioral of controlador is
-	type state_type is (start, busca, busca_LD, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR, instAND, instOR, instNOT, instXOR);
+	type state_type is (start, busca, busca_LD, busca_OUT, decode, MOV, MVI, ADD, SUB, instIN, instOUT, LD, ST, JMP, JZ, SHL, SHR, instAND, instOR, instNOT, instXOR);
 	signal state, next_state : state_type;
 	begin
 		sincronia : process (clk, reset)
@@ -50,6 +50,12 @@ architecture Behavioral of controlador is
 				else
 					next_state <= busca;
 				end if;
+			when busca_OUT =>
+				if (execute = '1') then
+					next_state <= decode;
+				else
+					next_state <= busca;
+				end if;	
 			when decode =>
 				case (instruction (7 downto 4)) is
 					when "0000" =>
@@ -89,6 +95,8 @@ architecture Behavioral of controlador is
 				end case;
 			when LD =>
 				next_state <= busca_LD;
+			when instOUT =>
+				next_state <= busca_OUT;
 			when others =>
 				next_state <= busca;
 		end case;
@@ -110,6 +118,11 @@ architecture Behavioral of controlador is
 				finished <= '0';
 				pcounter_control <= "01";
 				regload(3 downto 0) <= "0000";
+			when busca_OUT => 
+				finished <= '0';
+				pcounter_control <= "01";
+				--regload <= "00000100";
+				regload <= "00000000";
 			when decode =>
 				regload <= "00000000";
 				finished <= '0';

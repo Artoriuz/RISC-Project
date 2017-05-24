@@ -1,5 +1,5 @@
 EDA Netlist Writer report for microprocessador
-Sun May 21 15:36:43 2017
+Mon May 22 13:40:21 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun May 21 15:36:43 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon May 22 13:40:21 2017 ;
 ; Revision Name             ; microprocessador                      ;
 ; Top-level Entity Name     ; microprocessador                      ;
 ; Family                    ; Cyclone II                            ;
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun May 21 15:36:43 2017
+    Info: Processing started: Mon May 22 13:40:21 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off microprocessador -c microprocessador
 Info (204019): Generated file microprocessador.vo in folder "E:/GitHub Repos/RISC-Project/quartus/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 410 megabytes
-    Info: Processing ended: Sun May 21 15:36:43 2017
+    Info: Processing ended: Mon May 22 13:40:21 2017
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
