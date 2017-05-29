@@ -34,17 +34,24 @@ begin
 			end if; 
 		when "0001" => -- result = |in0 - in1|, flag = 1 if in1 > in0
 			if (in0 >= in1) then
-				result <= in0 - in1;
+				temp <= ('0' & in0) - ('0' & in1);
+				result <= temp(7 downto 0);
 				carryflag <= '0';
+				if (temp = "000000000") then
+					zero_sign <= '1';
+				else 
+					zero_sign <= '0';
+				end if; 
 			else
-				result <= in1 - in0;
+				temp <= ('0' & in1) - ('0' & in0);
+				result <= temp(7 downto 0);
 				carryflag <= '1';
-            end if;
-            if (temp = "000000000") then
-				zero_sign <= '1';
-			else 
-				zero_sign <= '0';
-			end if; 
+				if (temp = "000000000") then
+					zero_sign <= '1';
+				else 
+					zero_sign <= '0';
+				end if; 
+			end if;
 		when "0010" => -- and port 
 			result <= in0 and in1;
 		when "0011" => -- or port 
@@ -65,6 +72,7 @@ begin
 			temp(8 downto 0) <= "000000000";
 			result <= temp(7 downto 0);
 			carryflag <= '0';
+			zero_sign <= '0';
 		end case;
 	end process;
 end architecture Behavioral;
