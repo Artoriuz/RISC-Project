@@ -262,6 +262,16 @@ SIGNAL("reset")
 	PARENT = "";
 }
 
+SIGNAL("zero_sign")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("saida[7]")
 {
 	NODE
@@ -453,6 +463,15 @@ TRANSITION_LIST("reset")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("zero_sign")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -679,6 +698,15 @@ DISPLAY_LINE
 	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
 	PARENT = 14;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "zero_sign";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

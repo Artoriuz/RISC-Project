@@ -1,33 +1,38 @@
-﻿Fibonacci em RISC-Project Assembly
-
-MVI Reg0, 0
-OUT Reg0  --0
-MVI Reg1, 1
-OUT Reg1  --1
-
-ADD Reg0, Reg1 -- 0+1
-OUT Reg0  --1
-ADD Reg1, Reg0
-OUT Reg1  --2
-
-ADD Reg0, Reg1 -- 1+2
-OUT Reg0  --3
-ADD Reg1, Reg0 -- 2-3
-OUT Reg1  --5
-
-repete
+﻿Fibonacci
 
 ==========================================================
-então posso fazer isso:
+Assembly
 
 MVI Reg0, 0
 OUT Reg0 
 MVI Reg1,
 OUT Reg1 
+MVI Reg3, 233
 ADD Reg0, Reg1
 OUT Reg0 
+SUB Reg3, Reg0
+JZ  0
+MVI Reg3, 233
 ADD Reg1, Reg0
 OUT Reg1 
+SUB Reg3, Reg1
+JZ  0
 JMP 8
+
+==========================================================
+machine code binary
+
+00110000	00000000	11010000	00000000	00110100	00000001	11010100	00000000
+00111100	11101001	01000001	00000000	11010000	00000000	01011100	00000000
+11110000	00000000	00111100	11101001	01000100	00000000	11010100	00000000
+01011101	00000000	11110000	00000000	11100000	00001000	
+
+==========================================================
+machine code hexadecimal
+
+30	00	D0	00	34	01	D4	00
+3C	E9	41	00	D0	00	5C	00
+F0	00	3C	E9	44	00	D4	00
+5D	00	F0	00	E0	08	
 
 ==========================================================

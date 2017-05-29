@@ -10,7 +10,8 @@ entity microprocessador is
 		externaldata : in std_logic_vector(7 downto 0);
 		finished : out std_logic;
 		saida : out std_logic_vector(7 downto 0);
-		carryflag : out std_logic
+		carryflag : out std_logic;
+		zero_sign : out std_logic
 	);
 end entity microprocessador;
 	
@@ -31,5 +32,5 @@ signal clk_dp_proc : std_logic;
 begin
 controlador0 : controlador port map (clk_dp_proc, not reset, execute, instruction_proc, finished, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, zero_sign_proc, prev_instruction);
 datapath0 : datapath port map (clk, instruction_proc, saida, carryflag, mux0select_proc, mux1select_proc, mux2select_proc, regload_proc, not reset, alucontrol_proc, datamem_write_enable_proc, pcounter_control_proc, externaldata_proc, zero_sign_proc, prev_instruction, clk_dp_proc);
-
+zero_sign <= zero_sign_proc;
 end architecture Behavioral;

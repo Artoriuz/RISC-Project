@@ -1,5 +1,5 @@
 Analysis & Synthesis report for microprocessador
-Wed May 24 16:15:25 2017
+Mon May 29 20:16:47 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -54,16 +54,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 24 16:15:25 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon May 29 20:16:47 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 270                                             ;
-;     Total combinational functions  ; 239                                             ;
+; Total logic elements               ; 266                                             ;
+;     Total combinational functions  ; 235                                             ;
 ;     Dedicated logic registers      ; 77                                              ;
 ; Total registers                    ; 77                                              ;
-; Total pins                         ; 21                                              ;
+; Total pins                         ; 22                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,304                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -205,29 +205,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------------------------------+
 ; Resource                                    ; Usage                                    ;
 +---------------------------------------------+------------------------------------------+
-; Estimated Total logic elements              ; 270                                      ;
+; Estimated Total logic elements              ; 266                                      ;
 ;                                             ;                                          ;
-; Total combinational functions               ; 239                                      ;
+; Total combinational functions               ; 235                                      ;
 ; Logic element usage by number of LUT inputs ;                                          ;
-;     -- 4 input functions                    ; 140                                      ;
-;     -- 3 input functions                    ; 76                                       ;
-;     -- <=2 input functions                  ; 23                                       ;
+;     -- 4 input functions                    ; 133                                      ;
+;     -- 3 input functions                    ; 80                                       ;
+;     -- <=2 input functions                  ; 22                                       ;
 ;                                             ;                                          ;
 ; Logic elements by mode                      ;                                          ;
-;     -- normal mode                          ; 203                                      ;
-;     -- arithmetic mode                      ; 36                                       ;
+;     -- normal mode                          ; 197                                      ;
+;     -- arithmetic mode                      ; 38                                       ;
 ;                                             ;                                          ;
 ; Total registers                             ; 77                                       ;
 ;     -- Dedicated logic registers            ; 77                                       ;
 ;     -- I/O registers                        ; 0                                        ;
 ;                                             ;                                          ;
-; I/O pins                                    ; 21                                       ;
+; I/O pins                                    ; 22                                       ;
 ; Total memory bits                           ; 2304                                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                                        ;
 ; Maximum fan-out node                        ; datapath:datapath0|clk10Hz:clk0|temporal ;
 ; Maximum fan-out                             ; 92                                       ;
-; Total fan-out                               ; 1294                                     ;
-; Average fan-out                             ; 3.67                                     ;
+; Total fan-out                               ; 1273                                     ;
+; Average fan-out                             ; 3.64                                     ;
 +---------------------------------------------+------------------------------------------+
 
 
@@ -236,21 +236,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
-; |microprocessador                            ; 239 (1)           ; 77 (0)       ; 2304        ; 0            ; 0       ; 0         ; 21   ; 0            ; |microprocessador                                                                                                    ; work         ;
-;    |controlador:controlador0|                ; 64 (64)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                                                                           ; work         ;
-;    |datapath:datapath0|                      ; 174 (0)           ; 56 (0)       ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
-;       |ALU:ALU0|                             ; 58 (58)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
+; |microprocessador                            ; 235 (1)           ; 77 (0)       ; 2304        ; 0            ; 0       ; 0         ; 22   ; 0            ; |microprocessador                                                                                                    ; work         ;
+;    |controlador:controlador0|                ; 65 (65)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|controlador:controlador0                                                                           ; work         ;
+;    |datapath:datapath0|                      ; 169 (0)           ; 56 (0)       ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0                                                                                 ; work         ;
+;       |ALU:ALU0|                             ; 74 (74)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|ALU:ALU0                                                                        ; work         ;
 ;       |clk10Hz:clk0|                         ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|clk10Hz:clk0                                                                    ; work         ;
 ;       |datamem:datamem0|                     ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component                                ; work         ;
 ;             |altsyncram_cuc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated ; work         ;
 ;       |mux4to1:mux1|                         ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux4to1:mux1                                                                    ; work         ;
 ;       |mux4to1:mux2|                         ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux4to1:mux2                                                                    ; work         ;
-;       |mux5to1:mux0|                         ; 73 (73)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
+;       |mux5to1:mux0|                         ; 51 (51)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
 ;       |progmem:progmem0|                     ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component                                ; work         ;
 ;             |altsyncram_51d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated ; work         ;
-;       |programcounter:programcounter0|       ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|programcounter:programcounter0                                                  ; work         ;
+;       |programcounter:programcounter0|       ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|programcounter:programcounter0                                                  ; work         ;
 ;       |register1:regcarryflag|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regcarryflag                                                          ; work         ;
 ;       |register1:regzero|                    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regzero                                                               ; work         ;
 ;       |register8:reg00|                      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register8:reg00                                                                 ; work         ;
@@ -320,21 +320,21 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+-----------------------------------------+------------------------+
 ; controlador:controlador0|mux1select[1]              ; controlador:controlador0|WideOr14       ; yes                    ;
 ; controlador:controlador0|mux1select[0]              ; controlador:controlador0|WideOr14       ; yes                    ;
-; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|WideOr17       ; yes                    ;
-; controlador:controlador0|mux2select[1]              ; controlador:controlador0|WideOr12       ; yes                    ;
-; controlador:controlador0|mux2select[0]              ; controlador:controlador0|WideOr12       ; yes                    ;
 ; controlador:controlador0|alucontrol[3]              ; controlador:controlador0|WideOr17       ; yes                    ;
 ; controlador:controlador0|alucontrol[2]              ; controlador:controlador0|WideOr17       ; yes                    ;
 ; controlador:controlador0|alucontrol[1]              ; controlador:controlador0|WideOr17       ; yes                    ;
+; controlador:controlador0|alucontrol[0]              ; controlador:controlador0|WideOr17       ; yes                    ;
+; controlador:controlador0|mux2select[1]              ; controlador:controlador0|WideOr12       ; yes                    ;
+; controlador:controlador0|mux2select[0]              ; controlador:controlador0|WideOr12       ; yes                    ;
+; datapath:datapath0|ALU:ALU0|zero_sign               ; datapath:datapath0|ALU:ALU0|Mux19       ; yes                    ;
+; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr8        ; yes                    ;
 ; controlador:controlador0|mux0select[2]              ; controlador:controlador0|WideOr8        ; yes                    ;
 ; controlador:controlador0|mux0select[1]              ; controlador:controlador0|WideOr8        ; yes                    ;
-; controlador:controlador0|mux0select[0]              ; controlador:controlador0|WideOr8        ; yes                    ;
 ; controlador:controlador0|regload[5]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
 ; controlador:controlador0|regload[6]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
 ; controlador:controlador0|regload[7]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
 ; controlador:controlador0|regload[4]                 ; controlador:controlador0|state.busca_LD ; yes                    ;
-; controlador:controlador0|datamem_write_enable       ; controlador:controlador0|WideOr4        ; yes                    ;
-; datapath:datapath0|ALU:ALU0|zero_sign               ; datapath:datapath0|ALU:ALU0|Mux18       ; yes                    ;
+; controlador:controlador0|datamem_write_enable       ; controlador:controlador0|WideOr3        ; yes                    ;
 ; Number of user-specified and inferred latches = 17  ;                                         ;                        ;
 +-----------------------------------------------------+-----------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -370,11 +370,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |microprocessador|datapath:datapath0|programcounter:programcounter0|current[7] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux1|Mux2                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |microprocessador|datapath:datapath0|programcounter:programcounter0|current[0] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux1|Mux3                         ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |microprocessador|datapath:datapath0|mux4to1:mux2|Mux0                         ;
-; 10:1               ; 7 bits    ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; No         ; |microprocessador|datapath:datapath0|ALU:ALU0|Mux2                             ;
-; 17:1               ; 8 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; No         ; |microprocessador|datapath:datapath0|mux5to1:mux0|Mux3                         ;
+; 11:1               ; 7 bits    ; 49 LEs        ; 28 LEs               ; 21 LEs                 ; No         ; |microprocessador|datapath:datapath0|ALU:ALU0|Mux2                             ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; No         ; |microprocessador|datapath:datapath0|mux5to1:mux0|Mux2                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
@@ -583,7 +583,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed May 24 16:15:22 2017
+    Info: Processing started: Mon May 29 20:16:44 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/clk10hz.vhdl
@@ -623,8 +623,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file /github
     Info (12022): Found design unit 1: ALU-Behavioral
     Info (12023): Found entity 1: ALU
 Info (12127): Elaborating entity "microprocessador" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at microprocessador.vhdl(26): used implicit default value for signal "externaldata_proc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at microprocessador.vhdl(27): used implicit default value for signal "externaldata_proc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "controlador" for hierarchy "controlador:controlador0"
+Warning (10492): VHDL Process Statement warning at controlador.vhdl(116): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlador.vhdl(124): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlador.vhdl(133): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "regload", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
@@ -703,22 +706,22 @@ Warning (13012): Latch controlador:controlador0|mux1select[1] has unsafe behavio
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
 Warning (13012): Latch controlador:controlador0|mux1select[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
-Warning (13012): Latch controlador:controlador0|alucontrol[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SUB
-Warning (13012): Latch controlador:controlador0|mux2select[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
-Warning (13012): Latch controlador:controlador0|mux2select[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
 Warning (13012): Latch controlador:controlador0|alucontrol[3] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SHL
 Warning (13012): Latch controlador:controlador0|alucontrol[2] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instXOR
 Warning (13012): Latch controlador:controlador0|alucontrol[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instAND
-Warning (13012): Latch controlador:controlador0|datamem_write_enable has unsafe behavior
+Warning (13012): Latch controlador:controlador0|alucontrol[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.SUB
+Warning (13012): Latch controlador:controlador0|mux2select[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
+Warning (13012): Latch controlador:controlador0|mux2select[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
 Warning (13012): Latch datapath:datapath0|ALU:ALU0|zero_sign has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|alucontrol[2]
+Warning (13012): Latch controlador:controlador0|datamem_write_enable has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.ST
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
@@ -730,14 +733,14 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "externaldata[5]"
     Warning (15610): No output dependent on input pin "externaldata[6]"
     Warning (15610): No output dependent on input pin "externaldata[7]"
-Info (21057): Implemented 324 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 322 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 287 logic cells
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 284 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 548 megabytes
-    Info: Processing ended: Wed May 24 16:15:25 2017
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 544 megabytes
+    Info: Processing ended: Mon May 29 20:16:47 2017
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

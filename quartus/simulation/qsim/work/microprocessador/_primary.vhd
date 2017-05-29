@@ -8,6 +8,7 @@ entity microprocessador is
         externaldata    : in     vl_logic_vector(7 downto 0);
         finished        : out    vl_logic;
         saida           : out    vl_logic_vector(7 downto 0);
-        carryflag       : out    vl_logic
+        carryflag       : out    vl_logic;
+        zero_sign       : out    vl_logic
     );
 end microprocessador;

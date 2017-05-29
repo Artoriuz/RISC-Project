@@ -10,7 +10,7 @@ entity controlador is
 		finished : out std_logic; 
 		mux0select : out std_logic_vector(2 downto 0); 
 		mux1select, mux2select : out std_logic_vector(1 downto 0);
-		regload : out std_logic_vector(7 downto 0); -- ordem = Reg00 Reg01 Reg10 Reg11 Regin Regout Regcarryflag RegZero
+		regload : out std_logic_vector(7 downto 0); -- ordem dos regs = Reg00 Reg01 Reg10 Reg11 Regin Regout Regcarryflag RegZero
 		alucontrol : out std_logic_vector(3 downto 0);
 		datamem_write_enable : out std_logic;
 		pcounter_control: out std_logic_vector(1 downto 0);
@@ -112,17 +112,29 @@ architecture Behavioral of controlador is
 				pcounter_control <= "00";
 			when busca =>
 				finished <= '0';
-				pcounter_control <= "01";
 				regload <= "00000000";
+				if (execute = '1') then --esse if existe pra não incrementar o endereço de memória de programa caso o execute seja '0';
+					pcounter_control <= "01";
+				else 
+					pcounter_control <= "00";
+				end if;
 			when busca_LD => 
 				finished <= '0';
-				pcounter_control <= "01";
 				regload(3 downto 0) <= "0000";
+				if (execute = '1') then
+					pcounter_control <= "01";
+				else 
+					pcounter_control <= "00";
+				end if;
 			when busca_OUT => 
 				finished <= '0';
-				pcounter_control <= "01";
-				--regload <= "00000100";
-				regload <= "00000000";
+				--regload <= "00000100"; --usar isso caso exista problema de timing no regload do OUT
+				regload <= "00000000"; --usar isso pra waveform ou na placa quando não der problema de timning 
+				if (execute = '1') then
+					pcounter_control <= "01";
+				else 
+					pcounter_control <= "00";
+				end if;
 			when decode =>
 				regload <= "00000000";
 				finished <= '0';

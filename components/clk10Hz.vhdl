@@ -12,7 +12,8 @@ end clk10Hz;
 
 architecture Behavioral of clk10Hz is
 signal temporal : std_logic;
-signal counter : integer range 0 to 2699999 := 0;
+--signal counter : integer range 0 to 2699999 := 0; --valor pra ser usado na placa pra um clock de 10hz
+signal counter : integer range 0 to 1 := 0; --valor pra simulacao
 begin
 	freq_div: process (reset, clk_in) 
 	begin
@@ -20,7 +21,8 @@ begin
 			temporal <= '0';
 			counter <= 0;
 		elsif rising_edge(clk_in) then
-			if (counter = 2699999) then
+			--if (counter = 2699999) then --valor pra ser usado na placa pra um clock de 10hz
+				if (counter = 1) then --valor pra simulacao
 				temporal <= NOT(temporal);
 				counter <= 0;
 			else
