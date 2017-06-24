@@ -1,5 +1,5 @@
 Flow report for microprocessador
-Mon May 29 20:17:52 2017
+Wed May 31 20:15:50 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon May 29 20:17:52 2017           ;
+; Flow Status                        ; Successful - Wed May 31 20:15:50 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/29/2017 20:16:45 ;
+; Start date & time ; 05/31/2017 20:15:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; microprocessador    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163683366975411.149609980512100       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163683366975411.149627253806024       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
@@ -101,10 +101,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 541 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 406 MB              ; 00:00:00                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 541 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 406 MB              ; 00:00:01                           ;
-; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 406 MB              ; 00:00:01                           ;
+; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,7 +123,7 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog microprocessador -c microprocessador --vector_source="E:/GitHub Repos/RISC-Project/microprocessador/Waveform.vwf" --testbench_file=./simulation/qsim/microprocessador.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog microprocessador -c microprocessador --vector_source="E:/GitHub Repos/RISC-Project - segunda etapa/microprocessador/Waveform.vwf" --testbench_file=./simulation/qsim/microprocessador.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog microprocessador -c microprocessador
 
 

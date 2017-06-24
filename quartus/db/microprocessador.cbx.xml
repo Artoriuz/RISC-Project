@@ -2,6 +2,6 @@
 <LOG_ROOT>
 	<PROJECT NAME="microprocessador">
 		<CBX_INST_ENTRY INSTANCE_NAME="|microprocessador|datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_cuc1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_51d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kvd1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

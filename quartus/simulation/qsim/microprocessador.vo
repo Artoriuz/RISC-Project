@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "05/29/2017 20:17:52"
+// DATE "05/31/2017 20:15:50"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -336,20 +336,20 @@ wire \controlador0|WideNor0~0_combout ;
 wire \controlador0|WideOr2~combout ;
 wire \datapath0|ALU0|Mux18~1_combout ;
 wire \datapath0|regcarryflag|out0~regout ;
+wire [7:0] \datapath0|programcounter0|current ;
+wire [1:0] \controlador0|mux1select ;
+wire [7:0] \datapath0|reg11|out0 ;
 wire [3:0] \controlador0|alucontrol ;
 wire [7:0] \datapath0|reg_prev_isnt|out0 ;
+wire [1:0] \controlador0|mux2select ;
+wire [7:0] \datapath0|reg10|out0 ;
+wire [7:0] \datapath0|datamem0|altsyncram_component|auto_generated|q_a ;
 wire [7:0] \datapath0|progmem0|altsyncram_component|auto_generated|q_a ;
 wire [7:0] \controlador0|regload ;
 wire [7:0] \datapath0|reg01|out0 ;
-wire [1:0] \controlador0|mux2select ;
-wire [7:0] \datapath0|reg10|out0 ;
+wire [7:0] \datapath0|reg00|out0 ;
 wire [2:0] \controlador0|mux0select ;
 wire [7:0] \datapath0|reout|out0 ;
-wire [7:0] \datapath0|datamem0|altsyncram_component|auto_generated|q_a ;
-wire [1:0] \controlador0|mux1select ;
-wire [7:0] \datapath0|reg11|out0 ;
-wire [7:0] \datapath0|programcounter0|current ;
-wire [7:0] \datapath0|reg00|out0 ;
 
 wire [0:0] \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7_PORTADATAOUT_bus ;
 wire [0:0] \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6_PORTADATAOUT_bus ;
@@ -4217,9 +4217,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a7 .port_a_address_width = 8;
@@ -5514,9 +5514,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a5 .port_a_address_width = 8;
@@ -5576,9 +5576,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a4 .port_a_address_width = 8;
@@ -5638,9 +5638,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a3 .port_a_address_width = 8;
@@ -5700,9 +5700,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a2 .port_a_address_width = 8;
@@ -5762,9 +5762,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a1 .port_a_address_width = 8;
@@ -5824,9 +5824,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 8;
@@ -5886,9 +5886,9 @@ cycloneii_ram_block \datapath0|progmem0|altsyncram_component|auto_generated|ram_
 // synopsys translate_off
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .data_interleave_offset_in_bits = 1;
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .data_interleave_width_in_bits = 1;
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .init_file = "progmem.mif";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .init_file = "../quartus/progmem.mif";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .init_file_layout = "port_a";
-defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM";
+defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .logical_ram_name = "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .operation_mode = "single_port";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .port_a_address_clear = "none";
 defparam \datapath0|progmem0|altsyncram_component|auto_generated|ram_block1a6 .port_a_address_width = 8;

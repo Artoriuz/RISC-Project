@@ -1,0 +1,41 @@
+Multiplexadores
+
+MUX0
+	5 entradas:
+		000 - ALU
+		001 - MUX1
+		010 - Memória de programa
+		011 - Memória de dados
+		100 - Rin (Entrada externa)
+	
+MUX1
+	4 entradas:
+		00 - Registrador Interno 00
+		01 - Registrador Interno 01
+		10 - Registrador Interno 10
+		11 - Registrador Interno 11
+
+		
+MUX2
+	4 entradas
+		00 - Registrador Interno 00
+		01 - Registrador Interno 01
+		10 - Registrador Interno 10
+		11 - Registrador Interno 11
+	
+
+Unidades lógicas aritmeticas
+
+ALU (Só existe um)
+	12 funções (possuem 4bits para dar folga para futuras instruções):
+		0000 - ADD
+		0001 - SUB
+		0010 - AND
+		0011 - OR
+		0100 - XOR
+		0101 - NOT
+		0110 - NAND
+		0111 - NOR
+		1000 - SHL
+		1001 - SHR
+	

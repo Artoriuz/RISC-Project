@@ -57,22 +57,47 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
-set_global_assignment -name VHDL_FILE ../components/clk10Hz.vhdl
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../microprocessador/Waveform.vwf
+set_global_assignment -name VHDL_FILE ../microprocessador/microprocessador.vhd
+set_global_assignment -name VHDL_FILE ../datapath/datapath.vhd
+set_global_assignment -name VHDL_FILE ../controlador/controlador.vhd
+set_global_assignment -name VHDL_FILE ../components/register8.vhd
+set_global_assignment -name VHDL_FILE ../components/register1.vhd
+set_global_assignment -name VHDL_FILE ../components/RAM.vhd
+set_global_assignment -name VHDL_FILE ../components/programcounter.vhd
+set_global_assignment -name VHDL_FILE ../components/mux5to1.vhd
+set_global_assignment -name VHDL_FILE ../components/mux4to1.vhd
+set_global_assignment -name VHDL_FILE ../components/datamemory.vhd
+set_global_assignment -name VHDL_FILE ../components/clk10Hz.vhd
+set_global_assignment -name VHDL_FILE ../components/ALU.vhd
 set_global_assignment -name MIF_FILE progmem.mif
 set_global_assignment -name VHDL_FILE progmem.vhd
 set_global_assignment -name VHDL_FILE datamem.vhd
-set_global_assignment -name VHDL_FILE ../components/programcounter.vhdl
-set_global_assignment -name VHDL_FILE ../microprocessador/microprocessador.vhdl
-set_global_assignment -name VHDL_FILE ../datapath/datapath.vhdl
-set_global_assignment -name VHDL_FILE ../controlador/controlador.vhdl
-set_global_assignment -name VHDL_FILE ../components/register8.vhdl
-set_global_assignment -name VHDL_FILE ../components/register1.vhdl
-set_global_assignment -name VHDL_FILE ../components/mux5to1.vhdl
-set_global_assignment -name VHDL_FILE ../components/mux4to1.vhdl
-set_global_assignment -name VHDL_FILE ../components/ALU.vhdl
-set_global_assignment -name VECTOR_WAVEFORM_FILE ../microprocessador/Waveform.vwf
 set_global_assignment -name QIP_FILE progmem.qip
 set_global_assignment -name MIF_FILE datamem.mif
 set_global_assignment -name QIP_FILE datamem.qip
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_V2 -to execute
+set_location_assignment PIN_D13 -to clk
+set_location_assignment PIN_AE22 -to carryflag
+set_location_assignment PIN_U4 -to externaldata[7]
+set_location_assignment PIN_U3 -to externaldata[6]
+set_location_assignment PIN_T7 -to externaldata[5]
+set_location_assignment PIN_P2 -to externaldata[4]
+set_location_assignment PIN_P1 -to externaldata[3]
+set_location_assignment PIN_N1 -to externaldata[2]
+set_location_assignment PIN_A13 -to externaldata[1]
+set_location_assignment PIN_B13 -to externaldata[0]
+set_location_assignment PIN_AD12 -to finished
+set_location_assignment PIN_N23 -to reset
+set_location_assignment PIN_AC21 -to saida[7]
+set_location_assignment PIN_AD21 -to saida[6]
+set_location_assignment PIN_AD23 -to saida[5]
+set_location_assignment PIN_AD22 -to saida[4]
+set_location_assignment PIN_AC22 -to saida[3]
+set_location_assignment PIN_AB21 -to saida[2]
+set_location_assignment PIN_AF23 -to saida[1]
+set_location_assignment PIN_AE23 -to saida[0]
+set_location_assignment PIN_Y12 -to zero_sign
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/GitHub Repos/RISC-Project/microprocessador/Waveform.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/GitHub Repos/RISC-Project - segunda etapa/microprocessador/Waveform.vwf"

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for microprocessador
-Mon May 29 20:16:47 2017
+Wed May 31 20:15:40 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -20,7 +20,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  12. Registers Removed During Synthesis
  13. General Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated
+ 15. Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated
  16. Source assignments for datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated
  17. Parameter Settings for User Entity Instance: datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component
  18. Parameter Settings for User Entity Instance: datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component
@@ -54,7 +54,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 29 20:16:47 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed May 31 20:15:40 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; microprocessador                                ;
 ; Top-level Entity Name              ; microprocessador                                ;
@@ -167,37 +167,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+-------------------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                             ; Library ;
-+-------------------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------+---------+
-; ../components/clk10Hz.vhdl                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/clk10Hz.vhdl                     ;         ;
-; progmem.mif                               ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project/quartus/progmem.mif                         ;         ;
-; progmem.vhd                               ; yes             ; User Wizard-Generated File       ; E:/GitHub Repos/RISC-Project/quartus/progmem.vhd                         ;         ;
-; datamem.vhd                               ; yes             ; User Wizard-Generated File       ; E:/GitHub Repos/RISC-Project/quartus/datamem.vhd                         ;         ;
-; ../components/programcounter.vhdl         ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/programcounter.vhdl              ;         ;
-; ../microprocessador/microprocessador.vhdl ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/microprocessador/microprocessador.vhdl      ;         ;
-; ../datapath/datapath.vhdl                 ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/datapath/datapath.vhdl                      ;         ;
-; ../controlador/controlador.vhdl           ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/controlador/controlador.vhdl                ;         ;
-; ../components/register8.vhdl              ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/register8.vhdl                   ;         ;
-; ../components/register1.vhdl              ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/register1.vhdl                   ;         ;
-; ../components/mux5to1.vhdl                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/mux5to1.vhdl                     ;         ;
-; ../components/mux4to1.vhdl                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/mux4to1.vhdl                     ;         ;
-; ../components/ALU.vhdl                    ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project/components/ALU.vhdl                         ;         ;
-; datamem.mif                               ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project/quartus/datamem.mif                         ;         ;
-; altsyncram.tdf                            ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc                     ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                               ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                            ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal130.inc                            ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; a_rdenreg.inc                             ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                                ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                                ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                              ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_51d1.tdf                    ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project/quartus/db/altsyncram_51d1.tdf              ;         ;
-; db/altsyncram_cuc1.tdf                    ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project/quartus/db/altsyncram_cuc1.tdf              ;         ;
-+-------------------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++------------------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                       ; Library ;
++------------------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------+---------+
+; ../microprocessador/microprocessador.vhd ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/microprocessador/microprocessador.vhd ;         ;
+; ../datapath/datapath.vhd                 ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/datapath/datapath.vhd                 ;         ;
+; ../controlador/controlador.vhd           ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/controlador/controlador.vhd           ;         ;
+; ../components/register8.vhd              ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/register8.vhd              ;         ;
+; ../components/register1.vhd              ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/register1.vhd              ;         ;
+; ../components/programcounter.vhd         ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/programcounter.vhd         ;         ;
+; ../components/mux5to1.vhd                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/mux5to1.vhd                ;         ;
+; ../components/mux4to1.vhd                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/mux4to1.vhd                ;         ;
+; ../components/clk10Hz.vhd                ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/clk10Hz.vhd                ;         ;
+; ../components/ALU.vhd                    ; yes             ; User VHDL File                   ; E:/GitHub Repos/RISC-Project - segunda etapa/components/ALU.vhd                    ;         ;
+; progmem.mif                              ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/progmem.mif                   ;         ;
+; progmem.vhd                              ; yes             ; User Wizard-Generated File       ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/progmem.vhd                   ;         ;
+; datamem.vhd                              ; yes             ; User Wizard-Generated File       ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/datamem.vhd                   ;         ;
+; datamem.mif                              ; yes             ; User Memory Initialization File  ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/datamem.mif                   ;         ;
+; altsyncram.tdf                           ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altsyncram.tdf                  ;         ;
+; stratix_ram_block.inc                    ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/stratix_ram_block.inc           ;         ;
+; lpm_mux.inc                              ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/lpm_mux.inc                     ;         ;
+; lpm_decode.inc                           ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/lpm_decode.inc                  ;         ;
+; aglobal130.inc                           ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/aglobal130.inc                  ;         ;
+; a_rdenreg.inc                            ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/a_rdenreg.inc                   ;         ;
+; altrom.inc                               ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altrom.inc                      ;         ;
+; altram.inc                               ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altram.inc                      ;         ;
+; altdpram.inc                             ; yes             ; Megafunction                     ; d:/programs/altera/quartus/libraries/megafunctions/altdpram.inc                    ;         ;
+; db/altsyncram_kvd1.tdf                   ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/db/altsyncram_kvd1.tdf        ;         ;
+; db/altsyncram_cuc1.tdf                   ; yes             ; Auto-Generated Megafunction      ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/db/altsyncram_cuc1.tdf        ;         ;
++------------------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -249,7 +249,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |mux5to1:mux0|                         ; 51 (51)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|mux5to1:mux0                                                                    ; work         ;
 ;       |progmem:progmem0|                     ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_51d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated ; work         ;
+;             |altsyncram_kvd1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated ; work         ;
 ;       |programcounter:programcounter0|       ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|programcounter:programcounter0                                                  ; work         ;
 ;       |register1:regcarryflag|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regcarryflag                                                          ; work         ;
 ;       |register1:regzero|                    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |microprocessador|datapath:datapath0|register1:regzero                                                               ; work         ;
@@ -263,24 +263,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                    ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
-; Name                                                                                                          ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF         ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
-; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 32           ; 8            ; --           ; --           ; 256  ; datamem.mif ;
-; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; progmem.mif ;
-+---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                               ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------------+
+; Name                                                                                                          ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                    ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------------+
+; datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component|altsyncram_cuc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 32           ; 8            ; --           ; --           ; 256  ; datamem.mif            ;
+; datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; ../quartus/progmem.mif ;
++---------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                    ;
-+--------+--------------+---------+--------------+--------------+-------------------------------------------------------+--------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                       ; IP Include File                                  ;
-+--------+--------------+---------+--------------+--------------+-------------------------------------------------------+--------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|datamem:datamem0 ; E:/GitHub Repos/RISC-Project/quartus/datamem.vhd ;
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|progmem:progmem0 ; E:/GitHub Repos/RISC-Project/quartus/progmem.vhd ;
-+--------+--------------+---------+--------------+--------------+-------------------------------------------------------+--------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                    ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------+------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                       ; IP Include File                                                  ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------+------------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|datamem:datamem0 ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/datamem.vhd ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |microprocessador|datapath:datapath0|progmem:progmem0 ; E:/GitHub Repos/RISC-Project - segunda etapa/quartus/progmem.vhd ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------+------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -379,7 +379,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated ;
+; Source assignments for datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                          ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------+
@@ -398,62 +398,62 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 +------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                 ;
-+------------------------------------+----------------------+------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                              ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                           ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                         ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                         ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                       ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                              ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                              ;
-; WIDTH_A                            ; 8                    ; Signed Integer                                       ;
-; WIDTHAD_A                          ; 8                    ; Signed Integer                                       ;
-; NUMWORDS_A                         ; 256                  ; Signed Integer                                       ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                              ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                              ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                              ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                              ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                              ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                              ;
-; WIDTH_B                            ; 1                    ; Untyped                                              ;
-; WIDTHAD_B                          ; 1                    ; Untyped                                              ;
-; NUMWORDS_B                         ; 1                    ; Untyped                                              ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                              ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                              ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                              ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                              ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                              ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                              ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                              ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                              ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                              ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                              ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                              ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                              ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                       ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                              ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                              ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                              ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                              ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
-; INIT_FILE                          ; progmem.mif          ; Untyped                                              ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                              ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                              ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                              ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                              ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                              ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                              ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                              ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                              ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                              ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                              ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                              ;
-; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                              ;
-; CBXI_PARAMETER                     ; altsyncram_51d1      ; Untyped                                              ;
-+------------------------------------+----------------------+------------------------------------------------------+
++------------------------------------+------------------------+----------------------------------------------------+
+; Parameter Name                     ; Value                  ; Type                                               ;
++------------------------------------+------------------------+----------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                      ; Untyped                                            ;
+; AUTO_CARRY_CHAINS                  ; ON                     ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                    ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS                ; ON                     ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                    ; IGNORE_CASCADE                                     ;
+; WIDTH_BYTEENA                      ; 1                      ; Untyped                                            ;
+; OPERATION_MODE                     ; SINGLE_PORT            ; Untyped                                            ;
+; WIDTH_A                            ; 8                      ; Signed Integer                                     ;
+; WIDTHAD_A                          ; 8                      ; Signed Integer                                     ;
+; NUMWORDS_A                         ; 256                    ; Signed Integer                                     ;
+; OUTDATA_REG_A                      ; UNREGISTERED           ; Untyped                                            ;
+; ADDRESS_ACLR_A                     ; NONE                   ; Untyped                                            ;
+; OUTDATA_ACLR_A                     ; NONE                   ; Untyped                                            ;
+; WRCONTROL_ACLR_A                   ; NONE                   ; Untyped                                            ;
+; INDATA_ACLR_A                      ; NONE                   ; Untyped                                            ;
+; BYTEENA_ACLR_A                     ; NONE                   ; Untyped                                            ;
+; WIDTH_B                            ; 1                      ; Untyped                                            ;
+; WIDTHAD_B                          ; 1                      ; Untyped                                            ;
+; NUMWORDS_B                         ; 1                      ; Untyped                                            ;
+; INDATA_REG_B                       ; CLOCK1                 ; Untyped                                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                 ; Untyped                                            ;
+; RDCONTROL_REG_B                    ; CLOCK1                 ; Untyped                                            ;
+; ADDRESS_REG_B                      ; CLOCK1                 ; Untyped                                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED           ; Untyped                                            ;
+; BYTEENA_REG_B                      ; CLOCK1                 ; Untyped                                            ;
+; INDATA_ACLR_B                      ; NONE                   ; Untyped                                            ;
+; WRCONTROL_ACLR_B                   ; NONE                   ; Untyped                                            ;
+; ADDRESS_ACLR_B                     ; NONE                   ; Untyped                                            ;
+; OUTDATA_ACLR_B                     ; NONE                   ; Untyped                                            ;
+; RDCONTROL_ACLR_B                   ; NONE                   ; Untyped                                            ;
+; BYTEENA_ACLR_B                     ; NONE                   ; Untyped                                            ;
+; WIDTH_BYTEENA_A                    ; 1                      ; Signed Integer                                     ;
+; WIDTH_BYTEENA_B                    ; 1                      ; Untyped                                            ;
+; RAM_BLOCK_TYPE                     ; AUTO                   ; Untyped                                            ;
+; BYTE_SIZE                          ; 8                      ; Untyped                                            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE              ; Untyped                                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ   ; Untyped                                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ   ; Untyped                                            ;
+; INIT_FILE                          ; ../quartus/progmem.mif ; Untyped                                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A                 ; Untyped                                            ;
+; MAXIMUM_DEPTH                      ; 0                      ; Untyped                                            ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                 ; Untyped                                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                 ; Untyped                                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                 ; Untyped                                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                 ; Untyped                                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN        ; Untyped                                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN        ; Untyped                                            ;
+; ENABLE_ECC                         ; FALSE                  ; Untyped                                            ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                  ; Untyped                                            ;
+; WIDTH_ECCSTATUS                    ; 3                      ; Untyped                                            ;
+; DEVICE_FAMILY                      ; Cyclone II             ; Untyped                                            ;
+; CBXI_PARAMETER                     ; altsyncram_kvd1        ; Untyped                                            ;
++------------------------------------+------------------------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -583,73 +583,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon May 29 20:16:44 2017
+    Info: Processing started: Wed May 31 20:15:38 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off microprocessador -c microprocessador
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/clk10hz.vhdl
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/microprocessador/microprocessador.vhd
+    Info (12022): Found design unit 1: microprocessador-Behavioral
+    Info (12023): Found entity 1: microprocessador
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/datapath/datapath.vhd
+    Info (12022): Found design unit 1: datapath-Behavioral
+    Info (12023): Found entity 1: datapath
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/controlador/controlador.vhd
+    Info (12022): Found design unit 1: controlador-Behavioral
+    Info (12023): Found entity 1: controlador
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/register8.vhd
+    Info (12022): Found design unit 1: register8-description
+    Info (12023): Found entity 1: register8
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/register1.vhd
+    Info (12022): Found design unit 1: register1-description
+    Info (12023): Found entity 1: register1
+Warning (12019): Can't analyze file -- file ../components/RAM.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/programcounter.vhd
+    Info (12022): Found design unit 1: programcounter-Behavioral
+    Info (12023): Found entity 1: programcounter
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/mux5to1.vhd
+    Info (12022): Found design unit 1: mux5to1-behavioral
+    Info (12023): Found entity 1: mux5to1
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/mux4to1.vhd
+    Info (12022): Found design unit 1: mux4to1-behavioral
+    Info (12023): Found entity 1: mux4to1
+Warning (12019): Can't analyze file -- file ../components/datamemory.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/clk10hz.vhd
     Info (12022): Found design unit 1: clk10Hz-Behavioral
     Info (12023): Found entity 1: clk10Hz
+Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project - segunda etapa/components/alu.vhd
+    Info (12022): Found design unit 1: ALU-Behavioral
+    Info (12023): Found entity 1: ALU
 Info (12021): Found 2 design units, including 1 entities, in source file progmem.vhd
     Info (12022): Found design unit 1: progmem-SYN
     Info (12023): Found entity 1: progmem
 Info (12021): Found 2 design units, including 1 entities, in source file datamem.vhd
     Info (12022): Found design unit 1: datamem-SYN
     Info (12023): Found entity 1: datamem
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/programcounter.vhdl
-    Info (12022): Found design unit 1: programcounter-Behavioral
-    Info (12023): Found entity 1: programcounter
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/microprocessador/microprocessador.vhdl
-    Info (12022): Found design unit 1: microprocessador-Behavioral
-    Info (12023): Found entity 1: microprocessador
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/datapath/datapath.vhdl
-    Info (12022): Found design unit 1: datapath-Behavioral
-    Info (12023): Found entity 1: datapath
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/controlador/controlador.vhdl
-    Info (12022): Found design unit 1: controlador-Behavioral
-    Info (12023): Found entity 1: controlador
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/register8.vhdl
-    Info (12022): Found design unit 1: register8-description
-    Info (12023): Found entity 1: register8
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/register1.vhdl
-    Info (12022): Found design unit 1: register1-description
-    Info (12023): Found entity 1: register1
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/mux5to1.vhdl
-    Info (12022): Found design unit 1: mux5to1-behavioral
-    Info (12023): Found entity 1: mux5to1
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/mux4to1.vhdl
-    Info (12022): Found design unit 1: mux4to1-behavioral
-    Info (12023): Found entity 1: mux4to1
-Info (12021): Found 2 design units, including 1 entities, in source file /github repos/risc-project/components/alu.vhdl
-    Info (12022): Found design unit 1: ALU-Behavioral
-    Info (12023): Found entity 1: ALU
 Info (12127): Elaborating entity "microprocessador" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at microprocessador.vhdl(27): used implicit default value for signal "externaldata_proc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at microprocessador.vhd(27): used implicit default value for signal "externaldata_proc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "controlador" for hierarchy "controlador:controlador0"
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(116): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(124): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlador.vhdl(133): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "regload", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlador.vhdl(105): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux1select[0]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux1select[1]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux2select[0]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux2select[1]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux0select[0]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux0select[1]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "mux0select[2]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "datamem_write_enable" at controlador.vhdl(105)
-Info (10041): Inferred latch for "regload[4]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "regload[5]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "regload[6]" at controlador.vhdl(105)
-Info (10041): Inferred latch for "regload[7]" at controlador.vhdl(105)
+Warning (10492): VHDL Process Statement warning at controlador.vhd(116): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlador.vhd(124): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlador.vhd(133): signal "execute" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controlador.vhd(105): inferring latch(es) for signal or variable "regload", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhd(105): inferring latch(es) for signal or variable "datamem_write_enable", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhd(105): inferring latch(es) for signal or variable "mux0select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhd(105): inferring latch(es) for signal or variable "mux2select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhd(105): inferring latch(es) for signal or variable "mux1select", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlador.vhd(105): inferring latch(es) for signal or variable "alucontrol", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "alucontrol[0]" at controlador.vhd(105)
+Info (10041): Inferred latch for "alucontrol[1]" at controlador.vhd(105)
+Info (10041): Inferred latch for "alucontrol[2]" at controlador.vhd(105)
+Info (10041): Inferred latch for "alucontrol[3]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux1select[0]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux1select[1]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux2select[0]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux2select[1]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux0select[0]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux0select[1]" at controlador.vhd(105)
+Info (10041): Inferred latch for "mux0select[2]" at controlador.vhd(105)
+Info (10041): Inferred latch for "datamem_write_enable" at controlador.vhd(105)
+Info (10041): Inferred latch for "regload[4]" at controlador.vhd(105)
+Info (10041): Inferred latch for "regload[5]" at controlador.vhd(105)
+Info (10041): Inferred latch for "regload[6]" at controlador.vhd(105)
+Info (10041): Inferred latch for "regload[7]" at controlador.vhd(105)
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath0"
 Info (12128): Elaborating entity "clk10Hz" for hierarchy "datapath:datapath0|clk10Hz:clk0"
 Info (12128): Elaborating entity "programcounter" for hierarchy "datapath:datapath0|programcounter:programcounter0"
@@ -659,7 +661,7 @@ Info (12130): Elaborated megafunction instantiation "datapath:datapath0|progmem:
 Info (12133): Instantiated megafunction "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "progmem.mif"
+    Info (12134): Parameter "init_file" = "../quartus/progmem.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -671,9 +673,9 @@ Info (12133): Instantiated megafunction "datapath:datapath0|progmem:progmem0|alt
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_51d1.tdf
-    Info (12023): Found entity 1: altsyncram_51d1
-Info (12128): Elaborating entity "altsyncram_51d1" for hierarchy "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_51d1:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kvd1.tdf
+    Info (12023): Found entity 1: altsyncram_kvd1
+Info (12128): Elaborating entity "altsyncram_kvd1" for hierarchy "datapath:datapath0|progmem:progmem0|altsyncram:altsyncram_component|altsyncram_kvd1:auto_generated"
 Info (12128): Elaborating entity "datamem" for hierarchy "datapath:datapath0|datamem:datamem0"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "datapath:datapath0|datamem:datamem0|altsyncram:altsyncram_component"
@@ -700,8 +702,8 @@ Info (12128): Elaborating entity "register1" for hierarchy "datapath:datapath0|r
 Info (12128): Elaborating entity "mux5to1" for hierarchy "datapath:datapath0|mux5to1:mux0"
 Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:datapath0|mux4to1:mux1"
 Info (12128): Elaborating entity "ALU" for hierarchy "datapath:datapath0|ALU:ALU0"
-Warning (10631): VHDL Process Statement warning at ALU.vhdl(21): inferring latch(es) for signal or variable "zero_sign", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "zero_sign" at ALU.vhdl(21)
+Warning (10631): VHDL Process Statement warning at ALU.vhd(21): inferring latch(es) for signal or variable "zero_sign", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "zero_sign" at ALU.vhd(21)
 Warning (13012): Latch controlador:controlador0|mux1select[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controlador:controlador0|state.instOUT
 Warning (13012): Latch controlador:controlador0|mux1select[0] has unsafe behavior
@@ -738,10 +740,10 @@ Info (21057): Implemented 322 device resources after synthesis - the final resou
     Info (21059): Implemented 11 output pins
     Info (21061): Implemented 284 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 544 megabytes
-    Info: Processing ended: Mon May 29 20:16:47 2017
-    Info: Elapsed time: 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Wed May 31 20:15:40 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
